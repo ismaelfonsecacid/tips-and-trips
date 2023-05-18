@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from '../page.module.css'
+import styles from './Menu.module.css'
 const links = [{
   label: 'ABOUT',
   route: '/'
