@@ -1,11 +1,18 @@
 .grid_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   gap: 20px;
- margin-top: 30px;
- padding-left: 30px;
- padding-right: 30px;
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
+
+@media (max-width: 600px) {
+  .grid_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 
 .link {
   background-color: #f1f1f1;

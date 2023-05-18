@@ -3,7 +3,7 @@ import './globals.css'
 import { Kanit } from '@next/font/google'
 
 
-const ubuntu = Kanit({
+const font = Kanit({
   weight: '400',
   subsets: ['latin']
 })
@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
 
 
     <html>
-      <body>
+      <body className={font.className}>
         <Menu />
         {children}
       </body>
