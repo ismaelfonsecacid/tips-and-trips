@@ -19,7 +19,7 @@ export default  function Menu() {
     <div>
       <div style={{ textAlign: 'center'}}>
         {/* Bloque superior con el logotipo */}
-        <Image src='/images/logoTT.png' className={styles.logo} width={'400'} height={'400'}></Image>
+        <Image src='/images/logoTT.png' className={styles.logo} width={'400'} height={'400'} alt='logo'></Image>
       </div>
       <div style={{ textAlign: 'center', paddingTop: '20px' }}>
         {/* Bloque inferior con el menú */}
