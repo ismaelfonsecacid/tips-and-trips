@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './Menu.module.css'
+import Image from 'next/image';
 const links = [{
   label: 'ABOUT',
   route: '/'
@@ -18,7 +19,7 @@ export default  function Menu() {
     <div>
       <div style={{ textAlign: 'center'}}>
         {/* Bloque superior con el logotipo */}
-        <img src='/images/logoTT.png' className={styles.logo}></img>
+        <Image src='/images/logoTT.png' className={styles.logo} width={'400'} height={'400'}></Image>
       </div>
       <div style={{ textAlign: 'center', paddingTop: '20px' }}>
         {/* Bloque inferior con el menú */}
