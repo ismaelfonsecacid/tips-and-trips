@@ -9,7 +9,7 @@ export default function TripPage ({params}) {
     return (
         <div>
             {datosFiltrados.map(item=> (
-                <h2>{item.body}</h2>
+                <h2 key={item.id}>{item.body}</h2>
             ))}
         </div>
     )
