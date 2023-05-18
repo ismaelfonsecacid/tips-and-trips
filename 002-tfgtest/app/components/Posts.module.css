@@ -1,0 +1,42 @@
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  gap: 20px;
+ margin-top: 30px;
+ padding-left: 30px;
+ padding-right: 30px;
+}
+
+.link {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+
+}
+
+
+.grid_item {
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  height: auto;
+}
+
+.image {
+  width: 90%;
+  height: 60%;
+  border-radius: 4px;
+}
+
+.date {
+  font-weight: bold;
+}
+.date p {
+  text-decoration: none;
+  color: black;
+}
+
+.resume {
+  margin-top: 10px;
+}
