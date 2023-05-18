@@ -1,8 +1,13 @@
+.border {
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(23,69,110);
+}
+
 .ul li a {
     text-decoration: none;
     color: black;
     font-size: 18px;
-    background-color: rgb(211, 201, 201);
+    background-color: rgb(255,160,72);
     padding: 10px;
     border-radius: 20px;
 }

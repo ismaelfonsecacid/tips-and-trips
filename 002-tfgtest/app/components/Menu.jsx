@@ -16,10 +16,10 @@ const links = [{
 
 export default  function Menu() {
   return (
-    <div>
+    <div className={styles.border}>
       <div style={{ textAlign: 'center'}}>
         {/* Bloque superior con el logotipo */}
-        <Image src='/images/logoTT.png' className={styles.logo} width={'400'} height={'400'} alt='logo'></Image>
+        <Image src='/images/logo3.png' className={styles.logo} width={'400'} height={'400'} alt='logo'></Image>
       </div>
       <div style={{ textAlign: 'center', paddingTop: '20px' }}>
         {/* Bloque inferior con el menú */}
