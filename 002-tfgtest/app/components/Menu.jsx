@@ -64,11 +64,11 @@ export default function Menu() {
             <div className={`${styles.mobileMenu} ${styles.open}`}>
               <ul className={styles.mobileMenuList}>
                 {links.map(({ label, route }) => (
-                  <li key={route} className={styles.mobileMenuItem}>
-                    <Link href={route} onClick={toggleMobileMenu}>
+                  <Link href={route} onClick={toggleMobileMenu}>
+                    <li key={route} className={styles.mobileMenuItem}>
                       {label}
-                    </Link>
-                  </li>
+                    </li>
+                  </Link>
                 ))}
               </ul>
             </div>

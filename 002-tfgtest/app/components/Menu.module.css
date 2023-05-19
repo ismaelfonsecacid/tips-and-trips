@@ -45,10 +45,16 @@
   padding: 0;
   margin: 0;
   text-align: center;
+  padding: 20px;
+}
+.mobileMenuList a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
 }
 
 .mobileMenuItem {
-  padding: 10px;
+  padding: 30px;
 }
 
 .mobileMenuItem:hover {

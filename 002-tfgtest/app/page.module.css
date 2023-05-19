@@ -32,8 +32,11 @@
 }
 
 
-/* @media (max-width: 750px) {
-    .logo {
-      width: 70%;
-    }
-  } */
+@media (max-width: 750px) {
+  .first_div_1 p {
+    font-size: 14px;
+  }
+  .first_div_1 h1 {
+    font-size: 23px;
+  }
+  } 

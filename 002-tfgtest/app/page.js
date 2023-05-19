@@ -1,6 +1,6 @@
 import styles from './page.module.css'
 import Posts from './components/Posts'
-import Menu from './components/Menu'
+
 
 export default function Home() {
 
