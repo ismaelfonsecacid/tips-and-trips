@@ -29,7 +29,6 @@
   
   .list {
     list-style-type: none;
-    margin-left: 40px;
   }
   .container {
     display: flex;
