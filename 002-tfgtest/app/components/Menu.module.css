@@ -1,22 +1,92 @@
 .border {
-    padding-bottom: 20px;
-    border-bottom: 2px solid rgb(23,69,110);
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgb(23,69,110);
+}
+
+.logo {
+  height: 200px;
+  width: auto;
+  cursor: pointer;
+}
+
+/* Menu.module.css */
+
+.border {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.hamburgerButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  display: none; /* Ocultar el botón de hamburguesa por defecto */
+}
+
+.mobileMenu {
+  position: absolute;
+ /* Cambiar a top: 0; para mostrar el menú más arriba */
+  right: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  max-height: 20px;
+}
+
+.mobileMenuList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.mobileMenuItem {
+  padding: 10px;
+}
+
+.mobileMenuItem:hover {
+  background-color: #ddd;
+}
+
+.mobileMenu.open {
+  max-height: 600px;
+}
+
+.ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ul li {
+  display: inline-block;
+  margin: 0 15px;
 }
 
 .ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    background-color: rgb(255,160,72);
-    padding: 10px;
-    border-radius: 20px;
+  text-decoration: none;
+  color: #b12020;
+  font-size: 16px;
 }
 
 .ul li a:hover {
-    text-decoration: underline;
-
+  color: #aaa;
 }
-.logo {
-    height: 200px;
-    width: auto;
+
+/* Estilos para mostrar el botón de hamburguesa en dispositivos móviles */
+@media only screen and (max-width: 750px) {
+  .hamburgerButton {
+    display: block; /* Mostrar el botón de hamburguesa en dispositivos móviles */
+  }
+
+  .ul {
+    display: none; /* Ocultar la lista de menú en dispositivos móviles */
+  }
 }
