@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Page.module.css";
 import Image from "next/image";
+import Carousel from "../components/Carousel";
 export default async function TripsPage() {
 
     return (
@@ -8,7 +9,7 @@ export default async function TripsPage() {
             <div className={styles.container}>
                 <div className={styles.content}>
                     <div>
-                        <Image src="/images/tokyo.jpg" width={350} height={350} alt="Imagen de relleno"/>
+                        <Image src="/images/tokyo.jpg" width={350} height={350} alt="Imagen de relleno" />
                     </div>
                     <div className={styles.textContainer}>
                         <h1 className={styles.title}>Mis Experiencias de Viaje</h1>
@@ -21,19 +22,25 @@ export default async function TripsPage() {
                     </div>
                 </div>
             </div>
+            <div className={styles.colordiv}>
+            <h2 className={styles.subtitle}>Lugares que hemos visitado</h2>
+            <Carousel/>
 
-            <h2 className={styles.subtitle}>Lugares que he visitado</h2>
-            <ul className={styles.list}>
-                <li><strong>París, Francia</strong>: Una ciudad increíblemente romántica con una arquitectura impresionante y una rica historia.</li>
-                <br />
-                <li><strong>Tokio, Japón</strong>: Una metrópolis vibrante llena de cultura fascinante, deliciosa comida y tecnología de vanguardia.</li>
-                <br />
-                <li><strong>Machu Picchu</strong>, Perú: Un antiguo sitio arqueológico enclavado en las montañas de los Andes, que ofrece vistas impresionantes y una conexión con la historia inca.</li>
-                <br />
-                <li><strong>Sydney, Australia</strong>: Una ciudad costera con hermosas playas, un icónico puerto y una mezcla multicultural que la hace realmente especial.</li>
-            </ul>
+
+            </div>
             <h2 className={styles.subtitle}>Opiniones sobre mis viajes</h2>
 
         </div>
     );
 }
+
+                // <h2 className={styles.subtitle}>Lugares que he visitado</h2>
+                // <ul className={styles.list}>
+                //     <li><strong>París, Francia</strong>: Una ciudad increíblemente romántica con una arquitectura impresionante y una rica historia.</li>
+                //     <br />
+                //     <li><strong>Tokio, Japón</strong>: Una metrópolis vibrante llena de cultura fascinante, deliciosa comida y tecnología de vanguardia.</li>
+                //     <br />
+                //     <li><strong>Machu Picchu</strong>, Perú: Un antiguo sitio arqueológico enclavado en las montañas de los Andes, que ofrece vistas impresionantes y una conexión con la historia inca.</li>
+                //     <br />
+                //     <li><strong>Sydney, Australia</strong>: Una ciudad costera con hermosas playas, un icónico puerto y una mezcla multicultural que la hace realmente especial.</li>
+                // </ul>

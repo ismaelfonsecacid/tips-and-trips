@@ -1,0 +1,17 @@
+.item{
+    height: 20rem;
+    min-width: 15rem;
+    padding: 2rem;
+}
+.item img{
+
+    pointer-events: none;
+}
+.slider{
+    display: flex;
+    cursor: grab;
+}
+.slider_container{
+    margin: 0 auto;
+    overflow-x: hidden;
+}
