@@ -1,0 +1,26 @@
+.mobileMenuList {
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  @media (max-width: 750px) {
+    .mobileMenuList {
+        margin-top: 30px;
+      grid-template-columns: 100px 100px;
+    }
+  }
+  
+  
+  .mobileMenuItem {
+    margin-bottom: 10px;
+  }
+  
+  .mobileMenuItem:last-child {
+    margin-bottom: 0;
+  }
+  
+  
