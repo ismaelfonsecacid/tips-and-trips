@@ -64,11 +64,11 @@ export default function Menu() {
             <div className={`${styles.mobileMenu} ${styles.open}`}>
               <ul className={styles.mobileMenuList}>
                 {links.map(({ label, route }) => (
-                  <Link href={route} onClick={toggleMobileMenu}>
-                    <li key={route} className={styles.mobileMenuItem}>
+                  <li key={route} className={styles.mobileMenuItem}>
+                    <Link href={route} onClick={toggleMobileMenu}>
                       {label}
-                    </li>
-                  </Link>
+                    </Link>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -80,7 +80,7 @@ export default function Menu() {
           <ul className={styles.ul} style={{ listStyleType: 'none', padding: 0 }}>
             {links.map(({ label, route }) => (
               <li key={route} style={{ display: 'inline-block', margin: '0 15px' }}>
-                <Link href={route}>{label}</Link>
+                <Link href={route} key={route}>{label}</Link>
               </li>
             ))}
           </ul>
