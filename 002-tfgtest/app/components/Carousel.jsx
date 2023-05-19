@@ -11,7 +11,7 @@ const Slider = () => {
         <motion.div className={styles.slider} drag='x' 
         dragConstraints={{right: 0, left:-5345}} >
         {jsonCard.map(image => (
-            <motion.div className={styles.item}>
+            <motion.div className={styles.item} key={image.id}>
                 <Image src={image.img} alt="" width={'200'}height={'300'}/>
                 <p>{image.resume}</p>
             </motion.div>
