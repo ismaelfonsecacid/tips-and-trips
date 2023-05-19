@@ -22,8 +22,8 @@ export default async function TripsPage() {
                     </div>
                 </div>
             </div>
-            <div className={styles.colordiv}>
-            <h2 className={styles.subtitle}>Lugares que hemos visitado</h2>
+            <div className={styles.colordiv} id="viajes">
+            <h2  className={styles.subtitle}>Lugares que hemos visitado</h2>
             <Carousel/>
 
 

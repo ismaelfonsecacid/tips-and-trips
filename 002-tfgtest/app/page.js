@@ -1,5 +1,6 @@
 import styles from './page.module.css'
 import Posts from './components/Posts'
+import Link from 'next/link'
 
 
 export default function Home() {
@@ -24,8 +25,13 @@ export default function Home() {
 
         </div>
       </div>
-      <div>
-        <Posts/>
+      <div className={styles.second_div}>
+        <Posts />
+        <div className={styles.midboton}>
+          <Link to="/trips#viajes" href='/trips#viajes' className={styles.button}>
+            Ver viajes
+          </Link>
+        </div>
       </div>
       <div className={styles.img}>
 

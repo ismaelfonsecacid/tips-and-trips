@@ -1,0 +1,127 @@
+[
+    {
+      "id": "nuevayork",
+      "nombre": "Nueva York",
+      "pais": "Estados Unidos",
+      "poblacion": "8.4 millones",
+      "idioma": "Inglés",
+      "moneda": "Dólar estadounidense",
+      "clima": "☀️",
+      "atracciones": [
+        {
+          "nombre": "Times Square",
+          "descripcion": "Famosa por sus pantallas luminosas y su animado ambiente, Times Square es el corazón de Nueva York. Es un lugar ideal para ir de compras, disfrutar de espectáculos teatrales y probar una amplia variedad de restaurantes.",
+          "img": "/images/times_square.jpg"
+        },
+        {
+          "nombre": "Estatua de la Libertad",
+          "descripcion": "Uno de los símbolos más reconocidos de Nueva York y de Estados Unidos en general. Se puede acceder a la isla donde se encuentra la estatua y disfrutar de vistas panorámicas de la ciudad.",
+          "img": "/images/estatua_libertad.jpg"
+        },
+        {
+          "nombre": "Central Park",
+          "descripcion": "Este icónico parque urbano ofrece un oasis verde en medio de la ciudad. Es perfecto para pasear, hacer picnic, montar en bicicleta o disfrutar de actividades al aire libre. También alberga zoológicos, lagos y áreas de recreo.",
+          "img": "/images/central_park.jpg"
+        },
+        {
+          "nombre": "Empire State Building",
+          "descripcion": "Un rascacielos emblemático de Nueva York con vistas panorámicas desde su mirador en el piso 86. Es un lugar popular para disfrutar de impresionantes vistas de la ciudad y capturar fotos memorables.",
+          "img": "/images/empire_state.jpg"
+        },
+        {
+          "nombre": "Museo Metropolitano de Arte",
+          "descripcion": "Conocido como el MET, este museo alberga una vasta colección de arte de todo el mundo. Desde pinturas famosas hasta esculturas y artefactos históricos, el MET es un lugar imprescindible para los amantes del arte y la cultura.",
+          "img": "/images/met_museum.jpg"
+        }
+      ],
+      "comida_tipica": [
+        "Pizza",
+        "Hamburguesas",
+        "Hot dogs",
+        "Cheesecake",
+        "Bagels"
+      ]
+    },
+    {
+      "id": "paris",
+      "nombre": "París",
+      "pais": "Francia",
+      "poblacion": "2.2 millones",
+      "idioma": "Francés",
+      "moneda": "Euro",
+      "clima": "Templado",
+      "atracciones": [
+        {
+          "nombre": "Torre Eiffel",
+          "descripcion": "Uno de los monumentos más reconocidos del mundo, la Torre Eiffel ofrece vistas panorámicas impresionantes de París desde sus diferentes niveles. También cuenta con restaurantes y tiendas.",
+          "img": "/images/torre_eiffel.jpg"
+        },
+        {
+          "nombre": "Museo del Louvre",
+          "descripcion": "Uno de los museos más grandes y visitados del mundo, el Louvre alberga obras maestras como la Mona Lisa y la Venus de Milo. Explorar sus galerías es sumergirse en la historia del arte.",
+          "img": "/images/louvre_museum.jpg"
+        },
+        {
+          "nombre": "Catedral de Notre Dame",
+          "descripcion": "Un magnífico ejemplo de arquitectura gótica, la Catedral de Notre Dame es un lugar histórico y religioso. Sus impresionantes vitrales y su majestuosa estructura la convierten en una visita obligada.",
+          "img": "/images/notre_dame.jpg"
+        },
+        {
+          "nombre": "Arco de Triunfo",
+          "descripcion": "Situado en el extremo oeste de los Campos Elíseos, el Arco de Triunfo es un monumento emblemático de París. Ofrece vistas panorámicas de la ciudad y es un símbolo de la grandeza de Francia.",
+          "img": "/images/arco_triunfo.jpg"
+        },
+        {
+          "nombre": "Montmartre",
+          "descripcion": "Este barrio bohemio de París es conocido por su ambiente artístico y sus calles adoquinadas. La Basílica del Sagrado Corazón se encuentra en la cima de la colina de Montmartre y ofrece impresionantes vistas de la ciudad.",
+          "img": "/images/montmartre.jpg"
+        }
+      ],
+      "comida_tipica": [
+        "Croissant",
+        "Baguette",
+        "Quesos franceses",
+        "Foie gras",
+        "Macarons"
+      ]
+    },
+    {
+      "id": "tokio",
+      "nombre": "Tokio",
+      "pais": "Japón",
+      "poblacion": "13.9 millones",
+      "idioma": "Japonés",
+      "moneda": "Yen",
+      "clima": "Templado",
+      "atracciones": [
+        {
+          "nombre": "Tokyo Disneyland",
+          "descripcion": "Este parque temático es una visita obligada para los amantes de Disney. Ofrece atracciones emocionantes, espectáculos en vivo y la oportunidad de conocer a tus personajes favoritos.",
+          "img": "/images/tokyo_disneyland.jpg"
+        },
+        {
+          "nombre": "Templo Senso-ji",
+          "descripcion": "Uno de los templos más antiguos y venerados de Tokio, el Senso-ji es un lugar de peregrinación y una muestra impresionante de la arquitectura tradicional japonesa. También es famoso por su colorida calle comercial Nakamise.",
+          "img": "/images/sensoji_temple.jpg"
+        },
+        {
+          "nombre": "Barrio de Akihabara",
+          "descripcion": "Conocido como el paraíso de la electrónica, Akihabara es famoso por sus tiendas de tecnología, manga y anime. Es un lugar vibrante y lleno de energía que atrae a los amantes de la cultura pop japonesa.",
+          "img": "/images/akihabara.jpg"
+        },
+        {
+          "nombre": "Parque Ueno",
+          "descripcion": "Este amplio parque ofrece un escape tranquilo en medio del ajetreo de Tokio. Es ideal para relajarse, hacer un picnic, visitar museos y disfrutar de la belleza natural, especialmente durante la temporada de sakura (flores de cerezo).",
+          "img": "/images/ueno_park.jpg"
+        }
+      ],
+      "comida_tipica": [
+        "Sushi",
+        "Ramen",
+        "Tempura",
+        "Okonomiyaki",
+        "Matcha"
+      ]
+    }
+  ]
+  

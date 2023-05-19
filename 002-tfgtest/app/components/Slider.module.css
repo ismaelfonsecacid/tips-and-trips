@@ -3,6 +3,9 @@
     min-width: 15rem;
     padding: 2rem;
 }
+.item:hover{
+ background-color: aqua;
+}
 .item img{
 
     pointer-events: none;

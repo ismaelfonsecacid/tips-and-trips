@@ -1,0 +1,22 @@
+.cityContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .attractionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .foodList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
