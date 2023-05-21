@@ -12,10 +12,11 @@ export default function RootLayout({ children }) {
   return (
 
 
-    <html>
-      <header>
-        <title>Tips & Trips</title>
-      </header>
+    <html lang="es">
+      <head>
+        <meta charset="UTF-8"/>
+          <title>Tips & Trips</title>
+      </head>
       <body className={font.className}>
         <Menu />
         {children}
