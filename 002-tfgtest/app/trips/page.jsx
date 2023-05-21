@@ -33,14 +33,3 @@ export default async function TripsPage() {
         </div>
     );
 }
-
-                // <h2 className={styles.subtitle}>Lugares que he visitado</h2>
-                // <ul className={styles.list}>
-                //     <li><strong>París, Francia</strong>: Una ciudad increíblemente romántica con una arquitectura impresionante y una rica historia.</li>
-                //     <br />
-                //     <li><strong>Tokio, Japón</strong>: Una metrópolis vibrante llena de cultura fascinante, deliciosa comida y tecnología de vanguardia.</li>
-                //     <br />
-                //     <li><strong>Machu Picchu</strong>, Perú: Un antiguo sitio arqueológico enclavado en las montañas de los Andes, que ofrece vistas impresionantes y una conexión con la historia inca.</li>
-                //     <br />
-                //     <li><strong>Sydney, Australia</strong>: Una ciudad costera con hermosas playas, un icónico puerto y una mezcla multicultural que la hace realmente especial.</li>
-                // </ul>
