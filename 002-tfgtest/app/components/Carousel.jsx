@@ -15,7 +15,7 @@ const Slider = () => {
           <motion.div className={styles.item} key={image.id}>
             <Link href={`/trips/${image.continente}/${image.id}`} key={image.id} style={{cursor:'grab'}}>
 
-              <Image src={image.img} alt="" width={'200'} height={'300'} />
+              <Image src={image.img} alt={image.ciudad} width={'200'} height={'300'} />
 
             </Link>
               <Link href={`/trips/${image.continente}/${image.id}`} key={image.id} style={{cursor:'grab'}}>
