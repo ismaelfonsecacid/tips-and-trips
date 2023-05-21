@@ -1,6 +1,6 @@
-export default async function TipsPage () {
 
-    return(
-        <p>hola</p>
-    )
-}
+  export default function MyComponent() {
+
+  
+    return <div>Contenido del componente</div>;
+  }

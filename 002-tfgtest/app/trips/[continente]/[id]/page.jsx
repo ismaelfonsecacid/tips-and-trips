@@ -1,7 +1,5 @@
 
 'use client'
-
-'use client'
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import styles from './Page.module.css';

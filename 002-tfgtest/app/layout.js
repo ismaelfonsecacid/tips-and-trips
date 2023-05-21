@@ -13,6 +13,9 @@ export default function RootLayout({ children }) {
 
 
     <html>
+      <header>
+        <title>Tips & Trips</title>
+      </header>
       <body className={font.className}>
         <Menu />
         {children}
