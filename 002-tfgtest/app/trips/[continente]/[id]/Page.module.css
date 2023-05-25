@@ -1,22 +1,89 @@
 .cityContainer {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+.cityContainerlat {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+}
+
+@media (max-width: 900px) {
+  .cityContainerlat {
+   grid-template-columns: 1fr;
+
+  }
+}
+
+.aside{
+
+}
+
+.attractionsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+
+.attraction {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 0.4fr 1fr;
     align-items: center;
-    margin-bottom: 20px;
+    text-align: center;
+}
+
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attraction img {
+  max-width: 100%;
+
+}
+
+.foodList {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px;
+}
+
+.foodList li {
+  margin-bottom: 5px;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 750px) {
+  .cityContainer {
+    margin: 10px;
+    padding: 10px;
   }
   
-  .attractionContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
+  .attractionsContainer {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 10px;
   }
   
   .foodList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: disc;
-    margin-left: 20px;
+    margin: 10px;
   }
-  
+}
+
+@media (max-width: 1200px) {
+  .attraction {
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+
+  }
+}

@@ -55,37 +55,44 @@ export default function Menu() {
           />
         </Link>
       </div>
-      {isMobile && (
-        <div style={{ textAlign: 'right', paddingRight: '20px' }}>
-          <button className={styles.hamburgerButton} onClick={toggleMobileMenu}>
-            ☰
-          </button>
-          {isMobileMenuOpen && (
-            <div className={`${styles.mobileMenu} ${styles.open}`}>
-              <ul className={styles.mobileMenuList}>
-                {links.map(({ label, route }) => (
-                  <li key={route} className={styles.mobileMenuItem}>
-                    <Link href={route} onClick={toggleMobileMenu}>
-                      {label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </div>
-      )}
-      {!isMobile && (
-        <div style={{ textAlign: 'center', paddingTop: '20px' }}>
-          <ul className={styles.ul} style={{ listStyleType: 'none', padding: 0 }}>
-            {links.map(({ label, route }) => (
-              <li key={route} style={{ display: 'inline-block', margin: '0 15px' }}>
-                <Link href={route} key={route}>{label}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+
+      <div className='todo' style={{display:'flex',justifyContent:'center'}}>
+        {isMobile && (
+          <div style={{ textAlign: 'right', paddingRight: '20px' }}>
+            <button className={styles.hamburgerButton} onClick={toggleMobileMenu}>
+              ☰
+            </button>
+            {isMobileMenuOpen && (
+              <>
+                <div className={`${styles.mobileMenu} ${styles.open}`}>
+                  <ul className={styles.mobileMenuList}>
+                    {links.map(({ label, route }) => (
+                      <li key={route} className={styles.mobileMenuItem}>
+                        <Link href={route} onClick={toggleMobileMenu}>
+                          {label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </>
+            )}
+          </div>
+        )}
+        {!isMobile && (
+          <div style={{ textAlign: 'center', paddingTop: '20px' }}>
+            <ul className={styles.ul} style={{ listStyleType: 'none', padding: 0 }}>
+              {links.map(({ label, route }) => (
+                <li key={route} style={{ display: 'inline-block', margin: '0 15px' }}>
+                  <Link href={route} key={route}>{label}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+
+
     </div>
   );
 }

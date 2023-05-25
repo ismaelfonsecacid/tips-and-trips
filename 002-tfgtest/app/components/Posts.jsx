@@ -1,7 +1,8 @@
-import jsonData from '../json/posts.json'
+// import jsonData from '../json/posts.json'
 import styles from './Posts.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
+import { jsonData } from '../services/apiCallJsonPosts';
 
 export default function Posts() {
     return (

@@ -28,7 +28,7 @@ export default function Home() {
       <div className={styles.second_div}>
         <Posts />
         <div className={styles.midboton}>
-          <Link to="/trips#viajes" href='/trips#viajes' className={styles.button}>
+          <Link to="/trips" href='/trips' className={styles.button}>
             Ver viajes
           </Link>
         </div>

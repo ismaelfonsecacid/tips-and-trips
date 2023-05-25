@@ -34,14 +34,16 @@ export default function Menu() {
 
 
     return (
-        <div>
-            <ul className={styles.menu}>
-                {links.map(({ label, route }) =>
-                (<li key={route}>
-                    <Link href={route}>{label}</Link>
-                </li>)
-                )}
-            </ul>
+        <div style={{backgroundColor:'#202020'}}>
+            <div className={styles.interior}>
+                <ul className={styles.menu}>
+                    {links.map(({ label, route }) =>
+                    (<li key={route}>
+                        <Link href={route}>{label}</Link>
+                    </li>)
+                    )}
+                </ul>
+            </div>
         </div>
     )
 }

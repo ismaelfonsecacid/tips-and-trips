@@ -1,4 +1,5 @@
 import Menu from "./components/Menu.jsx"
+import { initFirebase } from "./firebase/firebaseApp.js"
 import './globals.css'
 import { Kanit } from '@next/font/google'
 
@@ -9,12 +10,14 @@ const font = Kanit({
 })
 
 export default function RootLayout({ children }) {
+  
+  const app = initFirebase();
+  console.log(app)
   return (
 
 
     <html lang="es">
       <head>
-        <meta charset="UTF-8"/>
           <title>Tips & Trips</title>
       </head>
       <body className={font.className}>

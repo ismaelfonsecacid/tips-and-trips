@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import styles from './Page.module.css';
 import jsonData from '../../../json/infoPosts.json'
+import Image from 'next/image';
 
 const TripPage = ({ params }) => {
   const { id } = params;
@@ -34,18 +35,17 @@ const TripPage = ({ params }) => {
   };
 
   const getEmojiFromCondition = (condition) => {
-    // Lógica para asignar un emoji basado en las condiciones climáticas
-    // Puedes personalizar esta función según tus necesidades
-    // Aquí hay un ejemplo básico
-    if (condition.includes('Sunny') || condition.includes('Clear')) {
+    const lowercaseCondition = condition.toLowerCase();
+
+    if (lowercaseCondition.includes('sunny') || lowercaseCondition.includes('clear')) {
       return '☀️';
-    } else if (condition.includes('Cloudy')) {
+    } else if (lowercaseCondition.includes('cloudy') || lowercaseCondition.includes('partial cloudy')) {
       return '☁️';
-    } else if (condition.includes('Rain')) {
+    } else if (lowercaseCondition.includes('rain')) {
       return '🌧️';
-    } else if (condition.includes('Snow')) {
+    } else if (lowercaseCondition.includes('snow')) {
       return '❄️';
-     } else if (condition.includes('Fog')) {
+    } else if (lowercaseCondition.includes('fog')) {
       return '🌫️';
     } else {
       return '❓';
@@ -56,35 +56,58 @@ const TripPage = ({ params }) => {
     const lugar = datosFiltrados[0];
 
     return (
-      <div>
-        <div key={lugar.id} className={styles.cityContainer}>
-          <h2>{weatherEmoji}</h2>
-          <h3>{lugar.nombre}</h3>
-          <p>País: {lugar.pais}</p>
-          <p>Población: {lugar.poblacion}</p>
-          <p>Idioma: {lugar.idioma}</p>
-          <p>Moneda: {lugar.moneda}</p>
-
-          <h3>Atracciones</h3>
-          {lugar.atracciones.map(atraccion => (
-            <div key={atraccion.nombre} className={styles.attractionContainer}>
-              <h4>{atraccion.nombre}</h4>
-              <img src={atraccion.img} alt={atraccion.nombre} />
-              <p>{atraccion.descripcion}</p>
+      <div className={styles.cityContainer}>
+        <div className={styles.cityContainerlat}>
+          <div>
+            <h2>{weatherEmoji}</h2>
+            <h3>{lugar.nombre}</h3>
+            <p>{lugar.detalles}</p>
+         <br />
+          </div>
+          <div className={styles.right}>
+            <div>
+              <p>País: {lugar.pais}</p>
+              <p>Población: {lugar.poblacion}</p>
+              <p>Idioma: {lugar.idioma}</p>
+              <p>Moneda: {lugar.moneda}</p>
             </div>
-          ))}
-
-          <h3>Comida típica</h3>
-          <ul className={styles.foodList}>
-            {lugar.comida_tipica.map(comida => (
-              <li key={comida}>{comida}</li>
-            ))}
-          </ul>
+          </div>
         </div>
+        <br />
+        <div>
+          <h3>Atracciones</h3>
+          <div className={styles.attractionsContainer}>
+            {lugar.atracciones.map(atraccion => (
+              <div key={atraccion.nombre} className={styles.attraction}>
+                <Image
+                  src={atraccion.img}
+                  title={atraccion.nombre}
+                  alt={atraccion.nombre}
+                  width={'200'}
+                  height={'250'}
+                  sizes="(height: 250px)"
+                />
+                <div className={styles.aside}>
+                  <h4>{atraccion.nombre}</h4>
+                  <p>{atraccion.descripcion}</p>
+                </div>
+              </div>
+            ))}
+
+          </div>
+        </div>
+
+        <h3>Comida típica</h3>
+        <ul className={styles.foodList}>
+          {lugar.comida_tipica.map(comida => (
+            <li key={comida}>{comida}</li>
+          ))}
+        </ul>
       </div>
+
     );
   } else {
-    return null; // Otra opción es mostrar un mensaje de "cargando" mientras se realiza la solicitud
+    return <div>Loading...</div>; // Otra opción es mostrar un mensaje de "cargando" mientras se realiza la solicitud
   }
 };
 

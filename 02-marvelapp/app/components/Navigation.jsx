@@ -6,8 +6,10 @@ export default function Navigation() {
 
     return (
         <nav className={styles.navbar}>
-            <div className={styles.leftZone}>
-                <a className={styles.loginLink} href="#">Login</a>
+            <div className={styles.border}>
+                <div className={styles.leftZone}>
+                    <a className={styles.loginLink} href="#">Login</a>
+                </div>
             </div>
             <div className={styles.middleZone}>
                 <img src="/images/logo.png" alt="Image" style={{width:'100px'}}/>

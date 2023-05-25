@@ -24,6 +24,7 @@ export default async function TripsPage({ children }) {
 
     return (
         <div>
+            <hr style={{borderColor:'red', marginBottom:'20px'} } />
             <div>
                 <ul className={styles.mobileMenuList}>
                     {links.map(({ label, route }) => (
