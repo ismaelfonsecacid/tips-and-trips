@@ -15,15 +15,15 @@ const Slider = () => {
       <motion.div className={styles.slider} drag='x'
         dragConstraints={{ right: 0, left: -2150 }} >
         {jsonData.map(image => (
-        
+
           <motion.div className={styles.item} key={image.id}>
-            <Link href={`/trips/${image.continente}/${image.id}`} key={image.id} style={{cursor:'grab'}}>
+            <Link href={`/trips/${image.continente}/${image.id}`} key={image.id} style={{ cursor: 'grab' }}>
               <Image src={image.img} alt={image.ciudad} width={'200'} height={'300'} />
             </Link>
-              <Link href={`/trips/${image.continente}/${image.id}`} key={image.id} style={{cursor:'grab'}}>
-              <p>{image.resume}</p>
-          </Link>
-            </motion.div>
+            <Link href={`/trips/${image.continente}/${image.id}`} key={image.id} style={{ cursor: 'grab',textDecoration:'none' }}>
+              <p className={styles.button}>{image.resume}</p>
+            </Link>
+          </motion.div>
         ))}
       </motion.div>
 

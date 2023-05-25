@@ -10,7 +10,7 @@ const font = Kanit({
 })
 
 export default function RootLayout({ children }) {
-  
+
   const app = initFirebase();
   console.log(app)
   return (
@@ -18,7 +18,8 @@ export default function RootLayout({ children }) {
 
     <html lang="es">
       <head>
-          <title>Tips & Trips</title>
+        <link rel="icon" href="/images/favicon.ico" />
+        <title>Tips & Trips</title>
       </head>
       <body className={font.className}>
         <Menu />

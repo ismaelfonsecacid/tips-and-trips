@@ -1,20 +1,37 @@
-.item{
+.item {
     height: 20rem;
     min-width: 15rem;
-    padding: 2rem;
+    padding: 2.3rem;
 }
-.item:hover{
- background-color: aqua;
+
+.item:hover {
+    background-color: aqua;
 }
-.item img{
+
+.item img {
 
     pointer-events: none;
 }
-.slider{
+
+.slider {
     display: flex;
-    cursor: grab;
+
+
 }
-.slider_container{
+
+.slider_container {
     margin: 0 auto;
     overflow-x: hidden;
+}
+
+.button {
+    z-index: 34;
+    color: black;
+    background-color: rgb(254, 161, 74);
+    border-radius: 40px 40px 0 0;
+    padding: 5px;
+}
+
+.button::hover {
+    color: white;
 }

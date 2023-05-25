@@ -35,11 +35,12 @@ const TripPage = ({ params }) => {
   };
 
   const getEmojiFromCondition = (condition) => {
+    console.log(condition)
     const lowercaseCondition = condition.toLowerCase();
 
     if (lowercaseCondition.includes('sunny') || lowercaseCondition.includes('clear')) {
       return '☀️';
-    } else if (lowercaseCondition.includes('cloudy') || lowercaseCondition.includes('partial cloudy')) {
+    } else if (lowercaseCondition.includes('cloudy')) {
       return '☁️';
     } else if (lowercaseCondition.includes('rain')) {
       return '🌧️';
@@ -59,13 +60,13 @@ const TripPage = ({ params }) => {
       <div className={styles.cityContainer}>
         <div className={styles.cityContainerlat}>
           <div>
-            <h2>{weatherEmoji}</h2>
             <h3>{lugar.nombre}</h3>
             <p>{lugar.detalles}</p>
             <br />
           </div>
           <div className={styles.right}>
-            <div>
+            <div className={styles.right2}>
+              <p>Tiempo:<span style={{fontSize:'25px'}}>{weatherEmoji}</span></p>
               <p>País: {lugar.pais}</p>
               <p>Población: {lugar.poblacion}</p>
               <p>Idioma: {lugar.idioma}</p>
@@ -74,7 +75,7 @@ const TripPage = ({ params }) => {
           </div>
         </div>
         <br />
-        <div>
+        <div className={styles.atracciones}>
           <h3>Atracciones</h3>
           <div className={styles.attractionsContainer}>
             {lugar.atracciones.map(atraccion => (

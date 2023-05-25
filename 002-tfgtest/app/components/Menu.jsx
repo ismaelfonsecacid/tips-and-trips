@@ -56,9 +56,9 @@ export default function Menu() {
         </Link>
       </div>
 
-      <div className='todo' style={{display:'flex',justifyContent:'center'}}>
+      <div className={styles.allDiv}>
         {isMobile && (
-          <div style={{ textAlign: 'right', paddingRight: '20px' }}>
+          <div>
             <button className={styles.hamburgerButton} onClick={toggleMobileMenu}>
               ☰
             </button>
