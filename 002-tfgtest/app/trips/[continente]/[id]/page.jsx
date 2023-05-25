@@ -62,7 +62,7 @@ const TripPage = ({ params }) => {
             <h2>{weatherEmoji}</h2>
             <h3>{lugar.nombre}</h3>
             <p>{lugar.detalles}</p>
-         <br />
+            <br />
           </div>
           <div className={styles.right}>
             <div>
