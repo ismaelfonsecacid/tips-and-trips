@@ -22,7 +22,7 @@ export default async function TripsPage() {
                     </div>
                 </div>
             </div>
-            <div className={styles.colordiv} id="viajes">
+            <div className={styles.colordiv} id="lugares">
             <h2  className={styles.subtitle}>Lugares que hemos visitado</h2>
             <Carousel/>
 
