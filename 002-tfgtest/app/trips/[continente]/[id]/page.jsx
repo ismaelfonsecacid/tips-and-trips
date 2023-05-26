@@ -1,57 +1,17 @@
 
-'use client'
-import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import WeatherEmoji from '@/app/components/WeatherEmoji';
 import styles from './Page.module.css';
-import jsonData from '../../../json/infoPosts.json'
+// import jsonData from '../../../json/infoPosts.json'
+import { jsonData } from '@/app/services/apiCallinfoData';
 import Image from 'next/image';
+import Reload from '@/app/components/Reload';
+import NotFound from '@/app/not-found';
 
 const TripPage = ({ params }) => {
   const { id } = params;
-  const router = useRouter();
-  const [weatherEmoji, setWeatherEmoji] = useState('');
+
+
   const datosFiltrados = jsonData.filter(item => item.id === id);
-
-  useEffect(() => {
-    if (datosFiltrados.length > 0) {
-      fetchWeatherEmoji(datosFiltrados[0].nombre);
-    } else {
-      // No se encontró ningún elemento con el ID especificado, redirigir a un error 404
-      router.push('/404'); // Reemplaza '/404' con la URL correcta para la página de error 404
-    }
-  }, []);
-
-  const fetchWeatherEmoji = async (nombreLugar) => {
-    try {
-      const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=9bbd27db37474d2c9e8121525231905&q=${nombreLugar}`);
-      const data = await response.json();
-      const condition = data.current.condition.text;
-      const emoji = getEmojiFromCondition(condition);
-      setWeatherEmoji(emoji);
-    } catch (error) {
-      console.error('Error fetching weather data:', error);
-      // Manejar el error aquí y mostrar un mensaje adecuado al usuario
-    }
-  };
-
-  const getEmojiFromCondition = (condition) => {
-    console.log(condition)
-    const lowercaseCondition = condition.toLowerCase();
-
-    if (lowercaseCondition.includes('sunny') || lowercaseCondition.includes('clear')) {
-      return '☀️';
-    } else if (lowercaseCondition.includes('cloudy')) {
-      return '☁️';
-    } else if (lowercaseCondition.includes('rain')) {
-      return '🌧️';
-    } else if (lowercaseCondition.includes('snow')) {
-      return '❄️';
-    } else if (lowercaseCondition.includes('fog')) {
-      return '🌫️';
-    } else {
-      return '❓';
-    }
-  };
 
   if (datosFiltrados.length > 0) {
     const lugar = datosFiltrados[0];
@@ -66,7 +26,7 @@ const TripPage = ({ params }) => {
           </div>
           <div className={styles.right}>
             <div className={styles.right2}>
-              <p>Tiempo:<span style={{fontSize:'25px'}}>{weatherEmoji}</span></p>
+            <WeatherEmoji nombreLugar={lugar.nombre} />
               <p>País: {lugar.pais}</p>
               <p>Población: {lugar.poblacion}</p>
               <p>Idioma: {lugar.idioma}</p>
@@ -108,7 +68,7 @@ const TripPage = ({ params }) => {
 
     );
   } else {
-    return <div>Loading...</div>; // Otra opción es mostrar un mensaje de "cargando" mientras se realiza la solicitud
+    return <NotFound/>; // Otra opción es mostrar un mensaje de "cargando" mientras se realiza la solicitud
   }
 };
 

@@ -1,7 +1,9 @@
+import Footer from "./components/Footer.jsx"
 import Menu from "./components/Menu.jsx"
 import { initFirebase } from "./firebase/firebaseApp.js"
 import './globals.css'
 import { Kanit } from '@next/font/google'
+
 
 
 const font = Kanit({
@@ -24,6 +26,7 @@ export default function RootLayout({ children }) {
       <body className={font.className}>
         <Menu />
         {children}
+        <Footer/>
       </body>
     </html>
   )
