@@ -4,9 +4,7 @@
     padding: 2.3rem;
 }
 
-.item:hover {
-    background-color: aqua;
-}
+
 
 .item img {
 
@@ -25,13 +23,17 @@
 }
 
 .button {
-    z-index: 34;
+
     color: black;
     background-color: rgb(254, 161, 74);
     border-radius: 40px 40px 0 0;
     padding: 5px;
 }
 
-.button::hover {
-    color: white;
+
+.button:hover {
+    transform: scale(1.1);
+    transition: all  ease 1s;
 }
+
+
