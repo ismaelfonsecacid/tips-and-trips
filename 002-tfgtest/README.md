@@ -1,7 +1,7 @@
 
 ## URL with final details
 
-https://nextjs-jrxfr0f5p-ismanoallaps4.vercel.app
+https://nextjs-oxv02qs2f-ismanoallaps4.vercel.app/
 
 
 
