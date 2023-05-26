@@ -26,7 +26,7 @@ const TripPage = ({ params }) => {
           </div>
           <div className={styles.right}>
             <div className={styles.right2}>
-            <WeatherEmoji nombreLugar={lugar.nombre} />
+            <WeatherEmoji nombreLugar={lugar.id} />
               <p>País: {lugar.pais}</p>
               <p>Población: {lugar.poblacion}</p>
               <p>Idioma: {lugar.idioma}</p>
