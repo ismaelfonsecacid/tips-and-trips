@@ -9,7 +9,7 @@ export default async function TripsPage() {
             <div className={styles.container}>
                 <div className={styles.content}>
                     <div>
-                        <Image src="/images/tokyo.jpg" width={350} height={350} alt="Imagen de relleno" />
+                        <Image src="/images/relleno.png" width={335} height={335} alt="Imagen de relleno" />
                     </div>
                     <div className={styles.textContainer}>
                         <h1 className={styles.title}>Mis Experiencias de Viaje</h1>
