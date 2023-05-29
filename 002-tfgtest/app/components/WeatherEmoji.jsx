@@ -32,7 +32,7 @@ const WeatherEmoji = ({ nombreLugar }) => {
       return '🌧️';
     } else if (lowercaseCondition.includes('snow')) {
       return '❄️';
-    } else if (lowercaseCondition.includes('fog') || lowercaseCondition.includes('mist')) {
+    } else if (lowercaseCondition.includes('fog') || lowercaseCondition.includes('mist') || lowercaseCondition.includes('overcast')) {
       return '🌫️';
     } else {
       return '❓';
