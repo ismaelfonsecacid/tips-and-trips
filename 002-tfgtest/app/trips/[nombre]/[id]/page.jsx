@@ -4,7 +4,6 @@ import styles from './Page.module.css';
 // import jsonData from '../../../json/infoPosts.json'
 import { jsonData } from '@/app/services/apiCallinfoData';
 import Image from 'next/image';
-import Reload from '@/app/components/Reload';
 import NotFound from '@/app/not-found';
 
 const TripPage = ({ params }) => {
@@ -13,10 +12,11 @@ const TripPage = ({ params }) => {
 
   const datosFiltrados = jsonData.filter(item => item.id === id);
 
-  if (datosFiltrados.length > 0) {
     const lugar = datosFiltrados[0];
 
+
     return (
+      
       <div className={styles.cityContainer}>
         <div className={styles.cityContainerlat}>
           <div>
@@ -67,9 +67,7 @@ const TripPage = ({ params }) => {
       </div>
 
     );
-  } else {
-    return <NotFound/>; // Otra opción es mostrar un mensaje de "cargando" mientras se realiza la solicitud
-  }
+  
 };
 
 export default TripPage;

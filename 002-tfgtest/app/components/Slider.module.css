@@ -1,39 +1,31 @@
-.item {
-    height: 20rem;
-    min-width: 15rem;
-    padding: 2.3rem;
+
+.carrusel {
+   display: flex;
+   flex-wrap: nowrap;
+    overflow-x: scroll;
+
 }
-
-
-
-.item img {
-
-    pointer-events: none;
-}
-
-.slider {
-    display: flex;
-
+.carrusel::-webkit-scrollbar {
+  display: block;
+  background-color: gray;
 
 }
 
-.slider_container {
-    margin: 0 auto;
-    overflow-x: hidden;
+.card {
+  flex: 1 0 auto;
+  width: 200px;
+  height: auto;
+  margin: 0 50px;
+}
+@media (max-width: 450px) {
+  .carrusel::-webkit-scrollbar {
+   display: none;
+  
+  }
+  
+
 }
 
-.button {
 
-    color: black;
-    background-color: rgb(254, 161, 74);
-    border-radius: 40px 40px 0 0;
-    padding: 5px;
-}
-
-
-.button:hover {
-    transform: scale(1.1);
-    transition: all  ease 1s;
-}
 
 

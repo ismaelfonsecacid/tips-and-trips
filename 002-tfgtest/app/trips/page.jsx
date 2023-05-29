@@ -1,16 +1,16 @@
 import React from "react";
 import styles from "./Page.module.css";
 import Image from "next/image";
-import Carousel from "../components/Carousel";
+import Slider from "../components/Carousel";
 export default async function TripsPage() {
 
     return (
         <div className={styles.tripspagecontainer}>
-            <div className={styles.container}>
+            <main className={styles.container}>
                 <div className={styles.content}>
-                    <div>
+                    <>
                         <Image src="/images/relleno.png" width={335} height={335} alt="Imagen de relleno" />
-                    </div>
+                    </>
                     <div className={styles.textContainer}>
                         <h1 className={styles.title}>Mis Experiencias de Viaje</h1>
                         <p className={styles.description} style={{ marginLeft: '50px', marginRight: '50px' }}>
@@ -21,14 +21,13 @@ export default async function TripsPage() {
                         </p>
                     </div>
                 </div>
-            </div>
+            </main>
             <div className={styles.colordiv} id="lugares">
-            <h2  className={styles.subtitle}>Lugares que hemos visitado</h2>
-            <Carousel/>
+                <h2 className={styles.subtitle}>Lugares que hemos visitado</h2>
+                <><Slider /></>
 
 
             </div>
-            <h2 className={styles.subtitle}>Opiniones sobre mis viajes</h2>
 
         </div>
     );

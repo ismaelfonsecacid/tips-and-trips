@@ -1,10 +1,8 @@
 
-export default function TripPage ({params}) {
+export default function TripPage({ params }) {
 
-    const { id } = params
+  const { nombre } = params
 
-  
-    return (
-      <p>{id}</p>
-    )
+
+
 }

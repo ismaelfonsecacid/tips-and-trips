@@ -13,8 +13,7 @@ const font = Kanit({
 
 export default function RootLayout({ children }) {
 
-  const app = initFirebase();
-  console.log(app)
+
   return (
 
 
