@@ -1,14 +1,16 @@
+let jsonData = [];
 
-let jsonData = []; // Variable para almacenar los datos de la API sustituyendo useState para evitar el renderizado desde el cliente
-
-fetch('https://trips-and-trips-default-rtdb.europe-west1.firebasedatabase.app/infoPost.json')
-  .then((response) => response.json())
-  .then((data) => {
-    jsonData = data;
-  })
-  .catch((error) => {
+const fetchData = async () => {
+  try {
+    const response = await fetch('https://trips-and-trips-default-rtdb.europe-west1.firebasedatabase.app/infoPost.json');
+    jsonData = await response.json(); // Puedes hacer algo con los datos cargados aquí
+  } catch (error) {
     console.log('Error fetching data:', error);
-  });
+  }
+};
+
+fetchData();
 
 
-export  {jsonData}
+
+export default jsonData;

@@ -2,9 +2,26 @@
 import WeatherEmoji from '@/app/components/WeatherEmoji';
 import styles from './Page.module.css';
 // import jsonData from '../../../json/infoPosts.json'
-import { jsonData } from '@/app/services/apiCallinfoData';
+
 import Image from 'next/image';
 import NotFound from '@/app/not-found';
+let jsonData = [];
+
+const fetchData = async () => {
+
+  try {
+    const response = await fetch('https://trips-and-trips-default-rtdb.europe-west1.firebasedatabase.app/infoPost.json');
+    jsonData = await response.json(); // Puedes hacer algo con los datos cargados aquí
+  } catch (error) {
+    console.log('Error fetching data:', error);
+  }
+};
+
+fetchData();
+
+
+
+
 
 const TripPage = ({ params }) => {
   const { id } = params;
@@ -13,6 +30,9 @@ const TripPage = ({ params }) => {
   const datosFiltrados = jsonData.filter(item => item.id === id);
 
     const lugar = datosFiltrados[0];
+
+    if (lugar == undefined)
+    return <NotFound/>
 
 
     return (
