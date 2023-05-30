@@ -5,6 +5,7 @@ import styles from './Page.module.css';
 
 import Image from 'next/image';
 import NotFound from '@/app/not-found';
+
 let jsonData = [];
 
 const fetchData = async () => {

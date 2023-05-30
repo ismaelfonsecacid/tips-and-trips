@@ -1,0 +1,57 @@
+{
+    "continentes": [
+      {
+        "id": "america",
+        "nombre": "Américas",
+        "descripcion": "Américas es un continente diverso y vasto que abarca desde el Ártico hasta la Patagonia. Con una amplia gama de culturas, paisajes impresionantes y una historia rica, las Américas ofrecen una experiencia única para los viajeros.",
+        "seguridad": "La seguridad varía en diferentes países y regiones de las Américas. Algunos lugares son considerados seguros para visitar, mientras que otros pueden requerir precauciones adicionales debido a la delincuencia o situaciones políticas.",
+        "opinion_personal": "Las Américas son un destino fascinante con una increíble diversidad cultural y paisajes impresionantes. Personalmente, me encanta explorar las vibrantes ciudades de América del Norte y sumergirme en la naturaleza exuberante de América Central y del Sur.",
+        "precio_promedio_vuelos": 800,
+        "mejores_lugares": [
+          "Machu Picchu, Perú",
+          "Gran Cañón, Estados Unidos",
+          "Patagonia, Argentina y Chile"
+        ]
+      },
+      {
+        "id": "europa",
+        "nombre": "Europa",
+        "descripcion": "Europa es un continente lleno de historia, arte y cultura. Con ciudades antiguas, castillos majestuosos y paisajes impresionantes, Europa atrae a millones de visitantes cada año.",
+        "seguridad": "La mayoría de los países europeos se consideran seguros para los viajeros, pero siempre es importante mantenerse alerta y tomar precauciones habituales en cuanto a la seguridad personal y el cuidado de los objetos de valor.",
+        "opinion_personal": "Europa es un lugar mágico donde cada rincón cuenta una historia. Me encanta perderme por las calles empedradas de ciudades como Praga y Florencia, y maravillarme con la majestuosidad de monumentos como la Torre Eiffel y el Coliseo Romano.",
+        "precio_promedio_vuelos": 1200,
+        "mejores_lugares": [
+          "Torre Eiffel, Francia",
+          "Coliseo Romano, Italia",
+          "Acrópolis de Atenas, Grecia"
+        ]
+      },
+      {
+        "id": "asia",
+        "nombre": "Asia",
+        "descripcion": "Asia es el continente más grande y diverso del mundo, con una rica historia, cultura vibrante y una belleza natural impresionante. Desde los templos antiguos hasta los rascacielos modernos, Asia ofrece una experiencia única para los viajeros.",
+        "seguridad": "La seguridad en Asia puede variar ampliamente según el país y la región. Algunos destinos son considerados seguros y acogedores para los turistas, mientras que otros pueden requerir precauciones adicionales debido a las condiciones políticas o situaciones de seguridad.",
+        "opinion_personal": "Asia es un continente fascinante lleno de contrastes y maravillas. Me encanta explorar las antiguas ruinas de Angkor Wat en Camboya y sumergirme en la bulliciosa vida urbana de Tokio, Japón. Además, la Gran Muralla China es una impresionante obra arquitectónica que no se puede perder.",
+        "precio_promedio_vuelos": 1000,
+        "mejores_lugares": [
+          "Angkor Wat, Camboya",
+          "Tokio, Japón",
+          "Gran Muralla China"
+        ]
+      },
+      {
+        "id": "oceania",
+        "nombre": "Oceanía",
+        "descripcion": "Oceanía es un continente compuesto por diversas islas y países, conocido por sus playas de arena blanca, arrecifes de coral y paisajes tropicales. Esta región remota ofrece una belleza natural impresionante y una rica cultura indígena.",
+        "seguridad": "La seguridad en Oceanía varía según el destino específico. En general, la mayoría de los países son considerados seguros para los turistas, pero es importante estar informado sobre las condiciones locales y seguir las recomendaciones de viaje.",
+        "opinion_personal": "Oceanía es un paraíso terrenal con sus impresionantes playas, aguas cristalinas y una increíble biodiversidad marina. Me encanta explorar los arrecifes de coral de la Gran Barrera de Coral en Australia y disfrutar de la hospitalidad de las islas de Fiji.",
+        "precio_promedio_vuelos": 1500,
+        "mejores_lugares": [
+          "Gran Barrera de Coral, Australia",
+          "Isla Norte, Nueva Zelanda",
+          "Bora Bora, Polinesia Francesa"
+        ]
+      }
+    ]
+  }
+  

@@ -38,7 +38,7 @@ export default function Menu() {
           />
         </Link>
         <div className={styles.menuMob}>
-          <MobileNav/>
+          <MobileNav />
         </div>
       </div>
 
