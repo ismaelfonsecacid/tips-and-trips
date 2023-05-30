@@ -1,15 +1,13 @@
 
-## URL
-
-https://nextjs-git-main-ismanoallaps4.vercel.app/
-
-
 # Tips and Trips - Blog de Viajes
 
-<p align="center">
+<p align="center" display='flex'>
   <img src="./public/images/logo3.png" alt="Tips and Trips Logo" width="150px" />
 </p>
 
+
+## URL
+https://nextjs-git-main-ismanoallaps4.vercel.app/
 
 
 ¡Bienvenido/a al repositorio del proyecto Tips and Trips! Este repositorio contiene el código fuente y los recursos relacionados con el desarrollo del blog de viajes Tips and Trips, construido con Next.js. A continuación, encontrarás toda la información necesaria para comprender el proyecto, contribuir a su desarrollo y utilizar Next.js.
@@ -24,6 +22,8 @@ El blog se construirá utilizando Next.js, un framework de React.js que facilita
 
 - `/components`: Componentes reutilizables de React utilizados en el blog.
 - `/app`: Páginas de Next.js que representan las diferentes rutas del blog.
+    - `/tips`
+    - `/trips`
 - `/public`: Recursos estáticos accesibles públicamente, como imágenes y archivos descargables.
 
 
