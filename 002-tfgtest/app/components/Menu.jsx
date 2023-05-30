@@ -27,16 +27,19 @@ export default function Menu() {
 
   return (
     <div className={styles.border}>
-      <div style={{ justifyContent: 'center',display:'flex' }}>
+      <div className={styles.top}>
         <Link href="/">
           <Image
             src="/images/logo3.png"
             className={styles.logo}
-            width={400}
-            height={400}
+            width={150}
+            height={150}
             alt="logo"
           />
         </Link>
+        <div className={styles.menuMob}>
+          <MobileNav/>
+        </div>
       </div>
 
       <div className={styles.allDiv}>
@@ -48,9 +51,6 @@ export default function Menu() {
               </li>
             ))}
           </ul>
-        </div>
-        <div className={styles.menuMob}>
-          <MobileNav/>
         </div>
       </div>
     </div>

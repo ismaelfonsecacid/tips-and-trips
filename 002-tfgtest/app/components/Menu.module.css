@@ -1,8 +1,10 @@
 .border {
   padding-bottom: 20px;
-
 }
-
+.top{
+  display: flex;
+  justify-content: center;
+}
 .allDiv {
   display: flex;
   justify-content: center;
@@ -10,8 +12,7 @@
 }
 
 .logo {
-  height: 200px;
-  width: auto;
+
   cursor: pointer;
 }
 
@@ -70,5 +71,15 @@
 
 .allDiv{
   display: block;
+}
+.top{
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+  
 }
 }
