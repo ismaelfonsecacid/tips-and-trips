@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/images/favicon.ico" />
         <title>Tips & Trips</title>
+        <meta name="description" content="Explora el mundo a través de nuestras historias y consejos de viaje en nuestro blog de viajes. Descubre destinos increíbles, experiencias únicas y consejos prácticos para planificar tu próxima aventura."/>
       </head>
       <body className={font.className}>
         <Menu />

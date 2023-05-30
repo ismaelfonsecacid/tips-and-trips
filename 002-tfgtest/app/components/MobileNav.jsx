@@ -20,8 +20,8 @@ export default function MobileNav() {
     return (
         <div>
             <MobileNavHam open={mobileNavOpen} onClick={() => setMobileNavOpen(false)}></MobileNavHam>
-            <button onClick={() => setMobileNavOpen(true)} className={styles.buton}>
-               <Image src='/images/icono.svg' width={'30'} height={'25'}/>
+            <button onClick={() => setMobileNavOpen(true)} className={styles.buton} aria-label="Menu desplegable">
+               <Image src='/images/icono.svg' width={'30'} height={'25'} alt="Boton para abrir el menu desplegable"/>
             </button>
         </div>
     )
