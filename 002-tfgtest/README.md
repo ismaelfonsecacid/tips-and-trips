@@ -6,7 +6,10 @@ https://nextjs-git-main-ismanoallaps4.vercel.app/
 
 # Tips and Trips - Blog de Viajes
 
-![Tips and Trips Logo](./public/images/logo3.png)
+<p align="center">
+  <img src="./public/images/logo3.png" alt="Tips and Trips Logo" />
+</p>
+
 
 ¡Bienvenido/a al repositorio del proyecto Tips and Trips! Este repositorio contiene el código fuente y los recursos relacionados con el desarrollo del blog de viajes Tips and Trips, construido con Next.js. A continuación, encontrarás toda la información necesaria para comprender el proyecto, contribuir a su desarrollo y utilizar Next.js.
 
