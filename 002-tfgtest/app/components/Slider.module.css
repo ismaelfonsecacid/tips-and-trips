@@ -16,6 +16,19 @@
   width: 200px;
   height: auto;
   margin: 0 50px;
+  padding-bottom: 12px;
+}
+
+.card p {
+  color: black;
+}
+.card:hover p{
+  background-color:  rgb(123, 178, 192);
+  border-radius: 20px;
+}
+
+.card img {
+  border-radius: 30px;
 }
 @media (max-width: 450px) {
   .carrusel::-webkit-scrollbar {

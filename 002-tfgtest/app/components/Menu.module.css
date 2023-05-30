@@ -1,8 +1,10 @@
 .border {
   padding-bottom: 20px;
-
 }
-
+.top{
+  display: flex;
+  justify-content: center;
+}
 .allDiv {
   display: flex;
   justify-content: center;
@@ -10,8 +12,7 @@
 }
 
 .logo {
-  height: 200px;
-  width: auto;
+
   cursor: pointer;
 }
 
@@ -26,52 +27,7 @@
   cursor: pointer;
 }
 
-.hamburgerButton {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 24px;
-  color: #333;
-  display: none;
-  /* Ocultar el botón de hamburguesa por defecto */
-}
 
-.mobileMenu {
-  position: absolute;
-  /* Cambiar a top: 0; para mostrar el menú más arriba */
-  right: 0;
-  width: 100%;
-  background-color: #f1f1f1;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  max-height: 20px;
-}
-
-.mobileMenuList {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  padding: 20px;
-}
-
-.mobileMenuList a {
-  text-decoration: none;
-  color: black;
-  font-size: large;
-}
-
-.mobileMenuItem {
-  padding: 30px;
-}
-
-.mobileMenuItem:hover {
-  background-color: #ddd;
-}
-
-.mobileMenu.open {
-  max-height: 600px;
-}
 
 .ul {
   list-style-type: none;
@@ -94,23 +50,36 @@
   color: #aaa;
 }
 
+.menuMob{
+  display: none;
+}
+
+
+
+
 /* Estilos para mostrar el botón de hamburguesa en dispositivos móviles */
 @media only screen and (max-width: 750px) {
-  .allDiv {
-    display: flex;
-    justify-content: flex-end;
-    
-
-  }
-
-  .hamburgerButton {
-    display: flex;
-    /* Mostrar el botón de hamburguesa en dispositivos móviles */
-    justify-content: flex-end;
-  }
-
-  .ul {
+  .menuPc {
     display: none;
     /* Ocultar la lista de menú en dispositivos móviles */
   }
+  
+.menuMob{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.allDiv{
+  display: block;
+}
+.top{
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+  
+}
 }

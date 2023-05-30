@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Page.module.css";
 import Image from "next/image";
-import Slider from "../components/Carousel";
+import Slider from "../components/Slider";
 export default async function TripsPage() {
 
     return (

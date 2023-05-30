@@ -1,8 +1,8 @@
-'use client'
-import React, { useState, useEffect } from 'react';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Menu.module.css';
+import MobileNav from './MobileNav';
 
 const links = [
   {
@@ -19,80 +19,40 @@ const links = [
   },
 ];
 
+
 export default function Menu() {
-  const [windowWidth, setWindowWidth] = useState(0);
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
 
-    window.addEventListener('resize', handleResize);
-    setWindowWidth(window.innerWidth);
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  const isMobile = windowWidth <= 750;
-
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
-  };
 
   return (
     <div className={styles.border}>
-      <div style={{ textAlign: 'center' }}>
+      <div className={styles.top}>
         <Link href="/">
           <Image
             src="/images/logo3.png"
             className={styles.logo}
-            width={400}
-            height={400}
+            width={150}
+            height={150}
             alt="logo"
           />
         </Link>
+        <div className={styles.menuMob}>
+          <MobileNav/>
+        </div>
       </div>
 
       <div className={styles.allDiv}>
-        {isMobile && (
-          <div>
-            <button className={styles.hamburgerButton} onClick={toggleMobileMenu}>
-              ☰
-            </button>
-            {isMobileMenuOpen && (
-              <>
-                <div className={`${styles.mobileMenu} ${styles.open}`}>
-                  <ul className={styles.mobileMenuList}>
-                    {links.map(({ label, route }) => (
-                      <li key={route} className={styles.mobileMenuItem}>
-                        <Link href={route} onClick={toggleMobileMenu}>
-                          {label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </>
-            )}
-          </div>
-        )}
-        {!isMobile && (
-          <div style={{ textAlign: 'center', paddingTop: '20px' }}>
-            <ul className={styles.ul} style={{ listStyleType: 'none', padding: 0 }}>
-              {links.map(({ label, route }) => (
-                <li key={route} style={{ display: 'inline-block', margin: '0 15px' }}>
-                  <Link href={route} key={route}>{label}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+        <div style={{ textAlign: 'center', paddingTop: '20px' }} className={styles.menuPc}>
+          <ul className={styles.ul} style={{ listStyleType: 'none', padding: 0 }}>
+            {links.map(({ label, route }) => (
+              <li key={route} style={{ display: 'inline-block', margin: '0 15px' }}>
+                <Link href={route} key={route}>{label}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-
-
     </div>
   );
 }
