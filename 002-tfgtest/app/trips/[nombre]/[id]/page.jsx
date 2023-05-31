@@ -32,8 +32,8 @@ const TripPage = ({ params }) => {
 
     const lugar = datosFiltrados[0];
 
-    if (lugar == undefined)
-    return <NotFound/>
+    // if (lugar == undefined)
+    // return <NotFound/>
 
 
     return (
