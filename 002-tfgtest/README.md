@@ -1,10 +1,11 @@
 
 # Tips and Trips - Blog de Viajes
 
+Progress: [██████████████████████████████░░░░░░░░░░] 65%
+
 <p align="center" display='flex'>
   <img src="./public/images/logo3.png" alt="Tips and Trips Logo" width="150px" />
 </p>
-
 
 ## URL
 https://nextjs-git-main-ismanoallaps4.vercel.app/
@@ -16,7 +17,7 @@ https://nextjs-git-main-ismanoallaps4.vercel.app/
 
 Tips and Trips es un blog de viajes dedicado a inspirar a los viajeros, compartir consejos útiles y brindar información detallada sobre destinos populares alrededor del mundo. Nuestro objetivo principal es crear una comunidad en línea para viajeros apasionados que deseen compartir sus experiencias y descubrimientos.
 
-El blog se construirá utilizando Next.js, un framework de React.js que facilita el desarrollo de aplicaciones web modernas y optimizadas para el rendimiento. Next.js nos brinda capacidades de renderizado del lado del servidor (SSR) y generación de páginas estáticas, lo que mejora la velocidad y la experiencia del usuario.
+El blog se construirá utilizando Next.js 13.4 (app estable/BETA), un framework de React.js que facilita el desarrollo de aplicaciones web modernas y optimizadas para el rendimiento. Next.js nos brinda capacidades de renderizado del lado del servidor (SSR) y generación de páginas estáticas, lo que mejora la velocidad y la experiencia del usuario.
 
 ## Estructura de Carpetas
 

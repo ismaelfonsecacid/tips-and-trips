@@ -20,7 +20,7 @@ export default function TripPage({ params }) {
           <h2>{item.nombre}</h2>
 
           <div className={styles.upper}>
-            <Image src={item.img} width={200} height={200} alt={`Imagen del continente de ${item.nombre}`} />
+            <Image src={item.img} width={300} height={200} alt={`Imagen del continente de ${item.nombre}`} />
             <div>
               <p>{item.descripcion}</p>
               <br />
@@ -31,26 +31,27 @@ export default function TripPage({ params }) {
           <div className={styles.slider_frame}>
             <ul>
               <li>
-                <Image src='/images/continentes/europa-mid.jpg' width={600} height={300} alt={`Imagen del continente de ${item.nombre}`} />
+                <Image src='/images/continentes/europa-mid1.jpg' width={600} height={300} alt={`Imagen del continente de ${item.nombre}`} />
               </li>
               <li>
-                <Image src='/images/continentes/europa-mid.jpg' width={600} height={300} alt={`Imagen del continente de ${item.nombre}`} />
+                <Image src='/images/continentes/europa-mid2.jpg' width={600} height={300} alt={`Imagen del continente de ${item.nombre}`} />
               </li>
               <li>
-                <Image src='/images/continentes/europa-mid.jpg' width={600} height={300} alt={`Imagen del continente de ${item.nombre}`} />
+                <Image src='/images/continentes/europa-mid3.jpg' width={600} height={300} alt={`Imagen del continente de ${item.nombre}`} />
               </li>
               <li>
-                <Image src='/images/continentes/europa-mid.jpg' width={600} height={300} alt={`Imagen del continente de ${item.nombre}`} />
+                <Image src='/images/continentes/europa-mid4.jpg' width={600} height={300} alt={`Imagen del continente de ${item.nombre}`} />
               </li>
               
             </ul>
           </div>
+
           <div className={styles.middle}>
             <div>
+              <h2>Mi opinión sobre {item.nombre}</h2>
               <p>{item.opinion_personal}</p>
             </div>
           </div>
-
         </>
       ))}
     </div>
