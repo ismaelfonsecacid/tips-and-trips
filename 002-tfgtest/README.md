@@ -105,8 +105,7 @@ La principal diferencia entre CSS y CSS Modules radica en su alcance y encapsula
 
 CSS Modules es una técnica que permite el encapsulamiento de estilos en componentes individuales en aplicaciones web. Genera nombres de clase únicos para evitar colisiones y permite importar y utilizar estilos en archivos JavaScript. Es una forma eficiente de modularizar y gestionar estilos en proyectos web.
 
-
-## Tecnologías utilizadas
+## Tecnologías y herramientas utilizadas
 
 Este proyecto se ha desarrollado utilizando las siguientes tecnologías y herramientas:
 
@@ -120,7 +119,9 @@ Este proyecto se ha desarrollado utilizando las siguientes tecnologías y herram
 | [Next.js](https://nextjs.org/docs) | Framework de React utilizado para crear aplicaciones web de rendimiento optimizado con enrutamiento y renderizado del lado del servidor (SSR). |
 | [Vercel](https://vercel.com/docs) | Plataforma de implementación y alojamiento web utilizada para desplegar aplicaciones de Next.js y otros frameworks. |
 | [Firebase](https://firebase.google.com/docs) | Plataforma de desarrollo de aplicaciones web y móviles utilizada para el almacenamiento de datos, autenticación, hosting y más. |
-| [JSON] | Formato de datos utilizado para el intercambio y almacenamiento de información estructurada. |
+| [JSON](https://www.json.org/json-es.html) | Formato de datos utilizado para el intercambio y almacenamiento de información estructurada. |
+| [Visual Studio Code (VSCode)](https://code.visualstudio.com/docs) | Entorno de desarrollo integrado (IDE) utilizado para escribir, editar y depurar código. |
+
 
 
 Estas tecnologías se combinan para crear una aplicación web moderna y escalable con una estructura organizada y estilos modularizados.
