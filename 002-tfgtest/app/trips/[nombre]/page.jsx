@@ -16,7 +16,7 @@ export default function TripPage({ params }) {
   return (
     <div className={styles.main}>
       {datosFiltrados.map(item => (
-        <>
+        <div key={item.nombre}>
           <h2>{item.nombre}</h2>
 
           <div className={styles.upper}>
@@ -58,7 +58,7 @@ export default function TripPage({ params }) {
               <h3>Días gratis en museos</h3>
               <ul className={styles.museos}>
                 {item.museos.map(info => (
-                  <li>{info}</li>
+                  <li key={info}>{info}</li>
                 ))}
               </ul>
             </div>
@@ -74,12 +74,12 @@ export default function TripPage({ params }) {
               <h3>Pases de transportes</h3>
               <ul className={styles.pases}>
                 {item.pases.map(info => (
-                  <li>{info}</li>
+                  <li key={info}>{info}</li>
                 ))}
               </ul>
             </div>
           </div>
-        </>
+        </div>
       ))}
     </div>
   )
