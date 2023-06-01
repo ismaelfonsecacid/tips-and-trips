@@ -105,6 +105,26 @@ La principal diferencia entre CSS y CSS Modules radica en su alcance y encapsula
 
 CSS Modules es una técnica que permite el encapsulamiento de estilos en componentes individuales en aplicaciones web. Genera nombres de clase únicos para evitar colisiones y permite importar y utilizar estilos en archivos JavaScript. Es una forma eficiente de modularizar y gestionar estilos en proyectos web.
 
+
+## Tecnologías utilizadas
+
+Este proyecto se ha desarrollado utilizando las siguientes tecnologías y herramientas:
+
+| Tecnología/Herramienta | Descripción |
+| --------------------- | ----------- |
+| [HTML](https://developer.mozilla.org/docs/Web/HTML) | Lenguaje de marcado utilizado para estructurar y organizar el contenido de las páginas web. |
+| [CSS](https://developer.mozilla.org/docs/Web/CSS) | Lenguaje de estilos utilizado para definir la apariencia y el diseño de los elementos HTML. |
+| [CSS Modules](https://github.com/css-modules/css-modules) | Técnica utilizada para el encapsulamiento y modularización de estilos en componentes individuales. |
+| [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript) | Lenguaje de programación utilizado para agregar interactividad y funcionalidad a las páginas web. |
+| [React](https://reactjs.org/docs) | Biblioteca de JavaScript utilizada para construir interfaces de usuario interactivas y reutilizables. |
+| [Next.js](https://nextjs.org/docs) | Framework de React utilizado para crear aplicaciones web de rendimiento optimizado con enrutamiento y renderizado del lado del servidor (SSR). |
+| [Vercel](https://vercel.com/docs) | Plataforma de implementación y alojamiento web utilizada para desplegar aplicaciones de Next.js y otros frameworks. |
+| [Firebase](https://firebase.google.com/docs) | Plataforma de desarrollo de aplicaciones web y móviles utilizada para el almacenamiento de datos, autenticación, hosting y más. |
+| [JSON] | Formato de datos utilizado para el intercambio y almacenamiento de información estructurada. |
+
+
+Estas tecnologías se combinan para crear una aplicación web moderna y escalable con una estructura organizada y estilos modularizados.
+
 ## Instalación y Uso de Next.js
 
 1. Asegúrate de tener instalado Node.js en tu sistema. Puedes descargarlo e instalarlo desde el sitio web oficial de Node.js: [https://nodejs.org](https://nodejs.org)
