@@ -25,9 +25,3 @@ body {
     background-color: #555;
   }
 
-  @media (max-width: 750px) {
-    body{
-      overflow-x: hidden;
-    }
-
-  }

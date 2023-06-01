@@ -20,11 +20,15 @@ export default async function TripsPage({ children }) {
             label: 'OCEANIA',
             route: '/oceania'
         },
+        {
+            label: 'AFRICA',
+            route: '/africa'
+        },
     ];
 
     return (
         <div>
-            <hr style={{borderColor:'red', marginBottom:'20px'} } />
+            <hr className={styles.hr} />
             <div>
                 <ul className={styles.mobileMenuList}>
                     {links.map(({ label, route }) => (

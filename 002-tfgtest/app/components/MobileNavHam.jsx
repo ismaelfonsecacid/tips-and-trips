@@ -5,7 +5,7 @@ export default function MobileNavHam({ open, onClick }) {
 
     return (
        
-            <div className={styles.allMenu} style={{ transform: !open ? 'translateX(1000%)' : 'translateX(10%)' }}>
+            <div className={styles.allMenu} style={{ right: !open ? '-1000px' : '-80px' }}>
                 <div className={styles.container}>
                     <div className={styles.menu}>
                         <button onClick={onClick} className={styles.buton} aria-label="Cerrar menu desplegable">
