@@ -14,13 +14,9 @@
   transition: right 500ms ease;
   z-index: 99;
 }
-
-
-
 /* MobileNavHam.module.css */
 
 .container {
-
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
@@ -52,14 +48,27 @@
   cursor: pointer;
 }
 
+.flex {
+  left: 20px;
+  top: 40px;
+  position: absolute;
+}
+
+.logoMenu {
+  position: absolute;
+  top: 10%;
+}
+
 .cLink {
   display: flex;
   flex-direction: column;
+  position: absolute;
 }
 
 .link {
+  border: 1px solid;
   margin-bottom: 20px;
-  padding: 10px 20px;
+  padding: 10px 100px;
   color: #333333;
   text-decoration: none;
   border-radius: 10px;
