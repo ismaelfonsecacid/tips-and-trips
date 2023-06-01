@@ -20,10 +20,7 @@ const links = [
 ];
 
 
-export default async function Menu() {
-
-
-
+export default function Menu() {
 
   return (
     <div className={styles.border}>
