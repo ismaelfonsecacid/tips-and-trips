@@ -24,12 +24,30 @@
 .middle {
     align-items: center;
     margin-top: 2%;
-    background-color: #fabe7edd;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     padding: 20px;
+    margin-bottom: 2%;
+    background-color: #f8cb9d;
 }
 
+.bottom {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.bottombox {
+    padding: 20px;
+    background-color: #86bdb9;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 
+}
+
+@media (max-width: 768px) {
+   .bottom{
+    grid-template-columns: repeat(1, 1fr);
+   }
+}
 
 @keyframes autoslide {
     0% {

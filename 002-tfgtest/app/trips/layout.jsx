@@ -9,7 +9,7 @@ export default async function TripsPage({ children }) {
             route: '/europa'
         },
         {
-            label: 'AMERICA',
+            label: 'AMÉRICA',
             route: '/america'
         },
         {
@@ -17,11 +17,11 @@ export default async function TripsPage({ children }) {
             route: '/asia'
         },
         {
-            label: 'OCEANIA',
+            label: 'OCEANÍA',
             route: '/oceania'
         },
         {
-            label: 'AFRICA',
+            label: 'ÁFRICA',
             route: '/africa'
         },
     ];

@@ -2,14 +2,14 @@
   {
     "id": "america",
     "img": "/images/continentes/america.png",
-    "img1": "/images/continentes/america-mid1.png",
-    "img2": "/images/continentes/america-mid2.png",
-    "img3": "/images/continentes/america-mid3.png",
-    "img4": "/images/continentes/america-mid4.png",
+    "img1": "/images/continentes/america-mid1.jpg",
+    "img2": "/images/continentes/america-mid2.jpg",
+    "img3": "/images/continentes/america-mid3.jpg",
+    "img4": "/images/continentes/america-mid4.jpg",
     "nombre": "América",
     "descripcion": "América es un continente diverso y vasto que abarca desde el Ártico hasta la Patagonia. Con una amplia gama de culturas, paisajes impresionantes y una historia rica, las Américas ofrecen una experiencia única para los viajeros.",
     "seguridad": "La seguridad varía en diferentes países y regiones de las Américas. Algunos lugares son considerados seguros para visitar, mientras que otros pueden requerir precauciones adicionales debido a la delincuencia o situaciones políticas.",
-    "opinion_personal": "Es un destino fascinante con una increíble diversidad cultural y paisajes impresionantes. Personalmente, me encanta explorar las vibrantes ciudades de América del Norte, como Nueva York y Ciudad de México, y sumergirme en la naturaleza exuberante de América Central y del Sur, como la selva amazónica y las playas de Brasil. Es un destino fascinante con una increíble diversidad cultural y paisajes impresionantes. Personalmente, me encanta explorar las vibrantes ciudades de América del Norte, como Nueva York y Ciudad de México, y sumergirme en la naturaleza exuberante de América Central y del Sur, como la selva amazónica y las playas de Brasil. Es un destino fascinante con una increíble diversidad cultural y paisajes impresionantes. Personalmente, me encanta explorar las vibrantes ciudades de América del Norte, como Nueva York y Ciudad de México, y sumergirme en la naturaleza exuberante de América Central y del Sur, como la selva amazónica y las playas de Brasil.",
+    "opinion_personal": "Los impresionantes paisajes de la Patagonia hasta la exuberante selva amazónica, América es un paraíso natural que me ha maravillado en cada paso. Sus playas de aguas cristalinas y sus imponentes montañas han sido testigos de mis aventuras más emocionantes y me han conectado con la belleza y la grandeza de la naturaleza. Pero América no se limita solo a su esplendor natural. Su rica historia y su mezcla de culturas han creado una vibrante tapestry que ha cautivado mi curiosidad. Desde la grandiosa arquitectura de las antiguas civilizaciones mesoamericanas hasta la música y el baile apasionado de Brasil y el Caribe, cada rincón del continente respira vida y celebración. Sin embargo, lo más memorable de América son las personas que he conocido en mi viaje. La calidez y la generosidad de los latinoamericanos, la alegría y la hospitalidad de los caribeños y la diversidad de perspectivas y experiencias de los estadounidenses me han inspirado y enseñado mucho sobre la fuerza y la resiliencia humana.",
     "precio_promedio_vuelos": 800,
     "precio_promedio_comida": "20-35",
     "mejores_lugares": [
@@ -24,28 +24,28 @@
       "Museo Nacional de Bellas Artes, Santiago, Chile: Día gratis: domingo"
     ],
     "pases": [
-      "Mexico City Pass   --    1 día: 25 euros, 2 días: 40 euros, 3 días: 50 euros, 5 días: 70 euros",
-      "New York City Pass   --   1 día: 40 euros, 2 días: 60 euros, 3 días: 80 euros, 5 días: 100 euros"
+      "Mexico City Pass   --    1 día: 25 €, 2 días: 40 €, 3 días: 50 €, 5 días: 70 €",
+      "New York City Pass   --   1 día: 40 €, 2 días: 60 €, 3 días: 80 €, 5 días: 100 €"
     ]
   },
   {
     "id": "europa",
     "img": "/images/continentes/europa.png",
-    "img1": "/images/continentes/europa-mid1.png",
-    "img2": "/images/continentes/europa-mid2.png",
-    "img3": "/images/continentes/europa-mid3.png",
-    "img4": "/images/continentes/europa-mid4.png",
+    "img1": "/images/continentes/europa-mid1.jpg",
+    "img2": "/images/continentes/europa-mid2.jpg",
+    "img3": "/images/continentes/europa-mid3.jpg",
+    "img4": "/images/continentes/europa-mid4.jpg",
     "nombre": "Europa",
-    "descripcion": "Europa es un continente lleno de historia, arte y cultura. Con ciudades antiguas, castillos majestuosos y paisajes impresionantes, Europa atrae a millones de visitantes cada año.",
+    "descripcion": "Eurpa es un continente lleno de historia, arte y cultura. Con ciudades antiguas, castillos majestuosos y paisajes impresionantes, Europa atrae a millones de visitantes cada año.",
     "seguridad": "La mayoría de los países europeos se consideran seguros para los viajeros, pero siempre es importante mantenerse alerta y tomar precauciones habituales en cuanto a la seguridad personal y el cuidado de los objetos de valor.",
-    "opinion_personal": "Europa es un lugar mágico donde cada rincón cuenta una historia. Me encanta perderme por las calles empedradas de ciudades como Praga y Florencia, maravillarme con la majestuosidad de monumentos como la Torre Eiffel y el Coliseo Romano, y disfrutar de la diversidad gastronómica de países como España e Italia. Europa es un lugar mágico donde cada rincón cuenta una historia. Me encanta perderme por las calles empedradas de ciudades como Praga y Florencia, maravillarme con la majestuosidad de monumentos como la Torre Eiffel y el Coliseo Romano, y disfrutar de la diversidad gastronómica de países como España e Italia. Europa es un lugar mágico donde cada rincón cuenta una historia. Me encanta perderme por las calles empedradas de ciudades como Praga y Florencia, maravillarme con la majestuosidad de monumentos como la Torre Eiffel y el Coliseo Romano, y disfrutar de la diversidad gastronómica de países como España e Italia.",
+    "opinion_personal": "Europa, un continente lleno de historia, cultura y paisajes impresionantes, ha dejado una huella profunda en mí. Sus ciudades históricas y encantadoras, como Roma y Atenas, me han regalado momentos inolvidables, transportándome a través del tiempo y conectándome con el pasado. Además, la diversidad de idiomas, tradiciones y sabores en Europa es fascinante. Cada paso es una experiencia única, desde degustar la auténtica pasta italiana hasta disfrutar de la animada vida nocturna en Berlín. Pero Europa no solo ofrece un patrimonio cultural, sino también una naturaleza impresionante. Desde los Alpes hasta las Islas Griegas, los paisajes me han dejado sin aliento y me han brindado una profunda conexión con la naturaleza. Sin embargo, lo más destacado de mi experiencia en Europa ha sido la calidez y hospitalidad de su gente. Siempre me he sentido bienvenido y apreciado, y las conexiones que he creado perduran en mi corazón.",
     "precio_promedio_vuelos": 1200,
     "precio_promedio_comida": "15-25",
     "pases": [
-        "Paris Visite Pass   --   1 día: 12,00 euros, 2 días: 19,50 euros, 3 días: 26,65 euros, 5 días: 38,35 euros",
-        "WelcomeCard Berlin   --   48 horas: 20,50 euros, 72 horas: 29,50 euros, 4 días: 34,50 euros, 5 días: 37,50 euros",
-        "Hola BCN   --  2 días: 16,30 euros, 3 días: 23,70 euros, 4 días: 30,80 euros, 5 días: 38,00 euros",
-        "Roma Pass   --  48 horas: 28 euros, 72 horas: 38,50 euros"
+        "Paris Visite Pass   --   1 día: 12,00 €, 2 días: 19,50 €, 3 días: 26,65 €, 5 días: 38,35 €",
+        "WelcomeCard Berlin   --   48 h: 20,50 €, 72 h: 29,50 €, 4 días: 34,50 €, 5 días: 37,50 €",
+        "Hola BCN   --   2 días: 16,30 €, 3 días: 23,70 €, 4 días: 30,80 €, 5 días: 38,00 €",
+        "Roma Pass   --  48 h: 28 €, 72 h: 38,50 €"
       ],
     "museos": [
         "Museo del Louvre, París, Francia, días gratis: domingo, primero de cada mes",
@@ -62,14 +62,14 @@
   {
     "id": "asia",
     "img": "/images/continentes/asia.png",
-    "img1": "/images/continentes/asia-mid1.png",
-    "img2": "/images/continentes/asia-mid2.png",
-    "img3": "/images/continentes/asia-mid3.png",
-    "img4": "/images/continentes/asia-mid4.png",
+    "img1": "/images/continentes/asia-mid1.jpg",
+    "img2": "/images/continentes/asia-mid2.jpg",
+    "img3": "/images/continentes/asia-mid3.jpg",
+    "img4": "/images/continentes/asia-mid4.jpg",
     "nombre": "Asia",
     "descripcion": "Asia es el continente más grande y diverso del mundo, con una rica historia, cultura vibrante y una belleza natural impresionante. Desde los templos antiguos hasta los rascacielos modernos, Asia ofrece una experiencia única para los viajeros.",
     "seguridad": "La seguridad en Asia puede variar ampliamente según el país y la región. Algunos destinos son considerados seguros y acogedores para los turistas, mientras que otros pueden requerir precauciones adicionales debido a las condiciones políticas o situaciones de seguridad.",
-    "opinion_personal": "Asia es un continente fascinante lleno de contrastes y maravillas. Me encanta explorar las antiguas ruinas de Angkor Wat en Camboya y sumergirme en la bulliciosa vida urbana de Tokio, Japón. Además, la Gran Muralla China es una impresionante obra arquitectónica que no se puede perder. También disfruto de la riqueza espiritual de lugares como Varanasi en India y el tranquilo paisaje de los campos de arroz de Bali en Indonesia. Asia es un continente fascinante lleno de contrastes y maravillas. Me encanta explorar las antiguas ruinas de Angkor Wat en Camboya y sumergirme en la bulliciosa vida urbana de Tokio, Japón. Además, la Gran Muralla China es una impresionante obra arquitectónica que no se puede perder. También disfruto de la riqueza espiritual de lugares como Varanasi en India y el tranquilo paisaje de los campos de arroz de Bali en Indonesia. Asia es un continente fascinante lleno de contrastes y maravillas. Me encanta explorar las antiguas ruinas de Angkor Wat en Camboya y sumergirme en la bulliciosa vida urbana de Tokio, Japón. Además, la Gran Muralla China es una impresionante obra arquitectónica que no se puede perder. También disfruto de la riqueza espiritual de lugares como Varanasi en India y el tranquilo paisaje de los campos de arroz de Bali en Indonesia.",
+    "opinion_personal": "Asia, un continente fascinante y lleno de contrastes, ha sido el escenario de innumerables aventuras y descubrimientos para mí. Desde las bulliciosas calles de Tokio hasta los serenos templos de Angkor Wat en Camboya, Asia me ha brindado una experiencia única llena de maravillas y sorpresas. La diversidad cultural de Asia es simplemente asombrosa. Cada país tiene su propia historia, tradiciones y costumbres arraigadas en siglos de antigüedad. Desde la espiritualidad del budismo en Tailandia hasta la sofisticación tecnológica de Corea del Sur, Asia es un crisol de culturas que te sumerge en un mundo completamente nuevo. Además de su riqueza cultural, Asia es también hogar de algunos de los paisajes más impresionantes del planeta. Las montañas del Himalaya, con el majestuoso Monte Everest, nos recuerdan nuestra pequeñez frente a la grandeza de la naturaleza. Los arrozales de Bali y las playas paradisíacas de Tailandia nos envuelven en una serenidad y belleza indescriptibles.",
     "precio_promedio_vuelos": 1000,
     "precio_promedio_comida": "5-20",
     "mejores_lugares": [
@@ -83,20 +83,20 @@
       "Museo de Historia de Hong Kong, Hong Kong: Día gratis: miércoles"
     ],
     "pases": [
-      "Tokyo Tourist Pass   --   1 día: 25 euros, 2 días: 40 euros, 3 días: 55 euros, 5 días: 75 euros"
+      "Tokyo Tourist Pass   --   1 día: 25 €, 2 días: 40 €, 3 días: 55 €, 5 días: 75 €"
     ]
   },
   {
     "id": "oceania",
     "img": "/images/continentes/oceania.png",
-    "img1": "/images/continentes/oceania-mid1.png",
-    "img2": "/images/continentes/oceania-mid2.png",
-    "img3": "/images/continentes/oceania-mid3.png",
-    "img4": "/images/continentes/oceania-mid4.png",
+    "img1": "/images/continentes/oceania-mid1.jpg",
+    "img2": "/images/continentes/oceania-mid2.jpg",
+    "img3": "/images/continentes/oceania-mid3.jpg",
+    "img4": "/images/continentes/oceania-mid4.jpg",
     "nombre": "Oceanía",
     "descripcion": "Oceanía es un continente compuesto por diversas islas y países, conocido por sus playas de arena blanca, arrecifes de coral y paisajes tropicales. Esta región remota ofrece una belleza natural impresionante y una rica cultura indígena.",
     "seguridad": "La seguridad en Oceanía varía según el destino específico. En general, la mayoría de los países son considerados seguros para los turistas, pero es importante estar informado sobre las condiciones locales y seguir las recomendaciones de viaje.",
-    "opinion_personal": "Oceanía es un paraíso terrenal con sus impresionantes playas, aguas cristalinas y una increíble biodiversidad marina. Me encanta explorar los arrecifes de coral de la Gran Barrera de Coral en Australia y disfrutar de la hospitalidad de las islas de Fiji. También es fascinante sumergirse en la cultura maorí en Nueva Zelanda y explorar la exuberante naturaleza de la isla de Tasmania en Australia. Oceanía es un paraíso terrenal con sus impresionantes playas, aguas cristalinas y una increíble biodiversidad marina. Me encanta explorar los arrecifes de coral de la Gran Barrera de Coral en Australia y disfrutar de la hospitalidad de las islas de Fiji. También es fascinante sumergirse en la cultura maorí en Nueva Zelanda y explorar la exuberante naturaleza de la isla de Tasmania en Australia. Oceanía es un paraíso terrenal con sus impresionantes playas, aguas cristalinas y una increíble biodiversidad marina. Me encanta explorar los arrecifes de coral de la Gran Barrera de Coral en Australia y disfrutar de la hospitalidad de las islas de Fiji. También es fascinante sumergirse en la cultura maorí en Nueva Zelanda y explorar la exuberante naturaleza de la isla de Tasmania en Australia.",
+    "opinion_personal": "Oceanía, un continente de ensueño que me ha dejado sin aliento en cada paso que he dado. Sus islas paradisíacas, bañadas por aguas cristalinas y rodeadas de exuberante vegetación, son un verdadero oasis de belleza natural. Desde los majestuosos paisajes de Nueva Zelanda, con sus impresionantes fiordos y montañas, hasta las playas de arena blanca de las Islas Fiji, Oceanía ofrece un espectáculo visual incomparable. Pero Oceanía no solo se trata de su asombrosa geografía, sino también de su fascinante cultura y herencia ancestral. Los indígenas maoríes de Nueva Zelanda, los aborígenes australianos y las diversas culturas de las islas del Pacífico, todos ellos tienen historias ricas y profundas que contar. Sus tradiciones, danzas y rituales transmiten un sentido de conexión con la tierra y el espíritu que es realmente conmovedor. Además, la calidez y amabilidad de los habitantes de Oceanía hacen que te sientas bienvenido y parte de su comunidad desde el primer momento. Sus sonrisas sinceras y su hospitalidad genuina hacen que cada encuentro sea especial y memorable.",
     "precio_promedio_vuelos": 1500,
     "precio_promedio_comida": "12-30",
     "mejores_lugares": [
@@ -110,8 +110,8 @@
       "Museo de Victoria, Melbourne: Día gratis: ninguno"
     ],
     "pases": [
-      "Sydney Explorer Pass   --   1 día: 30 euros, 2 días: 45 euros, 3 días: 60 euros, 5 días: 80 euros",
-      "Auckland City Pass   --   1 día: 35 euros, 2 días: 55 euros, 3 días: 70 euros, 5 días: 90 euros"
+      "Sydney Explorer Pass   --   1 día: 30 €, 2 días: 45 €, 3 días: 60 €, 5 días: 80 €",
+      "Auckland City Pass   --   1 día: 35 €, 2 días: 55 €, 3 días: 70 €, 5 días: 90 €"
     ]
   },
   {
@@ -124,7 +124,7 @@
     "nombre": "África",
     "descripcion": "África es un continente lleno de diversidad cultural, vida salvaje y paisajes impresionantes. Desde las vastas llanuras del Serengeti hasta las majestuosas cataratas Victoria, África ofrece experiencias únicas y memorables para los viajeros.",
     "seguridad": "La seguridad en África puede variar significativamente según el país y la región. Algunas áreas pueden presentar desafíos en términos de seguridad, como conflictos o problemas relacionados con la vida salvaje. Es importante informarse y seguir las recomendaciones de viaje antes de visitar cualquier destino en África.",
-    "opinion_personal": "África es un continente que te roba el aliento con su vida salvaje, sus paisajes deslumbrantes y sus culturas vibrantes. He tenido la oportunidad de hacer un safari en el Serengeti y presenciar la majestuosidad de los leones y elefantes en su hábitat natural. También me ha conmovido la belleza de las cataratas Victoria y la hospitalidad de la gente en países como Kenia y Sudáfrica. África es un continente que te roba el aliento con su vida salvaje, sus paisajes deslumbrantes y sus culturas vibrantes. He tenido la oportunidad de hacer un safari en el Serengeti y presenciar la majestuosidad de los leones y elefantes en su hábitat natural. También me ha conmovido la belleza de las cataratas Victoria y la hospitalidad de la gente en países como Kenia y Sudáfrica. África es un continente que te roba el aliento con su vida salvaje, sus paisajes deslumbrantes y sus culturas vibrantes. He tenido la oportunidad de hacer un safari en el Serengeti y presenciar la majestuosidad de los leones y elefantes en su hábitat natural. También me ha conmovido la belleza de las cataratas Victoria y la hospitalidad de la gente en países como Kenia y Sudáfrica.",
+    "opinion_personal": "África es un continente que me ha cautivado y fascinado desde el momento en que puse los pies en él. Cada vez que exploraba sus tierras, me sumergía en un mundo lleno de misterio y encanto. Desde las imponentes pirámides de Egipto hasta los vibrantes mercados de Marruecos, cada paso que daba era un viaje en el tiempo y en la cultura.Lo que más me maravilló de África fue su diversidad natural. Los inmensos paisajes de la sabana del Serengeti me dejaron sin aliento, mientras que las cataratas Victoria me llenaron de asombro con su fuerza y majestuosidad. Pero lo más especial de este continente son sus gentes. La calidez y hospitalidad de los africanos me hicieron sentir como en casa, y en cada encuentro descubría una nueva historia, una nueva tradición.Explorar África fue una experiencia única e inolvidable que me conectó con la esencia misma de la humanidad.",
     "precio_promedio_vuelos": 2000,
     "precio_promedio_comida": "2-15",
     "mejores_lugares": [
@@ -138,8 +138,8 @@
       "Museo de Nairobi, Nairobi: Día gratis: ninguno"
     ],
     "pases": [
-      "Cape Town Pass   --   1 día: 60 euros, 2 días: 90 euros, 3 días: 120 euros, 5 días: 150 euros",
-      "Cairo Pass   --   1 día: 18 euros, 2 días: 30 euros, 3 días: 42 euros, 5 días: 60 euros"
+      "Cape Town Pass   --   1 día: 60 €, 2 días: 90 €, 3 días: 120 €, 5 días: 150 €",
+      "Cairo Pass   --   1 día: 18 €, 2 días: 30 €, 3 días: 42 €, 5 días: 60 €"
     ]
   }
 ]

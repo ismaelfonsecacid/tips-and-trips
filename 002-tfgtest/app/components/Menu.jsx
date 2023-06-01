@@ -20,7 +20,7 @@ const links = [
 ];
 
 
-export default function Menu() {
+export default async function Menu() {
 
 
 
