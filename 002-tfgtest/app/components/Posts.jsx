@@ -2,9 +2,14 @@
 import styles from './Posts.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
-import { jsonData } from '../services/apiCallJsonPosts';
 
-export default function Posts() {
+import { fetchData } from '../services/apiFetchData';
+
+export default async function Posts() {
+const URL = 'results';
+const jsonData = await fetchData(URL);
+
+
     return (
         <>
             <h1 style={{textAlign:'center', marginTop:'30px'}}>Nuestros viajes</h1>
@@ -19,7 +24,6 @@ export default function Posts() {
                     </Link>
                 ))}
             </div>
-
         </>
     );
 }

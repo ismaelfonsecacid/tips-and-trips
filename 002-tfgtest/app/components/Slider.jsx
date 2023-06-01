@@ -2,15 +2,15 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
 import styles from './Slider.module.css'
-import { jsonData } from '../services/apiCallJsonPosts'
+import { fetchData } from '../services/apiFetchData'
 
 
 
-const Slider = () => {
-
-  const data = jsonData.map((item) => {
+export default async function Slider() {
+  const URL = 'results'
+  let data = await fetchData(URL);
+  let info = data.map((item) => {
     return (
 
       <div className={styles.card} key={item.id}>
@@ -29,11 +29,10 @@ const Slider = () => {
 
     <main className={styles.carrusel}>
 
-      {data}
+      {info}
 
     </main>
 
   )
 }
 
-export default Slider

@@ -1,15 +1,14 @@
 import Image from "next/image";
-import jsonData from "../../json/continente.json";
+
 import styles from './Page.module.css'
+import { fetchData } from "@/app/services/apiFetchData";
 
 export default async function TripPage({ params }) {
-
+  const URL = 'tripsContinentes';
   const { nombre } = params
-  const datosFiltrados = jsonData.filter(item => item.id === nombre);
-  console.log(datosFiltrados[0].id)
-  console.log(nombre)
-  console.log(datosFiltrados)
-
+  const data = await fetchData(URL)
+  const datosFiltrados = data.filter(item => item.id === nombre);
+console.log(datosFiltrados.museos)
 
 
 
