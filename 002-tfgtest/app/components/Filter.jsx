@@ -17,7 +17,8 @@ export function FilterPage() {
             nombre: 'all',
             minPrice: 0,
             continente: 'all',
-            hotel: 'all'
+            hotel: 'all',
+            dias:'all'
         }
     )
 
@@ -38,6 +39,11 @@ export function FilterPage() {
                 (
                     filters.hotel === 'all' ||
                     product.hotel === filters.hotel
+                )
+             &&
+                (
+                    filters.dias === 'all' ||
+                    product.dias === filters.dias
                 )
 
         })

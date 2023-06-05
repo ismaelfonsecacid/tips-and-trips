@@ -1,32 +1,55 @@
 /* Estilos para la lista */
 .ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-  }
-  
-  /* Estilos para cada elemento de la lista */
-  .li {
-    width: 100%; /* Mostrar 2 elementos por fila */
-    margin: 30px 0;
-  }
-  
-  /* Estilos para cuando la pantalla sea lo suficientemente estrecha para mostrar solo 1 elemento por fila */
-  @media (max-width: 768px) {
-   .mid {
-    flex-direction: column;
-   }
-  }
-  
-  .mid {
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
 
-  .div1 {
-    flex-basis: 40%;
+.ul2 {
+  list-style: none;
+  text-align: left;
+}
+.ul3{
+  list-style: none;
+}
+
+/* Estilos para cada elemento de la lista */
+.li {
+  width: 100%;
+  /* Mostrar 2 elementos por fila */
+  margin: 30px 0;
+}
+
+/* Estilos para cuando la pantalla sea lo suficientemente estrecha para mostrar solo 1 elemento por fila */
+@media (max-width: 768px) {
+  .mid {
+    flex-direction: column;
   }
-  .div2 {
-    flex-basis: 60%;
-  }
+}
+
+.mid {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.div1 {
+  flex-basis: 40%;
+}
+
+.div2 {
+  flex-basis: 60%;
+}
+
+.precio {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.precio p{
+  background-color: red;
+  padding: 20px 30px;
+  border-radius: 50px;
+  
+}
