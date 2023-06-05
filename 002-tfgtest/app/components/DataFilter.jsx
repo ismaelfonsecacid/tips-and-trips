@@ -135,7 +135,7 @@ export function DataFilter({ onChange }) {
                 </div>
             
             </section>
-            <button onClick={handleResetFilters}>Reset Filters</button>
+            <button onClick={handleResetFilters} className={styles.resetF}>Reset Filters</button>
         </>
     )
 }
