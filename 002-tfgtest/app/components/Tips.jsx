@@ -40,7 +40,7 @@ export function Tips({ datos }) {
                                 <h3>TIPS</h3>
                                 <ul className={styles.ul3}>
                                     {dato.tips.map(tip => (
-                                        <li>{tip}</li>
+                                        <li key={tip}>{tip}</li>
                                     ))}
                                 </ul>
                             </div>
