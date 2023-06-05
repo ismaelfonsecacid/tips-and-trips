@@ -214,5 +214,55 @@
       "Prueba la cerveza checa en los acogedores pubs y degusta platos tradicionales como el goulash y el trdelník.",
       "Visita el Reloj Astronómico de Praga y disfruta del espectáculo de las figuras animadas cada hora."
     ]
+  },
+  
+{
+  "id": 11,
+  "nombre": "Escapada rápida",
+  "lugar": "Barcelona",
+  "hotel": "F",
+  "precioViaje": 80,
+  "continente": "Europa",
+  "categoria": {
+  "tipo": "Hostal",
+  "precio": 50
+  },
+  "dias": "2",
+  "precioTransporte": 30,
+  "relleno": "En Barcelona, una ciudad vibrante y llena de vida, hemos aprovechado al máximo nuestra escapada de 2 días. Nos hemos maravillado con las obras maestras de la arquitectura modernista de Antoni Gaudí, como la Sagrada Familia y el Parque Güell.",
+  "imgH": "/images/hotel/barcelona.jpg",
+  "nombreHotel": "Hostal XYZ",
+  "tips": [
+  "Visita la Sagrada Familia, una obra maestra de la arquitectura de Gaudí.",
+  "Explora el Parque Güell y disfruta de las vistas panorámicas de la ciudad.",
+  "Pasea por Las Ramblas y sumérgete en la animada atmósfera de la ciudad.",
+  "Prueba la deliciosa gastronomía catalana, como la paella y las tapas.",
+  "Disfruta de la vida nocturna en los bares y discotecas de la ciudad."
+  ]
+  },
+  
+{
+  "id": 12,
+  "nombre": "Escapada rápida",
+  "lugar": "Madrid",
+  "hotel": "Hotel XYZ",
+  "precioViaje": 110,
+  "continente": "Europa",
+  "categoria": {
+  "tipo": "Hotel de 3⭐",
+  "precio": 60
+  },
+  "dias": "2",
+  "precioTransporte": 50,
+  "relleno": "En Madrid, la capital de España, hemos disfrutado de una escapada rápida llena de cultura y gastronomía. Hemos visitado el famoso Museo del Prado, donde hemos admirado obras maestras de artistas como Velázquez, Goya y El Greco. También hemos paseado por el animado Parque del Retiro y disfrutado de un relajante paseo en barco por el estanque. Además, hemos saboreado deliciosas tapas en los bares de la calle Cava Baja y nos hemos perdido por las estrechas calles del barrio de La Latina.",
+  "imgH": "/images/hotel/madrid.jpg",
+  "nombreHotel": "Hotel Madrid",
+  "tips": [
+  "Visita el Museo del Prado y maravíllate con su impresionante colección de arte.",
+  "Pasea por el Parque del Retiro y relájate en el hermoso estanque.",
+  "Disfruta de la gastronomía madrileña probando tapas en la calle Cava Baja.",
+  "Explora el barrio de La Latina y descubre sus encantadoras calles y plazas.",
+  "No te pierdas la animada vida nocturna de Madrid en los bares y discotecas del centro."
+  ]
   }
 ]

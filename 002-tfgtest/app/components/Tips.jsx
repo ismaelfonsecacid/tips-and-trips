@@ -7,16 +7,25 @@ export function Tips({ datos }) {
 
     console.log(datos)
 
-
-    const [showMore, setShowMore] = useState(false);
+    const [showMore, setShowMore] = useState(5);
 
     const handleShowMore = () => {
-        setShowMore(true);
+        setShowMore(showMore + 5);
     };
+
+    const handleGoToStart = () => {
+        setShowMore(5);
+        const mainElement = document.getElementById('top');
+        if (mainElement) {
+            mainElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+      
+
     return (
         <main className={styles.main}>
             <ul className={styles.ul}>
-                {datos.slice(0, showMore ? datos.length : 2).map((dato) =>
+                {datos.slice(0, showMore).map((dato) =>
                 (
                     <li key={dato.id} className={styles.li}>
                         <h2>{dato.lugar}</h2>
@@ -32,7 +41,6 @@ export function Tips({ datos }) {
                                         <div className={styles.precio}>
                                             <p>{dato.precioViaje}</p>
                                         </div>
-
                                     </ul>
                                 </div>
                             </div>
@@ -52,10 +60,15 @@ export function Tips({ datos }) {
                     </li>)
                 )}
             </ul>
-            {!showMore && (
-                <div className={styles.divBot}><button onClick={handleShowMore} role='button' className={styles.showMore}>Mostra más</button></div>
+            {showMore < datos.length ? (
+                <div className={styles.divBot}>
+                    <button onClick={handleShowMore} role='button' className={styles.showMore}>Mostrar más</button>
+                </div>
+            ) : (
+                <div className={styles.divBot}>
+                    <button onClick={handleGoToStart} role='button' className={styles.showMore}>Volver al inicio</button>
+                </div>
             )}
         </main>
     )
-
 }

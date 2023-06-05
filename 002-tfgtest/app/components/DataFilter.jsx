@@ -64,7 +64,7 @@ export function DataFilter({ onChange }) {
     }
     return (
         <>
-            <section className={styles.container}>
+            <section className={styles.container} id='top'>
                 <div>
                     <label htmlFor="price" className={styles.label}>Precio a partir de:</label>
                     <input
