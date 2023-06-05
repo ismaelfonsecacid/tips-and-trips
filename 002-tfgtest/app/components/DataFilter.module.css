@@ -24,7 +24,6 @@
   }
   
   .rangeInput {
-    width: 100%;
     height: 4px;
     -webkit-appearance: none;
     background-color: #dddddd;
@@ -34,24 +33,24 @@
   .rangeInput::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     background-color: #000000;
     border-radius: 50%;
     cursor: pointer;
   }
   
   .rangeInput::-moz-range-thumb {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     background-color: #000000;
     border-radius: 50%;
     cursor: pointer;
   }
   
   .rangeInput::-ms-thumb {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     background-color: #000000;
     border-radius: 50%;
     cursor: pointer;
