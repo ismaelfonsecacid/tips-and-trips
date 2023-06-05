@@ -4,14 +4,12 @@
   flex-wrap: wrap;
   list-style-type: none;
 }
-
 .ul2 {
   list-style: none;
   text-align: left;
 }
 .ul3{
   list-style: none;
-  font-size: 17px;
 }
 
 /* Estilos para cada elemento de la lista */
@@ -27,7 +25,13 @@
   .mid {
     flex-direction: column;
   }
-  .main p{
+  .ul p{
+    font-size: 16px;
+  }
+  .ul2 p{
+    font-size: 16px;
+  }
+  .ul3 p{
     font-size: 16px;
   }
 }
