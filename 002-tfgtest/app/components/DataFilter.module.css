@@ -1,21 +1,13 @@
 /* styles.module.css */
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
-  }
-  
-  @media (max-width: 900px) {
-    .container {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  @media (max-width: 554px) {
-    .container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  grid-gap: 10px;
+}
+
+
   
   .label {
     display: block;
@@ -23,19 +15,39 @@
     margin-bottom: 5px;
   }
   
-  .range-input {
-    width: 100%;
+  .rangeInput {
+    height: 4px;
+    -webkit-appearance: none;
+    background-color: #dddddd;
+    outline: none;
   }
   
-
-
-
-
-
-
-
-
-
+  .rangeInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .rangeInput::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background-color: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .rangeInput::-ms-thumb {
+    width: 16px;
+    height: 16px;
+    background-color: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
   
   .selectInput {
     appearance: none;
@@ -44,13 +56,18 @@
     background-color: #ffffff;
     border: 2px solid #cccccc;
     border-radius: 4px;
-    padding: 8px 12px;
+    padding: 6px 10px;
     font-size: 16px;
     color: #333333;
     width: 200px;
     transition: border-color 0.3s ease;
   }
   
+  @media (max-width: 600px) {
+   .selectInput {
+    width: 130px;
+   }
+  }
   .selectInput:hover,
   .selectInput:focus {
     border-color: #999999;
