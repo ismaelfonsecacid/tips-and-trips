@@ -53,3 +53,11 @@
   border-radius: 50px;
   
 }
+
+.main .li:nth-child(even) {
+  background-color: #86bdb9;
+}
+
+.main .li:nth-child(odd) {
+  background-color: #f8cb9d;
+}
