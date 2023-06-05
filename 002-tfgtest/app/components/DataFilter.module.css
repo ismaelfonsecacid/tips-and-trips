@@ -23,39 +23,13 @@
     margin-bottom: 5px;
   }
   
-  .rangeInput {
-    height: 4px;
-    -webkit-appearance: none;
-    background-color: #dddddd;
-    outline: none;
+  .range-input {
+    width: 100%;
   }
   
-  .rangeInput::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 16px;
-    height: 16px;
-    background-color: #000000;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  .rangeInput::-moz-range-thumb {
-    width: 16px;
-    height: 16px;
-    background-color: #000000;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  .rangeInput::-ms-thumb {
-    width: 16px;
-    height: 16px;
-    background-color: #000000;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
+
+
+
 
 
 
