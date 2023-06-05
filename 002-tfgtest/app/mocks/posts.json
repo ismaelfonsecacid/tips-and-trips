@@ -97,5 +97,15 @@
     "img": "/images/vancouver.jpg",
     "resume": "Disfruta de la naturaleza y la diversidad de Vancouver",
     "body": "Vancouver, en la costa oeste de Canadá, te brinda la combinación perfecta entre naturaleza y vida urbana. Admira las montañas cubiertas de nieve, explora los parques como Stanley Park, recorre el vibrante barrio de Gastown y prueba la variedad de restaurantes étnicos. No te pierdas la oportunidad de hacer senderismo, esquiar o pasear en bicicleta por la ciudad."
+  },
+  {
+    "id": "mauricio",
+    "ciudad": "Mauricio",
+    "continente": "África",
+    "fecha": "Mauricio / 2024-XX-XX",
+    "img": "/images/mauricio.jpg",
+    "resume": "Descubre la belleza tropical de Mauricio",
+    "body": "Mauricio, ubicado en el océano Índico, te cautivará con su impresionante belleza tropical. Disfruta de sus playas de arena blanca, aguas turquesas y exuberante vegetación. Explora la fascinante vida marina mientras practicas snorkel o buceo en sus arrecifes de coral. Admira las cascadas y senderos del Parque Nacional Black River Gorges y sumérgete en la rica cultura de Port Louis, la animada capital. No te pierdas la oportunidad de degustar la deliciosa comida local, como el curry de mariscos y el dholl puri. Mauricio te espera con un paraíso tropical que nunca olvidarás."
   }
+  
 ]

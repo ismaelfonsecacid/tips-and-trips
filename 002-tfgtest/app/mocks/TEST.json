@@ -1,0 +1,171 @@
+[
+  {
+    "id": 1,
+    "nombre": "Con Vuelo",
+    "hotel": "T",
+    "precioViaje": 10,
+    "continente": "África",
+    "categoria": {
+      "tipo": "Hotel de 3⭐",
+      "precio": 250,
+      "dias": "4 días"
+    },
+    "precioTransporte": 200,
+    "relleno": "En África hemos disfrutado de la increíble diversidad natural, desde las vastas llanuras del Serengeti hasta los majestuosos picos del Kilimanjaro. También nos hemos sumergido en la rica cultura y tradiciones de las tribus locales, aprendiendo sobre su historia y costumbres milenarias. Además, hemos tenido la oportunidad de realizar safaris y avistar la impresionante fauna africana, incluyendo elefantes, leones y jirafas.",
+    "imgH": "/images/hotel/africa.jpg",
+    "nombreHotel": "Hotel Africano"
+  },
+  {
+    "id": 2,
+    "nombre": "Con Vuelo",
+    "lugar": "Nueva York",
+    "hotel": "T",
+    "precioViaje": 20,
+    "continente": "América",
+    "categoria": {
+      "tipo": "Hotel de 4⭐",
+      "precio": 350,
+      "dias": "6 días"
+    },
+    "precioTransporte": 150,
+    "relleno": "En Nueva York hemos explorado la ciudad que nunca duerme. Hemos paseado por las bulliciosas calles de Times Square, recorrido Central Park en bicicleta, visitado los famosos museos como el MoMA y el MET, y disfrutado de increíbles vistas desde el Empire State Building. También hemos degustado una amplia variedad de sabores en los diversos restaurantes y food trucks de la ciudad, desde la auténtica pizza en Brooklyn hasta los deliciosos bagels de Manhattan.",
+    "imgH": "/images/hotel/nueva_york.jpg",
+    "nombreHotel": "Hotel Empire"
+  },
+  {
+    "id": 3,
+    "nombre": "Con tren",
+    "lugar": "París",
+    "hotel": "T",
+    "precioViaje": 30,
+    "continente": "Europa",
+    "categoria": {
+      "tipo": "Hotel de 2⭐",
+      "precio": 150,
+      "dias": "3 días"
+    },
+    "precioTransporte": 100,
+    "relleno": "En París, la ciudad del amor y la moda, hemos disfrutado de un ambiente romántico y sofisticado. Hemos paseado por las orillas del río Sena, visitado la emblemática Torre Eiffel y explorado los encantadores barrios de Montmartre y Le Marais. Además, hemos admirado obras maestras en el Louvre, descubierto la belleza gótica de la Catedral de Notre Dame y degustado exquisitos croissants y macarons en las encantadoras cafeterías parisinas.",
+    "imgH": "/images/hotel/paris.jpg",
+    "nombreHotel": "B&B HOTEL Paris Romainville"
+  },
+  {
+    "id": 4,
+    "nombre": "Con Vuelo",
+    "lugar": "Tokio",
+    "hotel": "TS",
+    "precioViaje": 300,
+    "continente": "Asia",
+    "categoria": {
+      "tipo": "Hotel de 5⭐",
+      "precio": 500,
+      "dias": "7 días"
+    },
+    "precioTransporte": 250,
+    "relleno": "En Tokio, la vibrante capital de Japón, hemos experimentado la fusión perfecta entre tradición y modernidad. Hemos explorado los antiguos templos y jardines, como el Templo Senso-ji y los Jardines del Palacio Imperial. También hemos recorrido los bulliciosos distritos de Shinjuku y Shibuya, famosos por sus luces de neón y cruces peatonales concurridas. Además, hemos disfrutado de la exquisita gastronomía japonesa, desde sushi fresco hasta ramen reconfortante.",
+    "imgH": "/images/hotel/tokio.jpg",
+    "nombreHotel": "Halekulani Okinawa"
+  },
+  {
+    "id": 5,
+    "nombre": "Con Vuelo",
+    "lugar": "Sídney",
+    "hotel": "F",
+    "precioViaje": 300,
+    "continente": "Oceanía",
+    "categoria": {
+      "tipo": "Hostal",
+      "precio": 400,
+      "dias": "7 días"
+    },
+    "precioTransporte": 200,
+    "relleno": "En Sídney, la icónica ciudad australiana, hemos disfrutado de hermosas playas, como Bondi Beach y Manly Beach, donde hemos practicado surf y tomado el sol. También hemos explorado el impresionante puerto de Sídney, admirando la Ópera de Sídney y el Puente de la Bahía. Además, hemos visitado el Zoológico de Taronga para conocer la fauna autóctona de Australia, como los koalas y canguros. Por las noches, nos hemos sumergido en la animada vida nocturna de Sídney, disfrutando de bares y restaurantes con vistas panorámicas.",
+    "imgH": "/images/hotel/sidney.jpg",
+    "nombreHotel": "YHA Sydney Central"
+  },
+  {
+    "id": 6,
+    "nombre": "Con Vuelo",
+    "lugar": "Mauricio",
+    "hotel": "TS",
+    "precioViaje": 40,
+    "continente": "África",
+    "categoria": {
+      "tipo": "Hotel de 5⭐",
+      "precio": 800,
+      "dias": "7 días"
+    },
+    "precioTransporte": 300,
+    "relleno": "En Mauricio, hemos disfrutado de hermosas playas de arena blanca y aguas cristalinas. Nos hemos relajado en los complejos turísticos de lujo, disfrutando de servicios exclusivos y tratamientos de spa. Además, hemos explorado la exuberante naturaleza de la isla, visitando cascadas y reservas naturales. También hemos probado la deliciosa cocina criolla, que combina influencias francesas, africanas e indias.",
+    "imgH": "/images/hotel/mauricio.jpg",
+    "nombreHotel": "LUX* Le Morne"
+  },
+  {
+    "id": 7,
+    "nombre": "Con Vuelo",
+    "lugar": "Santorini",
+    "hotel": "T",
+    "precioViaje": 50,
+    "continente": "Europa",
+    "categoria": {
+      "tipo": "Hotel de 5⭐",
+      "precio": 600,
+      "dias": "5 días"
+    },
+    "precioTransporte": 150,
+    "relleno": "En Santorini, la joya del mar Egeo, hemos disfrutado de vistas panorámicas impresionantes de sus famosos acantilados y casas blancas. Nos hemos relajado en las playas de arena volcánica y hemos explorado los pintorescos pueblos de Oia y Fira. También hemos degustado los sabores únicos de la gastronomía local, como el delicioso gyros y los vinos producidos en la isla.",
+    "imgH": "/images/hotel/santorini.jpg",
+    "nombreHotel": "Mystique Santorini"
+  },
+  {
+    "id": 8,
+    "nombre": "Con Vuelo",
+    "lugar": "Río de Janeiro",
+    "hotel": "T",
+    "precioViaje": 30,
+    "continente": "América",
+    "categoria": {
+      "tipo": "Hotel de 4⭐",
+      "precio": 400,
+      "dias": "7 días"
+    },
+    "precioTransporte": 200,
+    "relleno": "En Río de Janeiro, la vibrante ciudad brasileña, hemos disfrutado de sus famosas playas como Copacabana e Ipanema, donde hemos tomado el sol y hemos probado caipirinhas refrescantes. También hemos visitado los icónicos lugares turísticos como el Cristo Redentor y el Pan de Azúcar, y hemos experimentado la animada vida nocturna de Lapa. Además, hemos saboreado la rica gastronomía carioca, como la feijoada y los deliciosos pasteles.",
+    "imgH": "/images/hotel/rio_de_janeiro.jpg",
+    "nombreHotel": "Hotel Atlântico Rio"
+  },
+  {
+    "id": 9,
+    "nombre": "Con Vuelo",
+    "lugar": "Londres",
+    "hotel": "F",
+    "precioViaje": 25,
+    "continente": "Europa",
+    "categoria": {
+      "tipo": "Hostal",
+      "precio": 350,
+      "dias": "5 días"
+    },
+    "precioTransporte": 150,
+    "relleno": "En Londres, la capital del Reino Unido, hemos explorado la historia y la modernidad. Hemos visitado lugares emblemáticos como el Palacio de Buckingham, el Big Ben y el Museo Británico. Además, hemos disfrutado de los hermosos parques de la ciudad, como Hyde Park y Kensington Gardens, y hemos paseado por las animadas calles de Covent Garden y Camden Town. También hemos degustado platos tradicionales como el fish and chips y hemos disfrutado de la escena teatral del West End.",
+    "imgH": "/images/hotel/londres.jpg",
+    "nombreHotel": "The Langham, London"
+  },
+  {
+    "id": 10,
+    "nombre": "Con tren",
+    "lugar": "Kioto",
+    "hotel": "TS",
+    "precioViaje": 200,
+    "continente": "Asia",
+    "categoria": {
+      "tipo": "Hotel de 4⭐",
+      "precio": 400,
+      "dias": "6 días"
+    },
+    "precioTransporte": 150,
+    "relleno": "En Kioto, la antigua capital de Japón, hemos explorado los templos y santuarios tradicionales, como el Templo Kinkaku-ji (Pabellón Dorado) y el Santuario Fushimi Inari-taisha. También hemos paseado por los hermosos jardines de la ciudad y hemos participado en ceremonias de té japonesas. Además, hemos disfrutado de la deliciosa gastronomía de Kioto, incluyendo platos como el sushi y el ramen.",
+    "imgH": "/images/hotel/kioto.jpg",
+    "nombreHotel": "The Ritz-Carlton, Kyoto"
+  }
+]

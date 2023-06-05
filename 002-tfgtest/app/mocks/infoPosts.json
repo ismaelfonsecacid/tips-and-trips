@@ -416,5 +416,44 @@
       "Sushi"
     ],
     "detalles": "Vancouver, ubicada en Canadá, es una ciudad cosmopolita rodeada de impresionantes paisajes naturales. El Parque Stanley, un oasis urbano, ofrece una variedad de actividades al aire libre, desde caminatas hasta ciclismo, rodeado de hermosos jardines y playas pintorescas. Granville Island es un destino imperdible para los amantes de la comida y las artes, con su animado mercado público y una amplia oferta de productos frescos y artesanales. Gastown, el barrio más antiguo de la ciudad, ofrece un encanto histórico con sus calles empedradas y edificios victorianos, además de una gran selección de restaurantes y tiendas boutique. El Acuario de Vancouver es una atracción popular, donde se pueden explorar diversas especies marinas y aprender sobre la conservación. En cuanto a la comida típica, no te pierdas la oportunidad de probar el salmón ahumado, la poutine (patatas fritas con queso y salsa), el jugo de arce, el Nanaimo bar (un postre delicioso) y el sushi, que refleja la influencia multicultural de la ciudad."
+  },
+  {
+    "id": "mauricio",
+    "nombre": "Mauricio",
+    "pais": "Mauricio",
+    "poblacion": "1,265,577",
+    "idioma": "Inglés, francés y criollo mauriciano",
+    "moneda": "Rupia mauriciana",
+    "atracciones": [
+      {
+        "nombre": "Playa de Trou aux Biches",
+        "descripcion": "La playa de Trou aux Biches es conocida por sus aguas cristalinas y su arena blanca. Es un lugar perfecto para relajarse, nadar y practicar deportes acuáticos como el buceo y el snorkel. Además, ofrece impresionantes vistas al atardecer.",
+        "img": "/images/lugares/trou_aux_biches.jpg"
+      },
+      {
+        "nombre": "Parque Nacional Black River Gorges",
+        "descripcion": "El Parque Nacional Black River Gorges es un santuario natural que alberga una gran diversidad de flora y fauna. Es un destino ideal para hacer senderismo y explorar paisajes montañosos, cascadas y bosques exuberantes.",
+        "img": "/images/lugares/black_river_gorges.jpg"
+      },
+      {
+        "nombre": "Port Louis",
+        "descripcion": "Port Louis, la capital de Mauricio, es un lugar lleno de historia y cultura. Puedes visitar la Ciudadela, un fuerte histórico, y explorar el animado mercado central, donde encontrarás una variedad de productos locales. También puedes disfrutar de la arquitectura colonial francesa y visitar el famoso paseo marítimo de Caudan Waterfront.",
+        "img": "/images/lugares/port_louis.jpg"
+      },
+      {
+        "nombre": "Isla de los Ciervos",
+        "descripcion": "La Isla de los Ciervos, también conocida como Île aux Cerfs, es una isla paradisíaca en la costa este de Mauricio. Ofrece playas de arena blanca, aguas turquesas y una amplia gama de actividades acuáticas, como el esnórquel, el kayak y el parasailing.",
+        "img": "/images/lugares/ile_aux_cerfs.jpg"
+      }
+    ],
+    "comida_tipica": [
+      "Curry de mariscos",
+      "Dholl puri",
+      "Rougaille",
+      "Gateau Piment",
+      "Alouda"
+    ],
+    "detalles": "Mauricio, ubicado en el océano Índico, es un paraíso tropical conocido por sus hermosas playas, aguas cristalinas y rica cultura. La playa de Trou aux Biches es una de las más populares, con su arena blanca y aguas transparentes, ideal para relajarse y practicar deportes acuáticos. El Parque Nacional Black River Gorges ofrece una experiencia natural impresionante, con senderos para hacer senderismo, cascadas y bosques exuberantes. La capital, Port Louis, es un lugar lleno de historia y cultura, donde puedes explorar la Ciudadela, visitar el mercado central y disfrutar de la arquitectura colonial francesa. La Isla de los Ciervos, también conocida como Île aux Cerfs, es una isla paradisíaca con playas de ensueño y una amplia gama de actividades acuáticas. En cuanto a la comida típica, no te pierdas el curry de mariscos, el dholl puri (un panqueque relleno de lentejas), el rougaille (un guiso picante) y el gateau piment (una especie de buñuelo de chile). También puedes probar el alouda, una bebida refrescante a base de leche y sabores de rosa o almendra."
   }
+  
 ]

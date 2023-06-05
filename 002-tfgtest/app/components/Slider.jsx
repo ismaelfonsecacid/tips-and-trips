@@ -8,7 +8,7 @@ import { fetchData } from '../services/apiFetchData'
 
 
 export default async function Slider() {
-  const URL = 'results'
+  const URL = 'dataResults'
   let data = await fetchData(URL);
   let info = data.map((item) => {
     return (

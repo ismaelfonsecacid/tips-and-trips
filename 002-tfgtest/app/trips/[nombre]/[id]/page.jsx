@@ -10,7 +10,7 @@ import { fetchData } from '@/app/services/apiFetchData';
 
 
 export default async function TripPage({ params }) {
-  const URL = 'infoPost';
+  const URL = 'dataInfoPosts';
   const { id } = params;
   const data = await fetchData(URL)
 

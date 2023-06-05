@@ -1,3 +1,5 @@
+
+
 .tripspagecontainer {
     display: flex;
     flex-direction: column;
@@ -15,14 +17,13 @@
   }
   
   .subtitle {
-    font-size: 20px;
     font-weight: bold;
     padding: 10px;
     margin-bottom: 10px;
   }
   
   .description {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
   }
@@ -30,6 +31,7 @@
   .list {
     list-style-type: none;
   }
+
   .container {
     display: flex;
     justify-content: center;
@@ -53,7 +55,6 @@
     background-color: rgb(28,106,126);
     width: 100%;
     color: black;
-
   }
   
   @media (max-width: 750px) {
@@ -64,6 +65,9 @@
     .textContainer {
       max-width: 100%;
       margin: 20px 0;
+    }
+    .description {
+      font-size: 16px;
     }
   }
   

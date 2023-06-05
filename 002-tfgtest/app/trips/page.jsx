@@ -13,7 +13,7 @@ export default async function TripsPage() {
                     </>
                     <div className={styles.textContainer}>
                         <h1 className={styles.title}>Mis Experiencias de Viaje</h1>
-                        <p className={styles.description} style={{ marginLeft: '50px', marginRight: '50px' }}>
+                        <p className={styles.description}>
                             A lo largo de mis viajes, he descubierto que cada lugar tiene su propio encanto y belleza única. Me encanta sumergirme en la cultura local, probar la comida auténtica y explorar los puntos de interés históricos. Cada viaje me ha dejado recuerdos inolvidables y me ha enriquecido de muchas maneras. Viajar me ha enseñado a apreciar la diversidad del mundo y a ser más abierto y comprensivo.
                         </p>
                         <p className={styles.description}>

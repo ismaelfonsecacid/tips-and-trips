@@ -21,6 +21,7 @@
 
 .card p {
   color: black;
+  font-size: 17px;
 }
 .card:hover p{
   background-color:  rgb(123, 178, 192);
@@ -33,9 +34,10 @@
 @media (max-width: 450px) {
   .carrusel::-webkit-scrollbar {
    display: none;
-  
   }
-  
+  .card {
+    font-size: 16px;
+  }
 
 }
 
