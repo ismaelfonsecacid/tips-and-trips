@@ -49,17 +49,19 @@ export function Tips({ datos }) {
                   />
                   <ul className={styles.ul2}>
                     <li>
-                      <strong>Alojamiento: </strong>
-                      {dato.categoria.tipo} llamado <strong>{dato.nombreHotel}</strong>
+                      <p>
+                          <strong>Alojamiento: </strong>
+                          {dato.categoria.tipo} llamado <strong>{dato.nombreHotel}</strong>
+                      </p>
                     </li>
                     <li>
-                      <strong>Días</strong>: {dato.dias}
+                      <p><strong>Días</strong>: {dato.dias}</p>
                     </li>
                     <li>
-                      <strong>Precio alojamiento: </strong>: {dato.categoria.precio}€
+                      <p><strong>Precio alojamiento: </strong>: {dato.categoria.precio}€</p>
                     </li>
                     <li>
-                      <strong>Transporte</strong>: El precio ronda los {dato.precioTransporte}€
+                      <p><strong>Transporte</strong>: El precio ronda los {dato.precioTransporte}€</p>
                     </li>
                     <div className={styles.precio}>
                       <p>{dato.precioViaje}</p>
@@ -73,7 +75,7 @@ export function Tips({ datos }) {
                 <h3>TIPS</h3>
                 <ul className={styles.ul3}>
                   {dato.tips.map((tip) => (
-                    <li key={tip}>{tip}</li>
+                    <li key={tip}><p>{tip}</p></li>
                   ))}
                 </ul>
               </div>
