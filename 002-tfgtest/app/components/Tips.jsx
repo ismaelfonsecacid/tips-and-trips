@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import styles from './Tips.module.css'
 import { useState } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 export function Tips({ datos }) {
 
@@ -15,12 +16,11 @@ export function Tips({ datos }) {
 
     const handleGoToStart = () => {
         setShowMore(5);
-        const mainElement = document.getElementById('top');
-        if (mainElement) {
-            mainElement.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-      
+        scroll.scrollTo('top', {
+          smooth: true,
+          duration: 200, // Adjust the offset as needed
+        });
+      };
 
     return (
         <main className={styles.main}>
