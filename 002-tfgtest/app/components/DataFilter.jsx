@@ -70,8 +70,8 @@ export function DataFilter({ onChange }) {
                     <input
                         type="range"
                         id={minPriceFilterId}
-                        min="0"
-                        max="1000"
+                        min="300"
+                        max="1100"
                         onChange={handleChangeMinPrice}
                         className={styles.rangeInput}
                     />

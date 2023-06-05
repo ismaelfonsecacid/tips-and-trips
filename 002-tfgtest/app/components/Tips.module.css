@@ -10,7 +10,7 @@
   text-align: left;
 }
 .ul3{
-  list-style: none;
+  list-style: disc;
 }
 
 /* Estilos para cada elemento de la lista */
@@ -18,6 +18,7 @@
   width: 100%;
   /* Mostrar 2 elementos por fila */
   margin: 30px 0;
+  padding: 10px 20px;
 }
 
 /* Estilos para cuando la pantalla sea lo suficientemente estrecha para mostrar solo 1 elemento por fila */
@@ -36,6 +37,7 @@
 
 .div1 {
   flex-basis: 40%;
+  
 }
 
 .div2 {
@@ -59,5 +61,77 @@
 }
 
 .main .li:nth-child(odd) {
-  background-color: #f8cb9d;
+  background-color: #fbc58e;
+}
+
+.img{
+  box-shadow: 0px 10px 10px -6px black;
+}
+
+/* <!-- HTML !-->
+<button class="showMore" role="button">Button 56</button> */
+
+/* CSS */
+.showMore {
+  align-items: center;
+  background-color: #FDA24B;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.showMore:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.showMore:hover:after {
+  transform: translate(0, 0);
+}
+
+.showMore:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.showMore:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .showMore {
+    padding: 0 40px;
+  }
+}
+
+.divBot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

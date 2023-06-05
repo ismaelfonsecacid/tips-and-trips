@@ -23,9 +23,11 @@ export function Tips({ datos }) {
                         <div className={styles.mid}>
                             <div className={styles.div1}>
                                 <div>
-                                    <Image src={dato.imgH} width={250} height={250} alt={`Imagen que muestra como es ${dato.nombreHotel}`} title={dato.nombreHotel} />
+                                    <Image src={dato.imgH} width={250} height={250} alt={`Imagen que muestra como es ${dato.nombreHotel}`} title={dato.nombreHotel} className={styles.img} />
                                     <ul className={styles.ul2}>
-                                        <li><strong>Alojamiento: </strong>: {dato.categoria.tipo} llamado <strong>{dato.nombreHotel}</strong> durante  {dato.dias} días por un precio de {dato.categoria.precio}€</li>
+                                        <li><strong>Alojamiento: </strong>{dato.categoria.tipo} llamado <strong>{dato.nombreHotel}</strong></li>
+                                        <li><strong>Días</strong>: {dato.dias}</li>
+                                        <li><strong>Precio alojamiento: </strong>: {dato.categoria.precio}€</li>
                                         <li><strong>Transporte</strong>: El precio ronda los {dato.precioTransporte}€</li>
                                         <div className={styles.precio}>
                                             <p>{dato.precioViaje}</p>
@@ -51,7 +53,7 @@ export function Tips({ datos }) {
                 )}
             </ul>
             {!showMore && (
-                <button onClick={handleShowMore}>Show More</button>
+                <div className={styles.divBot}><button onClick={handleShowMore} role='button' className={styles.showMore}>Mostra más</button></div>
             )}
         </main>
     )
