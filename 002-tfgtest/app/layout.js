@@ -2,7 +2,7 @@ import Footer from "./components/Footer.jsx"
 import Menu from "./components/Menu.jsx"
 import { initFirebase } from "./firebases/firebaseApp.js"
 import './globals.css'
-import { Kanit } from '@next/font/google'
+import { Kanit } from 'next/font/google'
 
 
 

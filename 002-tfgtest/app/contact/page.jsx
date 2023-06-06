@@ -66,51 +66,62 @@ export default function EmailForm() {
   }, [state.succeeded]);
 
   return (
-    <form className={styles.formContainer} onSubmit={handleSubmit}>
-      <label className={styles.label} htmlFor="email">Dirección de correo electrónico</label>
-      <input
-        id="email"
-        type="email"
-        name="email"
-        required
-        onBlur={handleEmailBlur}
-        className={`${styles.inputField} ${emailHasError ? styles.errorBorder : ''}`}
-      />
-      {emailError && <p className={styles.error}>{emailError}</p>}
-
-      <label className={styles.label} htmlFor="subject">Asunto</label>
-      <input
-        name="subject"
-        id="subject"
-        required
-        onBlur={handleSubjectBlur}
-        className={`${styles.inputField} ${subjectHasError ? styles.errorBorder : ''}`}
-      />
-      {subjectError && <p className={styles.error}>{subjectError}</p>}
-
-      <label className={styles.label} htmlFor="message">Mensaje</label>
-      <textarea
-        id="message"
-        name="message"
-        required
-        onBlur={handleMessageBlur}
-        className={`${styles.inputField} ${messageHasError ? styles.errorBorder : ''}`}
-      />
-      {messageError && <p className={styles.error}>{messageError}</p>}
-
-      <button
-        type="submit"
-        disabled={state.submitting}
-        className={styles.submitButton}
-      >
-        Enviar
-      </button>
-
-      {state.succeeded && (
-        <p className={styles.successMessage}>
-          ¡Gracias por unirte! Serás redirigido a la página original en 5 segundos.
+    <div className={styles.main}>
+      <div className={styles.info}>
+        <p>
+          Si necesitas alguna información especial o tienes alguna pregunta específica sobre nuestros servicios, destinos o cualquier otro aspecto relacionado con los viajes, estaremos encantados de ayudarte. Nuestro equipo de expertos en viajes está disponible para brindarte la asistencia que necesitas.
         </p>
-      )}
-    </form>
+        <p>
+          Por favor, completa el formulario a continuación con tus detalles y tu consulta, y nos pondremos en contacto contigo a la brevedad posible. Queremos asegurarnos de proporcionarte la información precisa y personalizada que estás buscando.
+        </p>
+        <p>
+          ¡Estamos ansiosos por ayudarte a planificar tu próximo viaje extraordinario!
+        </p>
+      </div>
+      <div>
+        <form className={styles.formContainer} onSubmit={handleSubmit}>
+          <label className={styles.label} htmlFor="email">Dirección de correo electrónico</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            required
+            onBlur={handleEmailBlur}
+            className={`${styles.inputField} ${emailHasError ? styles.errorBorder : ''}`}
+          />
+          {emailError && <p className={styles.error}>{emailError}</p>}
+          <label className={styles.label} htmlFor="subject">Asunto</label>
+          <input
+            name="subject"
+            id="subject"
+            required
+            onBlur={handleSubjectBlur}
+            className={`${styles.inputField} ${subjectHasError ? styles.errorBorder : ''}`}
+          />
+          {subjectError && <p className={styles.error}>{subjectError}</p>}
+          <label className={styles.label} htmlFor="message">Mensaje</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            onBlur={handleMessageBlur}
+            className={`${styles.inputField} ${messageHasError ? styles.errorBorder : ''}`}
+          />
+          {messageError && <p className={styles.error}>{messageError}</p>}
+          <button
+            type="submit"
+            disabled={state.submitting}
+            className={styles.submitButton}
+          >
+            Enviar
+          </button>
+          {state.succeeded && (
+            <p className={styles.successMessage}>
+              ¡Gracias por contactar con Tips & Trips! Serás redirigido a la página original en 5 segundos.
+            </p>
+          )}
+        </form>
+      </div>
+    </div>
   );
 }

@@ -1,61 +1,78 @@
 /* Page.module.css */
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  padding: 0 10%;
+  gap: 30px;
+}
+@media (max-width: 768px) {
+.main {
+  flex-direction: column;
+}
+}
+
+.info{
+  flex-basis: 70%;
+}
 
 /* Estilos generales para el formulario */
 .formContainer {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  /* Estilos para las etiquetas de los campos */
-  .label {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Estilos para los campos de entrada */
-  .inputField {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-  }
-  
-  /* Estilos para los mensajes de error */
-  .error {
-    color: red;
-    font-size: 0.8rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Estilos para el borde rojo en caso de error */
-  .errorBorder {
-    border-color: red;
-  }
-  
-  /* Estilos para el botón de enviar */
-  .submitButton {
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .submitButton:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  
-  .submitButton:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Estilos para el mensaje de éxito */
-  .successMessage {
-    font-weight: bold;
-    color: green;
-    margin-top: 1rem;
-  }
-  
+  margin: 0 auto;
+  flex-basis: 30%;
+}
+
+/* Estilos para las etiquetas de los campos */
+.label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos para los campos de entrada */
+.inputField {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para los mensajes de error */
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos para el borde rojo en caso de error */
+.errorBorder {
+  border-color: red;
+}
+
+/* Estilos para el botón de enviar */
+.submitButton {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el mensaje de éxito */
+.successMessage {
+  font-weight: bold;
+  color: green;
+  margin-top: 1rem;
+}
