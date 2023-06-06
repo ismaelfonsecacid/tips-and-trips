@@ -1,12 +1,12 @@
 
+Task:
+    ✅Realizar la página de trips/[nombre]
+    ✅Realizar la página de tips
+    ✅Realizar la página de contact
 # Tips and Trips - Blog de Viajes
 
 Progress: [████████████████████████████████░░░] 87%
 
-Task:
-    ✅Realizar la página de trips/[nombre]
-    ✅Realizar la página de tips
-    ✅Realizar la página de conctact
 
 
 
@@ -25,7 +25,7 @@ Tips and Trips es un blog de viajes dedicado a inspirar a los viajeros, comparti
 
 El blog se construirá utilizando Next.js 13.4 (app estable/BETA), un framework de React.js que facilita el desarrollo de aplicaciones web modernas y optimizadas para el rendimiento. Next.js nos brinda capacidades de renderizado del lado del servidor (SSR) y generación de páginas estáticas, lo que mejora la velocidad y la experiencia del usuario.
 
-## Estructura de Carpetas
+# Estructura de Carpetas
 
 - `/components`: Componentes reutilizables de React utilizados en el blog.
 - `/app`: Páginas de Next.js que representan las diferentes rutas del blog.
@@ -33,12 +33,67 @@ El blog se construirá utilizando Next.js 13.4 (app estable/BETA), un framework 
     - `/trips`: Pagina principal de Trips con su contenido.
         - `/[nombre]`: Pagina secundaria de Trips con su contenido que dependerá del [nombre] del continente.
             - `/[id]`: Pagina secundaria de Trips/[nombre] con su contenido que dependerá del {id} que le pasemos al realizar la búsqueda.
+    - `/contact`: Pagina de formulario de contacto
 - `/public`: Recursos estáticos accesibles públicamente, como imágenes y archivos descargables.
     - `/images`: Contiene las imagenes que luego se van a renderizar en la web.
 
-## Información para entender la estructura del proyecto y sus archivos
+# Información para entender la estructura del proyecto y sus archivos
 
-##### NextJS 13
+NextJS 13 utiliza la carpeta "/app" para crear ahí todas las páginas del proyecto. Al crear una carpeta y un archivo con el nombre de page.jsx ya tendríamos un apartado del proyecto con el nombre de la carpeta. Por ejemplo si cremos una carpeta con nombre registro y dentro de ella el archivo page.jsx vamos a poder entrar en el accediendo desde www.ejemplo.com/registro. 
+Next tambien cuenta con la manera de crear estos enlaces pero que seán de manera dinámica. Esta se crearía poniendo ' [ text ] ' como nombre de la carpeta. La variable text puede ser cualquier cosa; lo mas importante a tener en cuenta es que si tenemos una base de datos con un id podemos pasar ese id como nombre de la carpeta y entonces creará una ruta anidada dinámica con ese id, y con ello poder controlar si existe un dato o no simplemente con la ruta.
+
+Hay que tener en cuenta que NextJS 13 su mayoría de contenido es para usarlo del lado del servidor, que quiere decir, que al crear una app lo prioritario es que aquel componente que sea necesaria usar el lado del cliente sea el mas pequeño posible para que así la carga de la página web sea lo mas rápida y dinámica posible.
+
+Los componentes cada vez se están actualizando para que sean SSR pero algunos siguen siendo CSR. Los mas usados en este proyecto son useState y useEffect.
+
+###### useState
+
+El componente useState es una función de React que permite agregar y manejar el estado en los componentes funcionales. El estado es una forma de almacenar y controlar datos que pueden cambiar durante la ejecución de un componente.
+
+Para usar useState, importa la función desde React y llámala dentro de un componente funcional. Proporciona un valor inicial como argumento a useState. La función devuelve un arreglo con dos elementos: una variable que almacena el estado y una función para actualizar ese estado.
+
+```javascript
+import React, { useState } from 'react';
+
+const MiComponente = () => {
+  const [estado, setEstado] = useState(valorInicial);
+  
+  // Resto del código del componente
+}
+```
+En el ejemplo anterior, estado es la variable que guarda el estado y setEstado es la función para actualizarlo. valorInicial es el valor con el que se inicializa el estado.
+
+Cuando llames a setEstado con un nuevo valor, React actualizará automáticamente el estado y volverá a renderizar el componente, mostrando los cambios en la interfaz de usuario.
+
+###### useEffect
+```javascript
+// Importar useEffect desde React
+import React, { useEffect } from 'react';
+const MiComponente = () => {
+  useEffect(() => {
+    // Lógica del efecto secundario
+    // Llamadas a APIs
+    // Suscripción a eventos
+    // Actualizaciones de estado
+    // Limpieza de recursos
+    // Opcionalmente, se puede retornar una función de limpieza
+    return () => {
+      // Lógica de limpieza
+      // Se ejecutará cuando el componente se desmonte o cuando el efecto cambie
+    };
+  }, [dependencias]);
+  return (
+    // Renderizado del componente
+  );
+};
+```
+- import React, { useEffect } from 'react';: Importa el componente useEffect desde la biblioteca React.
+- useEffect(() => { ... }, [dependencias]);: Llama a useEffect dentro del componente funcional y pasa una función como primer argumento. Esta función contiene la lógica del efecto secundario que deseas ejecutar.
+- [dependencias]: Es un array opcional de dependencias que se utiliza para controlar cuándo se debe volver a ejecutar el efecto. Si alguna de las dependencias cambia, el efecto se vuelve a ejecutar. Si el array de dependencias está vacío, el efecto solo se ejecutará una vez al montar el componente y no se volverá a ejecutar.
+- Lógica del efecto secundario: Aquí se coloca la lógica que deseas ejecutar como efecto secundario. Puedes realizar llamadas a APIs, suscribirte a eventos, actualizar el estado u otras acciones necesarias dentro de esta función.'
+
+En resumen, useEffect está siempre atento a la dependencia que le pases, entonces si esa dependencia cambia por cualquier cambio en la web, el useEffect se pondrá en funcionamiento y hará todo lo que tenga dentro de el. Un ejemplo sencillo para entender es que si en la dependencia tenemos la variable resultado, y nuestro programa es sumar dos dígitos que devolverán un resultado y queremos que si ese resultado es positivo o negativo nos lo diga; entonces useEffect estará vigilando el resultado, nosotros hacemos una operación y el resultado cambia y entonces useEffect detecta ese cambio y comprobará si es positivo y negativo, recargará el componente y nos dirá dicho resultado.
+### NextJS 13
 
 Next. js es un framework minimalista para crear aplicaciones de JavaScript de una sola página de una manera simple. 
 Se centra en el rendimiento y la compatibilidad inmediata con la representación del lado del servidor (SSR - Server Side Rendering).
