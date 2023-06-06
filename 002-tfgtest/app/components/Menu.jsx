@@ -17,6 +17,10 @@ const links = [
     label: 'TRIPS',
     route: '/trips'
   },
+  {
+    label: 'CONTACT',
+    route: '/contact'
+  },
 ];
 
 

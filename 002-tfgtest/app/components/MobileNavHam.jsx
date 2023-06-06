@@ -26,6 +26,7 @@ export default function MobileNavHam({ open, onClick }) {
                         <Link href="/" onClick={onClick} className={styles.link}>HOME</Link>
                         <Link href="/tips" onClick={onClick} className={styles.link}>TIPS</Link>
                         <Link href="/trips " onClick={onClick} className={styles.link}>TRIPS</Link>
+                        <Link href="/contact " onClick={onClick} className={styles.link}>CONTACT</Link>
                     </div>
                 </div>
             </div>

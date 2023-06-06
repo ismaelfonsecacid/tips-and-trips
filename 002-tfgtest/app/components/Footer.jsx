@@ -14,8 +14,8 @@ const links = [
         route: '/trips'
     },
     {
-        label: 'AUNNOSE',
-        route: '/AUNNOSE'
+        label: 'CONTACT',
+        route: '/contact'
     },
 ];
 function Footer() {
