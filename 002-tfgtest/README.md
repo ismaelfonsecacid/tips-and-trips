@@ -5,7 +5,8 @@ Progress: [███████████████████████
 
 Task:
     ✅Realizar la página de trips/[nombre]
-    ✅Realizar la página de tips/[nombre]
+    ✅Realizar la página de tips
+    ✅Realizar la página de conctact
 
 
 
