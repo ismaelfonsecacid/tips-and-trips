@@ -64,7 +64,7 @@ export function Tips({ datos }) {
                       <p><strong>Transporte</strong>: El precio ronda los {dato.precioTransporte}€</p>
                     </li>
                     <div className={styles.precio}>
-                      <p>{dato.precioViaje}</p>
+                      <p>El precio total del viaje sale por {dato.precioViaje}</p>
                     </div>
                   </ul>
                 </div>

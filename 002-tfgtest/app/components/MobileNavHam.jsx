@@ -19,7 +19,7 @@ export default function MobileNavHam({ open, onClick }) {
                         </div>
                     <div className={styles.flex}>
                         <button onClick={onClick} className={styles.buton} aria-label="Cerrar menu desplegable">
-                            <Image src='/images/closeicono.png' width={50} height={50} alt="Boton para cerrar el menu desplegable" />
+                            <Image src='/images/cerrar.png' width={25} height={25} alt="Boton para cerrar el menu desplegable" />
                         </button>
                     </div>
                     <div className={styles.cLink}>

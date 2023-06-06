@@ -4,11 +4,13 @@
   flex-wrap: wrap;
   list-style-type: none;
 }
+
 .ul2 {
   list-style: none;
   text-align: left;
 }
-.ul3{
+
+.ul3 {
   list-style: none;
   margin-bottom: 20px;
 }
@@ -26,13 +28,16 @@
   .mid {
     flex-direction: column;
   }
-  .ul p{
+
+  .ul p {
     font-size: 16px;
   }
-  .ul2 p{
+
+  .ul2 p {
     font-size: 16px;
   }
-  .ul3 p{
+
+  .ul3 p {
     font-size: 16px;
   }
 }
@@ -46,7 +51,7 @@
 
 .div1 {
   flex-basis: 40%;
-  
+
 }
 
 .div2 {
@@ -58,11 +63,13 @@
   justify-content: center;
   margin-top: 20px;
 }
-.precio p{
-  background-color: red;
-  padding: 20px 30px;
-  border-radius: 50px;
-  
+
+.precio p {
+  background-color: orange;
+
+  padding: 10px 15px;
+  margin-bottom: 20px;
+
 }
 
 .main .li:nth-child(even) {
@@ -73,9 +80,16 @@
   background-color: #fbc58e;
 }
 
-.img{
+.img {
   box-shadow: 0px 10px 10px -6px black;
   margin-bottom: 10px;
+}
+
+@media (max-width: 300px) {
+  .img{
+    width: 150px;
+    height: 150px;
+  }
 }
 
 .showMore {
@@ -87,7 +101,7 @@
   color: #111;
   cursor: pointer;
   display: flex;
-  font-family: Inter,sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 16px;
   height: 48px;
   justify-content: center;
