@@ -1,7 +1,7 @@
 
 # Tips and Trips - Blog de Viajes
 
-Progress: [████████████████████████████████░░░░░] 80%
+Progress: [████████████████████████████████░░░] 87%
 
 Task:
     ✅Realizar la página de trips/[nombre]
