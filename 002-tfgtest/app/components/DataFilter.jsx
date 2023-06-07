@@ -46,7 +46,7 @@ export function DataFilter({ onChange }) {
             ...prevState,
             hotel: event.target.value
         }))
-    }  
+    }
     const handleResetFilters = () => {
         setMinPrice(0)
         onChange({
@@ -75,7 +75,7 @@ export function DataFilter({ onChange }) {
                         max="1100"
                         onChange={handleChangeMinPrice}
                         className={styles.rangeInput}
-                    />
+                    ></input>
                     <span>{minPrice}€</span>
                 </div>
                 <div>
