@@ -3,7 +3,6 @@ import { useState } from "react"
 import datos from '../mocks/TEST.json'
 import { Tips } from "./Tips"
 import { TopFilter } from "./TopFilter"
-import { fetchData } from "../services/apiFetchData"
 
 export function FilterPage() {
 

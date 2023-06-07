@@ -20,7 +20,7 @@ export function DataFilter({ onChange }) {
         }))
     }
     const handleChangeDays = (event) => {
-        
+
         onChange(prevState => ({
             ...prevState,
             dias: event.target.value
@@ -46,15 +46,15 @@ export function DataFilter({ onChange }) {
             ...prevState,
             hotel: event.target.value
         }))
-    }
+    }  
     const handleResetFilters = () => {
         setMinPrice(0)
         onChange({
-          minPrice: 0,
-          nombre: 'all',
-          continente: 'all',
-          hotel: 'all',
-          dias:'all'
+            minPrice: 0,
+            nombre: 'all',
+            continente: 'all',
+            hotel: 'all',
+            dias: 'all'
         })
         document.getElementById(categoryFilterId).value = 'all';
         document.getElementById(continentFilterId).value = 'all';
@@ -66,16 +66,17 @@ export function DataFilter({ onChange }) {
         <>
             <section className={styles.container} id='top'>
                 <div>
-                    <label htmlFor="price" className={styles.label}>Precio a partir de:</label>
+                    <label htmlFor={minPrice} className={styles.label}>Precio a partir de:</label>
                     <input
                         type="range"
+                        placeholder=''
                         id={minPriceFilterId}
                         min="300"
                         max="1100"
                         onChange={handleChangeMinPrice}
                         className={styles.rangeInput}
                     />
-                    <span>{minPrice}</span>
+                    <span>{minPrice}€</span>
                 </div>
                 <div>
                     <label htmlFor={categoryFilterId} className={styles.label}>Transporte:</label>
@@ -84,7 +85,7 @@ export function DataFilter({ onChange }) {
                         onChange={handleChangeCategory}
                         className={styles.selectInput}
                     >
-                        <option value="all">Todas</option>
+                        <option value="all">Todos</option>
                         <option value="Con Vuelo">Con vuelo</option>
                         <option value="Con tren">Con tren</option>
                     </select>
@@ -96,7 +97,7 @@ export function DataFilter({ onChange }) {
                         onChange={handleChangeContinent}
                         className={styles.selectInput}
                     >
-                        <option value="all">Todas</option>
+                        <option value="all">Todos</option>
                         <option value="Europa">Europa</option>
                         <option value="África">África</option>
                         <option value="Oceanía">Oceanía</option>
@@ -110,7 +111,7 @@ export function DataFilter({ onChange }) {
                         onChange={handleChangeHotel}
                         className={styles.selectInput}
                     >
-                        <option value="all">Todas</option>
+                        <option value="all">Todos</option>
                         <option value="F">En hostal</option>
                         <option value="T">En hotel inferior a 4⭐</option>
                         <option value="TS">En hotel 4 o 5⭐</option>
@@ -123,7 +124,7 @@ export function DataFilter({ onChange }) {
                         onChange={handleChangeDays}
                         className={styles.selectInput}
                     >
-                        <option value="all">Todas</option>
+                        <option value="all">Todos</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -133,7 +134,7 @@ export function DataFilter({ onChange }) {
                         <option value="7">7</option>
                     </select>
                 </div>
-            
+
             </section>
             <button onClick={handleResetFilters} className={styles.resetF}>Reset Filters</button>
         </>
