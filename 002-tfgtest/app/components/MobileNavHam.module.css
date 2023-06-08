@@ -77,7 +77,10 @@
   text-align: center;
 }
 
-.link:hover {
-  background-color: #f0f0f0;
-  color: #ffffff;
+.link:nth-child(even):hover {
+  background-color: #FFA74D;
+}
+
+.link:nth-child(odd):hover {
+  background-color: #53A1AB;
 }

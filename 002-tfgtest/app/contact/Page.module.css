@@ -24,6 +24,7 @@
   flex-basis: 30%;
 }
 
+
 /* Estilos para las etiquetas de los campos */
 .label {
   font-weight: bold;
@@ -44,6 +45,11 @@
   color: red;
   font-size: 0.8rem;
   margin-bottom: 0.5rem;
+}
+
+.tlf{
+text-decoration: none;
+color: orange;
 }
 
 /* Estilos para el borde rojo en caso de error */
@@ -68,6 +74,11 @@
 
 .submitButton:hover {
   background-color: #0056b3;
+}
+
+.centerButton{
+  display: flex;
+  justify-content: center;
 }
 
 /* Estilos para el mensaje de éxito */

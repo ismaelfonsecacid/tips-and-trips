@@ -69,15 +69,18 @@ export default function EmailForm() {
     <div className={styles.main}>
       <div className={styles.info}>
         <p>
-          Si necesitas alguna información especial o tienes alguna pregunta específica sobre nuestros servicios, destinos o cualquier otro aspecto relacionado con los viajes, estaremos encantados de ayudarte. Nuestro equipo de expertos en viajes está disponible para brindarte la asistencia que necesitas.
+          Si necesitas alguna información especial o tienes alguna pregunta específica sobre nuestros servicios, destinos o cualquier otro aspecto relacionado con los viajes, estaremos encantados de ayudarte. 
         </p>
+        <p>Nuestro equipo de expertos en viajes está disponible para brindarte la asistencia que necesitas.</p>
         <p>
-          Por favor, completa el formulario a continuación con tus detalles y tu consulta, y nos pondremos en contacto contigo a la brevedad posible. Queremos asegurarnos de proporcionarte la información precisa y personalizada que estás buscando.
+          Puedes contactarnos por correo electrónico a través del siguiente formulario o por teléfono al <a href="tel:+34689272482" className={styles.tlf}>689 27 24 82</a>.
         </p>
+        <br />
         <p>
           ¡Estamos ansiosos por ayudarte a planificar tu próximo viaje extraordinario!
         </p>
       </div>
+
       <div>
         <form className={styles.formContainer} onSubmit={handleSubmit}>
           <label className={styles.label} htmlFor="email">Dirección de correo electrónico</label>
@@ -108,13 +111,15 @@ export default function EmailForm() {
             className={`${styles.inputField} ${messageHasError ? styles.errorBorder : ''}`}
           />
           {messageError && <p className={styles.error}>{messageError}</p>}
-          <button
-            type="submit"
-            disabled={state.submitting}
-            className={styles.submitButton}
-          >
-            Enviar
-          </button>
+          <div className={styles.centerButton}>
+            <button
+              type="submit"
+              disabled={state.submitting}
+              className={styles.submitButton}
+            >
+              Enviar
+            </button>
+          </div>
           {state.succeeded && (
             <p className={styles.successMessage}>
               ¡Gracias por contactar con Tips & Trips! Serás redirigido a la página original en 5 segundos.
