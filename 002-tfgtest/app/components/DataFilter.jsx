@@ -76,7 +76,7 @@ export function DataFilter({ onChange }) {
                         onChange={handleChangeMinPrice}
                         className={styles.rangeInput}
                     ></input>
-                    <span>{minPrice}€</span>
+                    <span>{minPrice}</span>
                 </div>
                 <div>
                     <label htmlFor={categoryFilterId} className={styles.label}>Transporte:</label>
