@@ -8,8 +8,6 @@ export default async function TripPage({ params }) {
   const { nombre } = params
   const data = await fetchData(URL)
   const datosFiltrados = data.filter(item => item.id === nombre);
-console.log(datosFiltrados.museos)
-
 
 
   return (

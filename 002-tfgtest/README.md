@@ -24,7 +24,6 @@ Progress: [███████████████████████
 - [Estructura de Carpetas](#estructura-de-carpetas)
 - [Información para entender la estructura del proyecto y sus archivos](#información-para-entender-la-estructura-del-proyecto-y-sus-archivos)
   - [NextJS 13](#nextjs-13)
-    - [Esto que quiere decir?](#esto-que-quiere-decir)
   - [Page.jsx](#pagejsx)
   - [Layout.jsx](#layoutjsx)
   - [CSS Modules](#css-modules)
@@ -205,11 +204,18 @@ Estas tecnologías se combinan para crear una aplicación web moderna y escalabl
 
 2. Abre una terminal y dirígete a la carpeta donde deseas crear tu nuevo proyecto con Next.js.
 
-3. Ejecuta el siguiente comando para crear un nuevo proyecto de Next.js:
+3. Clona el repositorio de Next.js desde GitLab o utiliza el comando `npx create-next-app` para crear un nuevo proyecto de Next.js. Aquí tienes ambas opciones:
 
-   ```shell
-   npx create-next-app nombre-del-proyecto
-    ```
+   - Clonar el repositorio de Next.js desde GitLab:
+     ```shell
+     git clone https://gitlab.com/ismanoallaps4/nextjs/-/tree/main/002-tfgtest
+     ```
+   
+   - Utilizar `npx create-next-app` para crear un nuevo proyecto de Next.js:
+     ```shell
+     npx create-next-app nombre-del-proyecto
+     ```
+
 4. Navega a la carpeta raíz del proyecto en la terminal:
      ```shell
    cd nombre-del-proyecto
