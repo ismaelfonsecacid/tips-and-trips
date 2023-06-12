@@ -50,8 +50,8 @@ export function Tips({ datos }) {
                   <ul className={styles.ul2}>
                     <li>
                       <p>
-                          <strong>Alojamiento: </strong>
-                          {dato.categoria.tipo} llamado <strong>{dato.nombreHotel}</strong>
+                        <strong>Alojamiento: </strong>
+                        {dato.categoria.tipo} llamado <strong>{dato.nombreHotel}</strong>
                       </p>
                     </li>
                     <li>
@@ -63,9 +63,11 @@ export function Tips({ datos }) {
                     <li>
                       <p><strong>Transporte</strong>: El precio ronda los {dato.precioTransporte}€</p>
                     </li>
-                    <div className={styles.precio}>
-                      <p>El precio total del viaje sale por {dato.precioViaje}</p>
-                    </div>
+                    <li>
+                      <div className={styles.precio}>
+                        <p>El precio total del viaje sale por {dato.precioViaje}</p>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -80,7 +82,6 @@ export function Tips({ datos }) {
                 </ul>
               </div>
             </div>
-            <div></div>
           </li>
         ))}
       </ul>
