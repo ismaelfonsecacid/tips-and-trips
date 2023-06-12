@@ -27,7 +27,7 @@ function Footer() {
             <footer className={styles.footer}>
                 <ul className={styles.nav}>
                     {links.map(({ label, route }) => (
-                        <li>
+                        <li key={label}>
                             <Link key={route} href={route} className={styles.navItem}>
                                 {label}
                             </Link>
