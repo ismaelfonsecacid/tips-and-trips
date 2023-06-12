@@ -73,6 +73,7 @@ export function DataFilter({ onChange }) {
                         id={minPriceFilterId}
                         min="300"
                         max="1100"
+                        aria-label="Rango de precio"
                         onChange={handleChangeMinPrice}
                         className={styles.rangeInput}
                     ></input>
