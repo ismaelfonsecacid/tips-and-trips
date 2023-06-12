@@ -224,7 +224,6 @@ correctamente.
 
 ## Equipo 
  - Ismael Fonseca Cid - Desarrollador principal - ismanoallaPS4@gmail.com
- - Sara Fernández Gómez - 
 
 ## Recursos Externos
 
