@@ -20,9 +20,6 @@ Progress: [███████████████████████
 
 # Índice
 
-- [Task](#task)
-- [Tips and Trips - Blog de Viajes](#tips-and-trips---blog-de-viajes)
-- [URL](#url)
 - [Descripción del Proyecto](#descripción-del-proyecto)
 - [Estructura de Carpetas](#estructura-de-carpetas)
 - [Información para entender la estructura del proyecto y sus archivos](#información-para-entender-la-estructura-del-proyecto-y-sus-archivos)
