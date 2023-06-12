@@ -5,7 +5,7 @@ Task:
     ✅Realizar la página de contact
 # Tips and Trips - Blog de Viajes
 
-Progress: [████████████████████████████████░░░] 87%
+Progress: [████████████████████████████████░] 92%
 
 
 
@@ -15,7 +15,8 @@ Progress: [███████████████████████
 </p>
 
 ## URL
-https://nextjs-git-main-ismanoallaps4.vercel.app/
+
+ [Tips & Trips](https://nextjs-ismanoallaps4.vercel.app/)
 
 
 ## Descripción del Proyecto
