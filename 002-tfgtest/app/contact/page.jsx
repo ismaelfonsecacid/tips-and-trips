@@ -69,7 +69,7 @@ export default function EmailForm() {
     <div className={styles.main}>
       <div className={styles.info}>
         <p>
-          Si necesitas alguna información especial o tienes alguna pregunta específica sobre nuestros servicios, destinos o cualquier otro aspecto relacionado con los viajes, estaremos encantados de ayudarte. 
+          Si necesitas alguna información especial o tienes alguna pregunta específica sobre nuestros servicios, destinos o cualquier otro aspecto relacionado con los viajes, estaremos encantados de ayudarte.
         </p>
         <p>Nuestro equipo de expertos en viajes está disponible para brindarte la asistencia que necesitas.</p>
         <p>
@@ -107,6 +107,7 @@ export default function EmailForm() {
             id="message"
             name="message"
             required
+            style={{resize:'none',height:'100px'}}
             onBlur={handleMessageBlur}
             className={`${styles.inputField} ${messageHasError ? styles.errorBorder : ''}`}
           />
