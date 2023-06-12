@@ -18,6 +18,23 @@ Progress: [███████████████████████
 
  [Tips & Trips](https://nextjs-ismanoallaps4.vercel.app/)
 
+# Índice
+
+- [Task](#task)
+- [Tips and Trips - Blog de Viajes](#tips-and-trips---blog-de-viajes)
+- [URL](#url)
+- [Descripción del Proyecto](#descripción-del-proyecto)
+- [Estructura de Carpetas](#estructura-de-carpetas)
+- [Información para entender la estructura del proyecto y sus archivos](#información-para-entender-la-estructura-del-proyecto-y-sus-archivos)
+  - [NextJS 13](#nextjs-13)
+    - [Esto que quiere decir?](#esto-que-quiere-decir)
+  - [Page.jsx](#pagejsx)
+  - [Layout.jsx](#layoutjsx)
+  - [CSS Modules](#css-modules)
+- [Tecnologías y herramientas utilizadas](#tecnologías-y-herramientas-utilizadas)
+- [Instalación y Uso de Next.js](#instalación-y-uso-de-nextjs)
+- [Contribución](#contribución)
+- [Licencia](#licencia)
 
 ## Descripción del Proyecto
 ¡Bienvenido/a al repositorio del proyecto Tips and Trips! Este repositorio contiene el código fuente y los recursos relacionados con el desarrollo del blog de viajes Tips and Trips, construido con Next.js. 13 A continuación, encontrarás toda la información necesaria para comprender el proyecto, contribuir a su desarrollo y utilizar Next.js.
