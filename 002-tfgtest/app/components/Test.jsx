@@ -1,36 +1,60 @@
 'use client'
+import React, { useState } from 'react';
 import { app } from '../firebases/firebaseApp';
-import { getDatabase,ref,get,set } from 'firebase/database';
+import { getDatabase, ref, get, set } from 'firebase/database';
 
-// Obtén una referencia a la base de datos
-const database = getDatabase(app);
+function FirebaseComponent() {
+  const [campo1, setCampo1] = useState('');
+  const [campo2, setCampo2] = useState('');
 
-// Ahora puedes utilizar la referencia a la base de datos para realizar operaciones
-// Por ejemplo, puedes obtener una referencia a un nodo y leer o escribir datos en él
-const nodeRef = ref(database, 'prueba');
-
-// Ejemplo de lectura de datos
-get(nodeRef)
-  .then((snapshot) => {
-    if (snapshot.exists()) {
-      const data = snapshot.val();
-      console.log('Datos obtenidos:', data);
-    } else {
-      console.log('No se encontraron datos en el nodo');
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    if (name === 'campo1') {
+      setCampo1(value);
+    } else if (name === 'campo2') {
+      setCampo2(value);
     }
-  })
-  .catch((error) => {
-    console.error('Error al obtener datos:', error);
-  });
+  };
 
-// Ejemplo de escritura de datos
-set(nodeRef, {
-  campo1: 'ismaelfonseca',
-  campo2: 'valor2',
-})
-  .then(() => {
-    console.log('¡Datos escritos exitosamente en Firebase!');
-  })
-  .catch((error) => {
-    console.error('Error al escribir en Firebase:', error);
-  });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Obtén una referencia a la base de datos
+    const database = getDatabase(app);
+
+    // Referencia al nodo 'prueba'
+    const nodeRef = ref(database, 'prueba');
+
+    // Ejemplo de escritura de datos
+    set(nodeRef, {
+      campo1: campo1,
+      campo2: campo2,
+    })
+      .then(() => {
+        console.log('¡Datos escritos exitosamente en Firebase!');
+      })
+      .catch((error) => {
+        console.error('Error al escribir en Firebase:', error);
+      });
+  };
+
+  return (
+    <div>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Campo 1:
+          <input type="text" name="campo1" value={campo1} onChange={handleInputChange} />
+        </label>
+        <br />
+        <label>
+          Campo 2:
+          <input type="text" name="campo2" value={campo2} onChange={handleInputChange} />
+        </label>
+        <br />
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  );
+}
+
+export default FirebaseComponent;
