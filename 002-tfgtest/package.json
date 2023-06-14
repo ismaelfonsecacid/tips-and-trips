@@ -15,7 +15,7 @@
     "@next/font": "^13.4.2",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.2",
-    "firebase": "^9.22.0",
+    "firebase": "^9.22.2",
     "framer-motion": "^10.12.12",
     "next": "13.4.2",
     "postcss-import": "^15.1.0",
@@ -32,5 +32,9 @@
   },
   "devDependencies": {
     "postcss-preset-env": "^8.4.1"
-  }
+  },
+  "description": "Task:     ✅Realizar la página de trips/[nombre]     ✅Realizar la página de tips     ✅Realizar la página de contact # Tips and Trips - Blog de Viajes",
+  "main": "next.config.js",
+  "author": "Ismael Fonseca Cid",
+  "license": "ISC"
 }
