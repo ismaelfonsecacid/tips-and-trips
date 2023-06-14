@@ -25,7 +25,7 @@ get(nodeRef)
 
 // Ejemplo de escritura de datos
 set(nodeRef, {
-  campo1: 'valor1',
+  campo1: 'ismaelfonseca',
   campo2: 'valor2',
 })
   .then(() => {
