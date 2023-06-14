@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import { FilterPage } from '../components/Filter'
-import FirebaseComponent from '../components/Test'
 
 
 export default function TipsPage() {
@@ -28,7 +27,6 @@ export default function TipsPage() {
 
 
       <FilterPage />
-      <FirebaseComponent/>
 
 
     </div>

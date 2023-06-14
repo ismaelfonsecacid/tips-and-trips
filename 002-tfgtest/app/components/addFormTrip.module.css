@@ -1,0 +1,91 @@
+.container {
+  margin: 20px;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-top: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.input {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.select {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #337ab7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.inputError {
+  border: 2px solid red; /* Estilo de borde rojo para resaltar el campo con error */
+}
+.defaultImagesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.defaultImage {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.defaultImage:hover {
+  border-color: #337ab7;
+}
+
+.imgBig{
+  width: 300px;
+  height: auto;
+}
+.selectedImage {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid #337ab7;
+}
+
+.addFormTripDataContainer {
+  margin-top: 20px;
+}
+
+.addFormTripDataItem {
+  margin-bottom: 10px;
+}
+
+.addFormTripDataTitle {
+  font-weight: bold;
+}
+
+.addFormTripDataValue {
+  margin-left: 10px;
+}

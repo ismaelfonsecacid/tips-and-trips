@@ -10,9 +10,10 @@ import { fetchData } from '@/app/services/apiFetchData';
 
 
 export default async function TripPage({ params }) {
-  const URL = 'dataInfoPosts';
+  const URL = 'dataInfoPostsPrueba';
   const { id } = params;
   const data = await fetchData(URL)
+  console.log(id)
 
   const datosFiltrados = data.filter(item => item.id === id);
 
@@ -65,13 +66,6 @@ export default async function TripPage({ params }) {
 
         </div>
       </div>
-
-      <h3>Comida típica</h3>
-      <ul className={styles.foodList}>
-        {lugar.comida_tipica.map(comida => (
-          <li key={comida}>{comida}</li>
-        ))}
-      </ul>
     </div>
 
   );
