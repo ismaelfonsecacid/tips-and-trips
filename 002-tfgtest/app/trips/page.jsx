@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Page.module.css";
 import Image from "next/image";
 import Slider from "../components/Slider";
+import AgregarViaje from "../components/AgregarViaje";
 export default async function TripsPage() {
 
     return (
@@ -25,6 +26,9 @@ export default async function TripsPage() {
             <div className={styles.colordiv} id="lugares">
                 <h2 className={styles.subtitle}>Lugares que hemos visitado</h2>
                 <><Slider /></>
+                <>
+                    <AgregarViaje />
+                </>
 
 
             </div>
