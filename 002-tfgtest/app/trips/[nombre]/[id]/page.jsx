@@ -81,13 +81,6 @@ export default function TripPage({ params }) {
 
         </div>
       </div>
-
-      <h3>Comida típica</h3>
-      <ul className={styles.foodList}>
-        {lugar.comida_tipica.map(comida => (
-          <li key={comida}>{comida}</li>
-        ))}
-      </ul>
     </div>
 
   );
