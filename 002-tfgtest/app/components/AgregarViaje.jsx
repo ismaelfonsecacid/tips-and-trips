@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-// import styles from './AgregarViaje.module.css';
+import styles from './AgregarViaje.module.css';
 // import AddFormTrip from './AddFormTrip';
 // import AddFormTripData from './AddFormTripData';
 
