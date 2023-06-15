@@ -26,13 +26,13 @@ export default async function TripsPage() {
             <div className={styles.colordiv} id="lugares">
                 <h2 className={styles.subtitle}>Lugares que hemos visitado</h2>
                 <><Slider /></>
-                <>
-                    <AgregarViaje />
-                </>
 
 
             </div>
 
+                <>
+                    <AgregarViaje />
+                </>
         </div>
     );
 }
