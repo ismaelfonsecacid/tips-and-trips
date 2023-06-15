@@ -20,7 +20,7 @@ export default function TripPage({ params }) {
 
   useEffect(() => {
     const interval = setInterval(revalidate, 5000); // Revalidar cada 5 segundos
-
+    console.log('yepa')
     return () => clearInterval(interval);
   }, []);
 
