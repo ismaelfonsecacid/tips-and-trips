@@ -1,9 +1,9 @@
 'use client'
 
 import React, { useState } from 'react';
-import styles from './AgregarViaje.module.css';
-import AddFormTrip from './AddFormTrip';
-import AddFormTripData from './AddFormTripData';
+// import styles from './AgregarViaje.module.css';
+// import AddFormTrip from './AddFormTrip';
+// import AddFormTripData from './AddFormTripData';
 
 
 export default function AgregarViaje() {
@@ -42,8 +42,8 @@ export default function AgregarViaje() {
         relevante.
       </p>
       <button onClick={handleClick}>Agregar Viaje</button>
-      {showAddFormTrip && <AddFormTrip onSubmit={handleFormSubmit} />}
-      {showAddFormTripData && <AddFormTripData />}
+      {/* {showAddFormTrip && <AddFormTrip onSubmit={handleFormSubmit} />}
+      {showAddFormTripData && <AddFormTripData />} */}
     </div>
   );
 }
