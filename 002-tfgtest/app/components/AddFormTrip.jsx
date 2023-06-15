@@ -5,7 +5,7 @@ import { app } from '../firebases/firebaseApp';
 import { getDatabase, ref, update, onValue } from 'firebase/database';
 
 import styles from './AddFormTrip.module.css';
-// import AddFormTripData from './AddFormTripData';
+import AddFormTripData from './AddFormTripData';
 
 const defaultImages = [
   '/images/berlin.jpg',
@@ -224,7 +224,7 @@ export default function FirebaseComponent({ onSubmit }) {
           Enviar
         </button>
       </form>
-      {/* {showAddFormTripData && <AddFormTripData />} */}
+      {showAddFormTripData && <AddFormTripData />}
     </div>
   );
   
