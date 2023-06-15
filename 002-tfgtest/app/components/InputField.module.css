@@ -1,0 +1,63 @@
+/* InputField.module.css */
+
+.inputContainer {
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .error {
+    border: 1px solid red;
+  }
+  
+  .errorText {
+    color: red;
+  }
+  
+  /* Estilos para hacerlo responsive */
+  
+  @media screen and (max-width: 600px) {
+    .inputContainer {
+      margin-bottom: 5px;
+    }
+  
+    .label {
+      margin-bottom: 3px;
+    }
+  
+    .input {
+      padding: 6px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .inputContainer {
+      margin-bottom: 3px;
+    }
+  
+    .label {
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+  
+    .input {
+      padding: 4px;
+      font-size: 14px;
+    }
+  
+    .errorText {
+      font-size: 14px;
+    }
+  }
+  

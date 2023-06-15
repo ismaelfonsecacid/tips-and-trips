@@ -3,14 +3,24 @@
 import React, { useState } from 'react';
 import styles from './AgregarViaje.module.css';
 import AddFormTrip from './addFormTrip';
+import AddFormTripData from './addFormTripData';
 
 
 export default function AgregarViaje() {
   const [showAddFormTrip, setShowAddFormTrip] = useState(false);
+  const [showAddFormTripData, setShowAddFormTripData] = useState(false);
 
   const handleClick = () => {
     setShowAddFormTrip(true);
   };
+
+  const handleFormSubmit = () => {
+    setShowAddFormTrip(false);
+    setShowAddFormTripData(true);
+  };
+
+
+
 
   return (
     <div className={styles.contenido2}>
@@ -32,7 +42,8 @@ export default function AgregarViaje() {
         relevante.
       </p>
       <button onClick={handleClick}>Agregar Viaje</button>
-      {showAddFormTrip && <AddFormTrip />}
+      {showAddFormTrip && <AddFormTrip onSubmit={handleFormSubmit} />}
+      {showAddFormTripData && <AddFormTripData />}
     </div>
   );
 }

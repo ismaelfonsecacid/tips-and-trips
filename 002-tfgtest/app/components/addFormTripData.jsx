@@ -1,27 +1,73 @@
 'use client'
 
+
 import React, { useState, useEffect } from 'react';
 import { app } from '../firebases/firebaseApp';
 import { getDatabase, ref, update, onValue } from 'firebase/database';
-import InputField from './InputField';
-import styles from './addFormTrip.module.css';
+import styles from './addFormTripData.module.css';
 
-function FirebaseComponent() {
+const defaultImages = [
+  { url: '/images/bar.jpg', name: 'Restaurante o Bar' },
+  { url: '/images/museo.jpg', name: 'Arte y Entretenimiento' },
+  { url: '/images/rios.jpg', name: 'Río o playa' },
+  { url: '/images/mercadillo.jpg', name: 'Mercadillo o Tienda' }
+];
+
+function AddFormTripData() {
+
   const [data, setData] = useState({
     atracciones: Array(4).fill().map(() => ({
       descripcion: '',
-      img: null,
+      img: '',
       nombre: '',
     })),
     detalles: '',
-    id: '',
+    id:"",
     idioma: '',
     moneda: '',
     nombre: '',
     pais: '',
     poblacion: '',
   });
+
+
   const [count, setCount] = useState(0);
+  const [errors, setErrors] = useState({
+    imgURL: Array(4).fill(false),
+  });
+  const [selectedImages, setSelectedImages] = useState(Array(4).fill(""));
+
+  const handleDefaultImageSelect = (attractionIndex, imageName) => {
+    const selectedImage = defaultImages.find((image) => image.name === imageName);
+
+    setData((prevData) => {
+      const newAttractions = [...prevData.atracciones];
+      newAttractions[attractionIndex] = {
+        ...newAttractions[attractionIndex],
+        img: null,
+        imgURL: selectedImage.url,
+      };
+      return {
+        ...prevData,
+        atracciones: newAttractions,
+      };
+    });
+
+    setSelectedImages((prevSelectedImages) => {
+      const newSelectedImages = [...prevSelectedImages];
+      newSelectedImages[attractionIndex] = imageName;
+      return newSelectedImages;
+    });
+
+    setErrors((prevErrors) => {
+      const newErrors = [...prevErrors.imgURL];
+      newErrors[attractionIndex] = false;
+      return {
+        ...prevErrors,
+        imgURL: newErrors,
+      };
+    });
+  };
 
   useEffect(() => {
     const database = getDatabase(app);
@@ -41,24 +87,6 @@ function FirebaseComponent() {
     }));
   };
 
-  const handleImageUpload = (acceptedFiles, index) => {
-    const image = acceptedFiles[0];
-    const imageURL = URL.createObjectURL(image);
-
-    setData((prevData) => {
-      const newAttractions = [...prevData.atracciones];
-      newAttractions[index] = {
-        ...newAttractions[index],
-        img: image,
-        imgURL: imageURL,
-      };
-      return {
-        ...prevData,
-        atracciones: newAttractions,
-      };
-    });
-  };
-
   const handleAttractionInputChange = (index, field, value) => {
     setData((prevData) => {
       const newAttractions = [...prevData.atracciones];
@@ -76,28 +104,37 @@ function FirebaseComponent() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    setCount((prevCount) => prevCount + 1);
+    const hasEmptyImageURL = data.atracciones.some((attraction) => !attraction.imgURL);
+
+    if (hasEmptyImageURL) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        imgURL: data.atracciones.map((attraction) => !attraction.imgURL),
+      }));
+      return;
+    }
+
+    setCount((prevCount) => prevCount);
     const newCount = count + 1;
 
     const newData = {
       [newCount]: {
-        atracciones: data.atracciones.reduce((acc, attraction, index) => {
-          acc[index] = {
-            descripcion: attraction.descripcion,
-            img: attraction.imgURL,
-            nombre: attraction.nombre,
-          };
-          return acc;
-        }, {}),
+        atracciones: Array(4).fill().map((attraction, index) => ({
+          descripcion: data.atracciones[index].descripcion,
+          img: data.atracciones[index].imgURL,
+          nombre: data.atracciones[index].nombre,
+        })),
         detalles: data.detalles,
-        id: data.id,
+        id: data.nombre.toLowerCase(),
         idioma: data.idioma,
-        moneda: data.moneda.toLowerCase(),
+        moneda: data.moneda,
         nombre: data.nombre,
         pais: data.pais,
         poblacion: data.poblacion,
-      },
+      }
     };
+    
+
 
     const database = getDatabase(app);
     const nodeRef = ref(database, 'dataInfoPostsPrueba');
@@ -105,120 +142,173 @@ function FirebaseComponent() {
     update(nodeRef, newData)
       .then(() => {
         console.log('¡Datos escritos exitosamente en Firebase!');
-        // Borrar los valores de los inputs y las imágenes seleccionadas
-        setData({
-          atracciones: Array(4).fill().map(() => ({
-            descripcion: '',
-            img: null,
-            nombre: '',
-          })),
-          detalles: '',
-          id: '',
-          idioma: '',
-          moneda: '',
-          nombre: '',
-          pais: '',
-          poblacion: '',
-        });
       })
       .catch((error) => {
         console.error('Error al escribir en Firebase:', error);
       });
   };
+  const capitalizeFirstWord = (value) => {
+    if (typeof value !== 'string' || value.length === 0) {
+      return value;
+    }
 
+    const firstChar = value.charAt(0).toUpperCase();
+    const restOfString = value.slice(1).toLowerCase();
+    return firstChar + restOfString;
+  };
   return (
     <div className={styles.container}>
       <form onSubmit={handleSubmit}>
-        <InputField
-          label="Detalles"
-          type="text"
-          name="detalles"
-          value={data.detalles}
-          onChange={handleInputChange}
-        />
+        <div>
+          <label htmlFor="nombre">Ciudad</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            value={capitalizeFirstWord(data.nombre)}
+            onChange={handleInputChange}
+            required
+            className={styles.input}
+          />
+        </div>
         <br />
-        <InputField
-          label="ID"
-          type="text"
-          name="id"
-          value={data.id}
-          onChange={handleInputChange}
-        />
+        <div>
+          <label htmlFor="detalles">Detalles que deberíamos saber sobre {data.nombre}</label>
+          <input
+            type="text"
+            id="detalles"
+            name="detalles"
+            value={data.detalles}
+            onChange={handleInputChange}
+            required
+            className={styles.input}
+          />
+        </div>
         <br />
-        <InputField
-          label="Idioma"
-          type="text"
-          name="idioma"
-          value={data.idioma}
-          onChange={handleInputChange}
-        />
+        <div>
+          <label htmlFor="idioma">Idioma</label>
+          <input
+            type="text"
+            id="idioma"
+            name="idioma"
+            value={capitalizeFirstWord(data.idioma)}
+            onChange={handleInputChange}
+            required
+            className={styles.input}
+          />
+        </div>
         <br />
-        <InputField
-          label="Moneda"
-          type="text"
-          name="moneda"
-          value={data.moneda}
-          onChange={handleInputChange}
-        />
+        <div>
+          <label htmlFor="moneda">Moneda</label>
+          <input
+            type="text"
+            id="moneda"
+            name="moneda"
+            value={capitalizeFirstWord(data.moneda)}
+            onChange={handleInputChange}
+            required
+            className={styles.input}
+          />
+        </div>
         <br />
-        <InputField
-          label="Nombre"
-          type="text"
-          name="nombre"
-          value={data.nombre}
-          onChange={handleInputChange}
-        />
+        <div>
+          <label htmlFor="pais">País</label>
+          <input
+            type="text"
+            id="pais"
+            name="pais"
+            value={capitalizeFirstWord(data.pais)}
+            onChange={handleInputChange}
+            required
+            className={styles.input}
+          />
+        </div>
         <br />
-        <InputField
-          label="País"
-          type="text"
-          name="pais"
-          value={data.pais}
-          onChange={handleInputChange}
-        />
+        <div>
+          <label htmlFor="poblacion">Población</label>
+          <input
+            type="number"
+            id="poblacion"
+            name="poblacion"
+            min={0}
+            value={data.poblacion}
+            onChange={handleInputChange}
+            required
+            className={styles.input}
+          />
+        </div>
         <br />
-        <InputField
-          label="Población"
-          type="text"
-          name="poblacion"
-          value={data.poblacion}
-          onChange={handleInputChange}
-        />
+        <div>
+          <h2>Puntos de interés</h2>
+          <br />
+          {data.atracciones.map((attraction, index) => (
+            <div key={index}>
+              <label htmlFor={`atraccion${index}`}>Punto nº {index + 1}: <span>{attraction.nombre}</span></label>
+              <input
+                type="text"
+                id={`atraccion${index}`}
+                name={`atraccion${index}`}
+                value={capitalizeFirstWord(attraction.nombre)}
+                onChange={(e) =>
+                  handleAttractionInputChange(index, 'nombre', e.target.value)
+                }
+                required
+                className={styles.input}
+              />
+              <br />
+              <label htmlFor={`descripcion${index}`}>Descripción:</label>
+              <textarea
+                id={`descripcion${index}`}
+                name={`descripcion${index}`}
+                value={attraction.descripcion}
+                onChange={(e) =>
+                  handleAttractionInputChange(index, 'descripcion', e.target.value)
+                }
+                required
+                className={styles.textarea}
+              />
+              <br />
+              <label htmlFor={`imagenDefault${index}`}>Tipo de:</label>
+              <select
+                id={`imagenDefault${index}`}
+                name={`imagenDefault${index}`}
+                value={selectedImages[index]}
+                onChange={(e) => handleDefaultImageSelect(index, e.target.value)}
+                required
+                className={styles.select}
+              >
+                <option value="" disabled>
+                  Seleccionar imagen
+                </option>
+                {defaultImages.map((image, imageIndex) => (
+                  <option
+                    key={imageIndex}
+                    value={image.name}
+                    selected={selectedImages[index] === image.name}
+                  >
+                    {image.name}
+                  </option>
+                ))}
+              </select>
+
+              {selectedImages[index] && (
+                <img src={defaultImages.find((image) => image.name === selectedImages[index]).url} alt={`Imagen ${index}`} className={styles.imgBig} />
+              )}
+              <br />
+              {errors.imgURL[index] && (
+                <span className={styles.error}>Por favor, selecciona una imagen</span>
+              )}
+              <br />
+            </div>
+          ))}
+        </div>
         <br />
-        {data.atracciones.map((attraction, index) => (
-          <div key={index}>
-            <InputField
-              label={`Nombre de la atracción ${index + 1}`}
-              type="text"
-              name={`nombre${index}`}
-              value={attraction.nombre}
-              onChange={(e) =>
-                handleAttractionInputChange(index, 'nombre', e.target.value)
-              }
-            />
-            <br />
-            <InputField
-              label={`Descripción de la atracción ${index + 1}`}
-              type="text"
-              name={`descripcion${index}`}
-              value={attraction.descripcion}
-              onChange={(e) =>
-                handleAttractionInputChange(index, 'descripcion', e.target.value)
-              }
-            />
-            <br />
-            <input
-              type="file"
-              accept="image/*"
-              onChange={(e) => handleImageUpload(e.target.files, index)}
-            />
-            {attraction.imgURL && <img src={attraction.imgURL} alt="" />}
-          </div>
-        ))}
-        <button type="submit">Agregar</button>
+        <button type="submit" className={styles.button}>Agregar</button>
       </form>
     </div>
   );
+
+
 }
 
-export default FirebaseComponent;
+export default AddFormTripData;

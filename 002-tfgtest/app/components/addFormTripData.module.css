@@ -1,0 +1,76 @@
+.container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .input,
+  .textarea,
+  .select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .textarea {
+    resize: none;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  .imgBig {
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .error {
+    color: red;
+    border-color: red;
+  }
+  
+  @media (max-width: 800px) {
+    .container{
+        width: 600px;
+    }
+    }
+
+
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+      max-width: 400px;
+    }
+    
+    .input,
+    .textarea,
+    .select {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .container {
+      max-width: 300px;
+    }
+  }
+  

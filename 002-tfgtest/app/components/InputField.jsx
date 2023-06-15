@@ -1,6 +1,11 @@
-import React from 'react';
 
-function InputField({ label, type, name, value, onChange, required, error, errorMessage }) {
+// InputField.js
+import React from 'react';
+import styles from './InputField.module.css';
+
+function InputField({ label, type, name, value, onChange, required, disabled, error,placeHolder }) {
+  const errorClass = error ? styles.error : '';
+
   return (
     <div>
       <label>
@@ -10,8 +15,10 @@ function InputField({ label, type, name, value, onChange, required, error, error
           name={name}
           value={value}
           onChange={onChange}
-          required={required}
-          className={error ? 'error' : ''}
+          required
+          className={`${styles.input} ${errorClass}`}
+          disabled={disabled}
+          placeholder={placeHolder}
         />
       </label>
     </div>

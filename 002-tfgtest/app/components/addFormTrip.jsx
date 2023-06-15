@@ -3,9 +3,9 @@
 import React, { useState, useEffect } from 'react';
 import { app } from '../firebases/firebaseApp';
 import { getDatabase, ref, update, onValue } from 'firebase/database';
-import InputField from './InputField';
+
 import styles from './addFormTrip.module.css';
-import AddFormTripData from './addFormTripData';
+import AddFormTripData from './AddFormTripData';
 
 const defaultImages = [
   '/images/berlin.jpg',
@@ -14,7 +14,7 @@ const defaultImages = [
   '/images/sidney.jpg'
 ];
 
-function FirebaseComponent() {
+function FirebaseComponent({ onSubmit }) {
   const [data, setData] = useState({
     body: '',
     ciudad: '',
@@ -25,17 +25,13 @@ function FirebaseComponent() {
     imgURL: '',
     resume: ''
   });
+
   const [count, setCount] = useState(0);
   const [showAddFormTripData, setShowAddFormTripData] = useState(false);
   const [selectedDefaultImage, setSelectedDefaultImage] = useState('');
-  const [inputErrors, setInputErrors] = useState({
-    body: false,
-    ciudad: false,
-    continente: false,
-    fecha: false,
-    imgURL: false,
-    resume: false
-  });
+  const [disabled, setDisabled] = useState(false);
+  const [cityIdExists, setCityIdExists] = useState(false);
+  const [id, setId] = useState('');
 
   useEffect(() => {
     const database = getDatabase(app);
@@ -44,6 +40,7 @@ function FirebaseComponent() {
     onValue(nodeRef, (snapshot) => {
       const dataSize = snapshot.val() ? Object.keys(snapshot.val()).length : 0;
       setCount(dataSize - 1);
+      setCityIdExists(false);
     });
   }, []);
 
@@ -63,29 +60,15 @@ function FirebaseComponent() {
     }));
   };
 
-  const validateInputs = () => {
-    const errors = {
-      body: !data.body,
-      ciudad: !data.ciudad,
-      continente: !data.continente,
-      fecha: !data.fecha,
-      imgURL: !data.imgURL,
-      resume: !data.resume
-    };
-
-    setInputErrors(errors);
-
-    return Object.values(errors).every((error) => !error);
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!validateInputs()) {
-      alert('Faltan campos obligatorios');
+    if (selectedDefaultImage === '') {
+      setId('');
       return;
     }
 
+    const cityId = data.ciudad.replace(/\s+/g, '').toLowerCase();
     setCount((prevCount) => prevCount + 1);
     const newCount = count + 1;
 
@@ -95,7 +78,7 @@ function FirebaseComponent() {
         ciudad: data.ciudad,
         continente: data.continente,
         fecha: data.fecha,
-        id: data.ciudad.toLowerCase(),
+        id: cityId,
         img: data.imgURL,
         resume: data.resume
       }
@@ -107,59 +90,74 @@ function FirebaseComponent() {
     update(nodeRef, newData)
       .then(() => {
         console.log('¡Datos escritos exitosamente en Firebase!');
-        setData({
-          body: '',
-          ciudad: '',
-          continente: '',
-          fecha: '',
-          id: '',
-          imgFile: null,
-          imgURL: '',
-          resume: ''
-        });
         setShowAddFormTripData(true);
+        setDisabled(true);
       })
       .catch((error) => {
         console.error('Error al escribir en Firebase:', error);
       });
+      onSubmit();
   };
+
+  useEffect(() => {
+    const database = getDatabase(app);
+    const nodeRef = ref(database, 'dataResultsPrueba');
+
+    onValue(nodeRef, (snapshot) => {
+      const cityId = data.ciudad.toLowerCase();
+      const cityIdExists = Object.values(snapshot.val() || {}).some((item) => item.id === cityId);
+      setCityIdExists(cityIdExists);
+    });
+  }, [data.ciudad]);
 
   return (
     <div className={styles.container}>
       <form className={styles.form} onSubmit={handleSubmit}>
-        <InputField
-          label="Body"
-          type="text"
-          name="body"
-          value={data.body}
-          onChange={handleInputChange}
-          className={styles.input}
-          required
-          error={inputErrors.body}
-          errorMessage="Este campo es obligatorio"
-        />
-        <br />
-        <InputField
-          label="Ciudad"
-          type="text"
-          name="ciudad"
-          value={data.ciudad}
-          onChange={handleInputChange}
-          className={styles.input}
-          required
-          error={inputErrors.ciudad}
-          errorMessage="Este campo es obligatorio"
-        />
-        <br />
-        <label className={styles.label}>
-          Continente:
+        <div>
+          <label htmlFor="body" className={styles.label}>
+            Body:
+          </label>
+          <input
+            type="text"
+            id="body"
+            name="body"
+            value={data.body}
+            onChange={handleInputChange}
+            required
+            disabled={disabled}
+            className={styles.input}
+          />
+        </div>
+  
+        <div>
+          <label htmlFor="ciudad" className={styles.label}>
+            Ciudad:
+          </label>
+          <input
+            type="text"
+            id="ciudad"
+            name="ciudad"
+            value={data.ciudad}
+            onChange={handleInputChange}
+            required
+            disabled={disabled}
+            className={styles.input}
+          />
+          {cityIdExists && <p className={styles.errorText}>El viaje a la ciudad ya existe o se acaba de agregar</p>}
+        </div>
+  
+        <div>
+          <label htmlFor="continente" className={styles.label}>
+            Continente:
+          </label>
           <select
+            id="continente"
             name="continente"
             value={data.continente}
             onChange={handleInputChange}
-            className={styles.select}
             required
-            error={inputErrors.continente}
+            disabled={disabled}
+            className={styles.select}
           >
             <option value="">Seleccionar continente</option>
             <option value="africa">África</option>
@@ -168,57 +166,68 @@ function FirebaseComponent() {
             <option value="europa">Europa</option>
             <option value="oceania">Oceanía</option>
           </select>
-        </label>
-        <br />
-        <InputField
-          label="Fecha"
-          type="date"
-          name="fecha"
-          value={data.fecha}
-          onChange={handleInputChange}
-          className={styles.input}
-          required
-          error={inputErrors.fecha}
-          errorMessage="Este campo es obligatorio"
-        />
-        <br />
-        <div className={styles.defaultImagesContainer}>
-            <span>Elige una imagen por defecto: </span>
-          {defaultImages.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`Default Image ${index + 1}`}
-              className={selectedDefaultImage === image ? styles.selectedImage : styles.defaultImage}
-              onClick={() => handleDefaultImageSelect(image)}
-            />
-          ))}
         </div>
-        <div className={styles.divImg}>
-          {selectedDefaultImage && (
-            <img src={selectedDefaultImage} alt="Imagen seleccionada" className={styles.imgBig} />
-          )}
+  
+        <div>
+          <label htmlFor="fecha" className={styles.label}>
+            Fecha:
+          </label>
+          <input
+            type="date"
+            id="fecha"
+            name="fecha"
+            value={data.fecha}
+            onChange={handleInputChange}
+            required
+            disabled={disabled}
+            className={styles.input}
+          />
         </div>
-        <br />
-        <InputField
-          label="Resumen"
-          type="text"
-          name="resume"
-          value={data.resume}
-          onChange={handleInputChange}
-          className={styles.input}
-          required
-          error={inputErrors.resume}
-          errorMessage="Este campo es obligatorio"
-        />
-        <br />
-        <button type="submit" className={styles.button}>
+  
+        <div>
+          <span>Elige una imagen por defecto: </span>
+          <div className={styles.defaultImagesContainer}>
+            {defaultImages.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`Default Image ${index + 1}`}
+                className={selectedDefaultImage === image ? styles.selectedImage : styles.defaultImage}
+                onClick={() => handleDefaultImageSelect(image)}
+              />
+            ))}
+          </div>
+          <div className={styles.divImg}>
+            {selectedDefaultImage && (
+              <img src={selectedDefaultImage} alt="Imagen seleccionada" className={styles.imgBig} />
+            )}
+          </div>
+        </div>
+  
+        <div>
+          <label htmlFor="resume" className={styles.label}>
+            Resumen:
+          </label>
+          <input
+            type="text"
+            id="resume"
+            name="resume"
+            value={data.resume}
+            onChange={handleInputChange}
+            required
+            disabled={disabled}
+            className={styles.input}
+          />
+        </div>
+  
+        <button type="submit" className={styles.button} disabled={cityIdExists || disabled}>
           Enviar
         </button>
       </form>
       {showAddFormTripData && <AddFormTripData />}
     </div>
   );
+  
 }
 
 export default FirebaseComponent;
