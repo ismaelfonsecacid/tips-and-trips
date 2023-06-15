@@ -1,27 +1,43 @@
 
+'use client'
+import { useEffect } from 'react';
+import useSWR from 'swr';
 import WeatherEmoji from '@/app/components/WeatherEmoji';
 import styles from './Page.module.css';
-// import jsonData from '../../../json/infoPosts.json'
-
 import Image from 'next/image';
 import NotFound from '@/app/not-found';
 import { fetchData } from '@/app/services/apiFetchData';
 
+const fetcher = (url) => fetchData(url);
 
-
-export default async function TripPage({ params }) {
+export default function TripPage({ params }) {
   const URL = 'dataInfoPostsPrueba';
   const { id } = params;
-  const data = await fetchData(URL)
 
-  const datosFiltrados = data.filter(item => item.id === id);
+  const { data, error, revalidate } = useSWR(URL, fetcher, {
+    refreshInterval: 5000, // Revalidar cada 5 segundos
+  });
 
+  useEffect(() => {
+    const interval = setInterval(revalidate, 5000); // Revalidar cada 5 segundos
 
+    return () => clearInterval(interval);
+  }, []);
+
+  if (error) {
+    return <NotFound />;
+  }
+
+  if (!data) {
+    return <div>Cargando...</div>;
+  }
+
+  const datosFiltrados = data.filter((item) => item.id === id);
   const lugar = datosFiltrados[0];
 
-  if (lugar == undefined)
-  return <NotFound/>
-
+  if (!lugar) {
+    return <NotFound />;
+  }
 
   return (
 
