@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from 'react';
 import { app } from '../firebases/firebaseApp';
 import { getDatabase, ref, update, onValue } from 'firebase/database';
-import styles from './addFormTripData.module.css';
+import styles from './AddFormTripData.module.css';
 
 const defaultImages = [
   { url: '/images/bar.jpg', name: 'Restaurante o Bar' },

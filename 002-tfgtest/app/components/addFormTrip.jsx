@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { app } from '../firebases/firebaseApp';
 import { getDatabase, ref, update, onValue } from 'firebase/database';
 
-import styles from './addFormTrip.module.css';
+import styles from './AddFormTrip.module.css';
 import AddFormTripData from './AddFormTripData';
 
 const defaultImages = [
@@ -14,7 +14,7 @@ const defaultImages = [
   '/images/sidney.jpg'
 ];
 
-function FirebaseComponent({ onSubmit }) {
+export default function FirebaseComponent({ onSubmit }) {
   const [data, setData] = useState({
     body: '',
     ciudad: '',
@@ -229,5 +229,3 @@ function FirebaseComponent({ onSubmit }) {
   );
   
 }
-
-export default FirebaseComponent;

@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react';
 import styles from './AgregarViaje.module.css';
-import AddFormTrip from './addFormTrip';
-import AddFormTripData from './addFormTripData';
+import AddFormTrip from './AddFormTrip';
+import AddFormTripData from './AddFormTripData';
 
 
 export default function AgregarViaje() {
