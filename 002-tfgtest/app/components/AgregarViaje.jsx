@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import styles from './AgregarViaje.module.css';
 import AddFormTrip from './AddFormTrip';
-// import AddFormTripData from './AddFormTripData';
+import AddFormTripData from './AddFormTripData';
 
 
 export default function AgregarViaje() {
@@ -43,7 +43,7 @@ export default function AgregarViaje() {
       </p>
       <button onClick={handleClick}>Agregar Viaje</button>
       {showAddFormTrip && <AddFormTrip onSubmit={handleFormSubmit} />}
-      {/* {showAddFormTripData && <AddFormTripData />} */}
+      {showAddFormTripData && <AddFormTripData />}
     </div>
   );
 }
