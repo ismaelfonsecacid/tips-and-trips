@@ -22,7 +22,7 @@ export default function AgregarViaje() {
   const handleFormSubmit = () => {
     setShowAddFormTrip(false);
     setShowAddFormTripData(true);
-    setShowCancelButton(false);
+    setShowCancelButton(true);
   };
 
   const handleCancelClick = () => {

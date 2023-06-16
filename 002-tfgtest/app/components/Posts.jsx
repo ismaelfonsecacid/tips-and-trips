@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { fetchData } from '../services/apiFetchData';
 
 export default async function Posts() {
-const URL = 'results';
+const URL = 'dataResultsPrueba';
 const jsonData = await fetchData(URL);
 
 
@@ -14,7 +14,7 @@ const jsonData = await fetchData(URL);
         <>
             <h1 style={{textAlign:'center', marginTop:'30px'}}>Nuestros viajes</h1>
             <div className={styles.grid_container}>
-                {jsonData.splice(0, 3).map((item) => (
+                {jsonData.splice(3,3).map((item) => (
                     <Link className={styles.link} href={`/trips/${item.continente}/${item.id}`} key={item.id}>
                         <div className={styles.grid_item}>
                         <Image src={item.img} alt={item.ciudad} className={styles.image} width={'400'}height={'300'}/>
