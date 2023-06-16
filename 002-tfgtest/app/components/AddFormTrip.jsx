@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { app } from '../firebases/firebaseApp';
-import { getDatabase, ref, update, onValue } from 'firebase/database';
+import { getDatabase, ref, update, onValue, orderByKey, get, limitToLast, child, onChildAdded } from 'firebase/database';
 
 import styles from './AddFormTrip.module.css';
 import AddFormTripData from './AddFormTripData';
@@ -31,7 +31,15 @@ export default function FirebaseComponent({ onSubmit }) {
   const [selectedDefaultImage, setSelectedDefaultImage] = useState('');
   const [disabled, setDisabled] = useState(false);
   const [cityIdExists, setCityIdExists] = useState(false);
-  const [id, setId] = useState('');
+  const capitalizeFirstWord = (value) => {
+    if (typeof value !== 'string' || value.length === 0) {
+      return value;
+    }
+
+    const firstChar = value.charAt(0).toUpperCase();
+    const restOfString = value.slice(1).toLowerCase();
+    return firstChar + restOfString;
+  };
 
   useEffect(() => {
     const database = getDatabase(app);
@@ -78,7 +86,7 @@ export default function FirebaseComponent({ onSubmit }) {
         ciudad: data.ciudad,
         continente: data.continente,
         fecha: data.fecha,
-        id: cityId,
+        id: cityId.toLowerCase(),
         img: data.imgURL,
         resume: data.resume
       }
@@ -96,7 +104,7 @@ export default function FirebaseComponent({ onSubmit }) {
       .catch((error) => {
         console.error('Error al escribir en Firebase:', error);
       });
-      onSubmit();
+    onSubmit();
   };
 
   useEffect(() => {
@@ -128,7 +136,7 @@ export default function FirebaseComponent({ onSubmit }) {
             className={styles.input}
           />
         </div>
-  
+
         <div>
           <label htmlFor="ciudad" className={styles.label}>
             Ciudad:
@@ -137,7 +145,7 @@ export default function FirebaseComponent({ onSubmit }) {
             type="text"
             id="ciudad"
             name="ciudad"
-            value={data.ciudad}
+            value={capitalizeFirstWord(data.ciudad)}
             onChange={handleInputChange}
             required
             disabled={disabled}
@@ -145,7 +153,7 @@ export default function FirebaseComponent({ onSubmit }) {
           />
           {cityIdExists && <p className={styles.errorText}>El viaje a la ciudad ya existe o se acaba de agregar</p>}
         </div>
-  
+
         <div>
           <label htmlFor="continente" className={styles.label}>
             Continente:
@@ -167,7 +175,7 @@ export default function FirebaseComponent({ onSubmit }) {
             <option value="oceania">Oceanía</option>
           </select>
         </div>
-  
+
         <div>
           <label htmlFor="fecha" className={styles.label}>
             Fecha:
@@ -183,7 +191,7 @@ export default function FirebaseComponent({ onSubmit }) {
             className={styles.input}
           />
         </div>
-  
+
         <div>
           <span>Elige una imagen por defecto: </span>
           <div className={styles.defaultImagesContainer}>
@@ -203,7 +211,7 @@ export default function FirebaseComponent({ onSubmit }) {
             )}
           </div>
         </div>
-  
+
         <div>
           <label htmlFor="resume" className={styles.label}>
             Resumen:
@@ -219,13 +227,13 @@ export default function FirebaseComponent({ onSubmit }) {
             className={styles.input}
           />
         </div>
-  
+
         <button type="submit" className={styles.button} disabled={cityIdExists || disabled}>
-          Enviar
+          Siguiente
         </button>
       </form>
       {showAddFormTripData && <AddFormTripData />}
     </div>
   );
-  
+
 }

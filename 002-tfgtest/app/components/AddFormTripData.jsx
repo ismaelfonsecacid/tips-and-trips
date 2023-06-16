@@ -13,7 +13,7 @@ const defaultImages = [
   { url: '/images/mercadillo.jpg', name: 'Mercadillo o Tienda' }
 ];
 
-function AddFormTripData() {
+function AddFormTripData({onCloseForm}) {
 
   const [data, setData] = useState({
     atracciones: Array(4).fill().map(() => ({
@@ -68,6 +68,25 @@ function AddFormTripData() {
       };
     });
   };
+
+  const [lastID,setLastID] = useState('')
+
+  useEffect(() => {
+    const database = getDatabase(app);
+    const nodeRef = ref(database, 'dataResultsPrueba');
+
+    const unsubscribe = onValue(nodeRef, (snapshot) => {
+      const data = snapshot.val();
+      let lastPositionId = data[data.length - 1].id;
+      setLastID(lastPositionId)
+      console.log(lastPositionId)
+    });
+
+    return () => {
+      // Limpia la suscripción cuando el componente se desmonta
+      unsubscribe();
+    };
+  }, []);
 
   useEffect(() => {
     const database = getDatabase(app);
@@ -125,10 +144,10 @@ function AddFormTripData() {
           nombre: data.atracciones[index].nombre,
         })),
         detalles: data.detalles,
-        id: data.nombre.toLowerCase(),
+        id:lastID,
         idioma: data.idioma,
         moneda: data.moneda,
-        nombre: data.nombre,
+        nombre: capitalizeFirstWord(lastID),
         pais: data.pais,
         poblacion: data.poblacion,
       }
@@ -142,6 +161,7 @@ function AddFormTripData() {
     update(nodeRef, newData)
       .then(() => {
         console.log('¡Datos escritos exitosamente en Firebase!');
+        onCloseForm();
       })
       .catch((error) => {
         console.error('Error al escribir en Firebase:', error);
@@ -159,21 +179,9 @@ function AddFormTripData() {
   return (
     <div className={styles.container}>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="nombre">Ciudad</label>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            value={capitalizeFirstWord(data.nombre)}
-            onChange={handleInputChange}
-            required
-            className={styles.input}
-          />
-        </div>
         <br />
         <div>
-          <label htmlFor="detalles">Detalles que deberíamos saber sobre {data.nombre}</label>
+          <label htmlFor="detalles">Detalles que deberíamos saber sobre: <strong>{capitalizeFirstWord(lastID)}</strong></label>
           <input
             type="text"
             id="detalles"
@@ -243,7 +251,7 @@ function AddFormTripData() {
           <br />
           {data.atracciones.map((attraction, index) => (
             <div key={index}>
-              <label htmlFor={`atraccion${index}`}>Punto nº {index + 1}: <span>{attraction.nombre}</span></label>
+              <label htmlFor={`atraccion${index}`}>Punto nº {index + 1}: <span style={{color:'green'}}>{attraction.nombre}</span></label>
               <input
                 type="text"
                 id={`atraccion${index}`}

@@ -11,6 +11,7 @@
   border-radius: 10px;
   background-color: #f9f9f9;
   font-size: 18px;
+  border-radius: 50px;
 }
 
 .cityContainerlat {
@@ -33,7 +34,13 @@
   margin: 20px;
 }
 .atracciones {
-  background-color:rgb(255,185,110);
+  border-radius: 50px;
+  background-color:rgb(255,185,110,85%);
+}
+.atracciones img {
+  border-radius: 30px;
+  box-shadow: 0px 10px 10px -6px black;
+  margin-bottom: 1em;
 }
 .attraction {
   display: grid;
@@ -54,6 +61,13 @@
   padding: 15px 20px;
   border-radius: 25px;
   background-color: rgba(14, 151, 224, 30%);
+}
+@media (min-width: 1200px) {
+.attraction {
+
+  grid-template-columns: 1fr 1fr;
+
+}
 }
 
 .attraction img {
@@ -77,7 +91,7 @@ margin-right: 3%;
 }
 
 /* Media Query para dispositivos móviles */
-@media (max-width: 750px) {
+@media (max-width: 700px) {
   .cityContainer {
     margin: 10px;
     padding: 10px;

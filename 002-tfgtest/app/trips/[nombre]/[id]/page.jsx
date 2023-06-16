@@ -20,7 +20,6 @@ export default function TripPage({ params }) {
 
   useEffect(() => {
     const interval = setInterval(revalidate, 5000); // Revalidar cada 5 segundos
-    console.log('yepa')
     return () => clearInterval(interval);
   }, []);
 
@@ -70,7 +69,8 @@ export default function TripPage({ params }) {
                 alt={atraccion.nombre}
                 width={'200'}
                 height={'250'}
-                sizes="(height: 250px)"
+                className={styles.imgF}
+               
               />
               <div className={styles.aside}>
                 <h4>{atraccion.nombre}</h4>

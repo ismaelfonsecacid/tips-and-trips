@@ -6,19 +6,39 @@ import AddFormTrip from './AddFormTrip';
 import AddFormTripData from './AddFormTripData';
 
 
+
 export default function AgregarViaje() {
   const [showAddFormTrip, setShowAddFormTrip] = useState(false);
   const [showAddFormTripData, setShowAddFormTripData] = useState(false);
+  const [showCancelButton, setShowCancelButton] = useState(false);
+  const [showMessage, setShowMessage] = useState(false);
 
   const handleClick = () => {
-    setShowAddFormTrip(true);
+    setShowAddFormTrip(!showAddFormTrip);
+    setShowAddFormTripData(false);
+    setShowCancelButton(!showCancelButton);
   };
 
   const handleFormSubmit = () => {
     setShowAddFormTrip(false);
     setShowAddFormTripData(true);
+    setShowCancelButton(false);
   };
 
+  const handleCancelClick = () => {
+    setShowAddFormTrip(false);
+    setShowAddFormTripData(false);
+    setShowCancelButton(false);
+  };
+
+  const handleCloseForm = () => {
+    setShowAddFormTripData(false);
+    setShowMessage(true); // Mostrar el mensaje al cerrar el formulario
+
+    setTimeout(() => {
+      setShowMessage(false); // Ocultar el mensaje después de 5 segundos
+    }, 5000);
+  };
 
 
 
@@ -41,9 +61,18 @@ export default function AgregarViaje() {
         No dudes en incluir detalles interesantes, anécdotas divertidas o cualquier otro aspecto que consideres
         relevante.
       </p>
-      <button onClick={handleClick}>Agregar Viaje</button>
+      <button
+        onClick={showCancelButton ? handleCancelClick : handleClick}
+        className={`${styles.button} ${showCancelButton ? styles.cancelButton : styles.addButton}`}
+      >
+        {showCancelButton ? 'Cancelar' : 'Agregar Viaje'}
+      </button>
       {showAddFormTrip && <AddFormTrip onSubmit={handleFormSubmit} />}
-      {showAddFormTripData && <AddFormTripData />}
+      {showAddFormTripData && (
+        <AddFormTripData onCloseForm={handleCloseForm} />
+      )}
+      {showMessage && <div><span style={{color:'green'}}>¡Muchas gracias por agregar un nuevo viaje!</span></div>}
+
     </div>
   );
 }

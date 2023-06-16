@@ -22,7 +22,7 @@ export function FilterPage() {
     )
 
     const filterProducts = (products) => {
-        console.log(products)
+        
         return products.filter(product => {
             return (
                 product.precioViaje >= filters.minPrice &&
@@ -49,7 +49,7 @@ export function FilterPage() {
     }
 
     const filteredProducts = filterProducts(products)
-    console.log(filteredProducts)
+   
 
     return (
 
