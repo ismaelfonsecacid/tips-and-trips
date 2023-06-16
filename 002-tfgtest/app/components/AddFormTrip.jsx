@@ -2,16 +2,16 @@
 
 import React, { useState, useEffect } from 'react';
 import { app } from '../firebases/firebaseApp';
-import { getDatabase, ref, update, onValue, orderByKey, get, limitToLast, child, onChildAdded } from 'firebase/database';
+import { getDatabase, ref, update, onValue} from 'firebase/database';
 
 import styles from './AddFormTrip.module.css';
 import AddFormTripData from './AddFormTripData';
 
 const defaultImages = [
-  '/images/berlin.jpg',
-  '/images/estambul.jpg',
-  '/images/rio.jpg',
-  '/images/sidney.jpg'
+  '/images/def1.jpg',
+  '/images/def2.jpg',
+  '/images/def3.jpg',
+  '/images/def4.jpg'
 ];
 
 export default function FirebaseComponent({ onSubmit }) {

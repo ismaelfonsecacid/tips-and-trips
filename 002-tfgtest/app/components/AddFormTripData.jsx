@@ -166,6 +166,8 @@ function AddFormTripData({onCloseForm}) {
       .catch((error) => {
         console.error('Error al escribir en Firebase:', error);
       });
+
+      
   };
   const capitalizeFirstWord = (value) => {
     if (typeof value !== 'string' || value.length === 0) {
@@ -177,7 +179,7 @@ function AddFormTripData({onCloseForm}) {
     return firstChar + restOfString;
   };
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='addFormData'>
       <form onSubmit={handleSubmit}>
         <br />
         <div>
