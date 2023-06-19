@@ -15,7 +15,7 @@ export default function TripPage({ params }) {
   const { id } = params;
 
   const { data, error, revalidate } = useSWR(URL, fetcher, {
-    refreshInterval: 20, // Revalidar cada 5 segundos
+    refreshInterval: 5000, // Revalidar cada 5 segundos
   });
 
   useEffect(() => {
