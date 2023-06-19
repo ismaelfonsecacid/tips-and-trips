@@ -177,6 +177,8 @@ function AddFormTripData({ onCloseForm }) {
     const restOfString = value.slice(1).toLowerCase();
     return firstChar + restOfString;
   };
+
+  
   return (
     <div className={styles.container} id='addFormData'>
       <form onSubmit={handleSubmit}>

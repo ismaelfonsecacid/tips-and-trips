@@ -71,7 +71,7 @@ export default function AgregarViaje() {
       {showAddFormTripData && (
         <AddFormTripData onCloseForm={handleCloseForm} />
       )}
-      {showMessage && <div><span style={{color:'green'}}>¡Muchas gracias por agregar un nuevo viaje!</span></div>}
+      {showMessage && <div><span style={{color:'green'}}>¡Muchas gracias por agregar un nuevo viaje! Puedes revisarlo al final del slider anterior</span></div>}
 
     </div>
   );

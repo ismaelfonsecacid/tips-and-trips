@@ -34,7 +34,6 @@ const Slider = () => {
   React.useEffect(() => {
     const interval = setInterval(() => {
       mutate();
-      console.log('mutate')
     }, 10000);
 
     return () => clearInterval(interval);

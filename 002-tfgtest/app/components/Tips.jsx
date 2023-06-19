@@ -6,7 +6,6 @@ import { useState } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 export function Tips({ datos }) {
-  console.log(datos);
 
   const [showMore, setShowMore] = useState(5);
 
