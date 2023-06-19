@@ -13,7 +13,7 @@ const defaultImages = [
   { url: '/images/mercadillo.jpg', name: 'Mercadillo o Tienda' }
 ];
 
-function AddFormTripData({onCloseForm}) {
+function AddFormTripData({ onCloseForm }) {
 
   const [data, setData] = useState({
     atracciones: Array(4).fill().map(() => ({
@@ -22,7 +22,7 @@ function AddFormTripData({onCloseForm}) {
       nombre: '',
     })),
     detalles: '',
-    id:"",
+    id: "",
     idioma: '',
     moneda: '',
     nombre: '',
@@ -69,7 +69,7 @@ function AddFormTripData({onCloseForm}) {
     });
   };
 
-  const [lastID,setLastID] = useState('')
+  const [lastID, setLastID] = useState('')
 
   useEffect(() => {
     const database = getDatabase(app);
@@ -79,7 +79,6 @@ function AddFormTripData({onCloseForm}) {
       const data = snapshot.val();
       let lastPositionId = data[data.length - 1].id;
       setLastID(lastPositionId)
-      console.log(lastPositionId)
     });
 
     return () => {
@@ -143,16 +142,16 @@ function AddFormTripData({onCloseForm}) {
           img: data.atracciones[index].imgURL,
           nombre: data.atracciones[index].nombre,
         })),
-        detalles: data.detalles,
-        id:lastID,
-        idioma: data.idioma,
-        moneda: data.moneda,
+        detalles: capitalizeFirstWord(data.detalles),
+        id: lastID,
+        idioma: capitalizeFirstWord(data.idioma),
+        moneda: capitalizeFirstWord(data.moneda),
         nombre: capitalizeFirstWord(lastID),
-        pais: data.pais,
+        pais: capitalizeFirstWord(data.pais),
         poblacion: data.poblacion,
       }
     };
-    
+
 
 
     const database = getDatabase(app);
@@ -167,7 +166,7 @@ function AddFormTripData({onCloseForm}) {
         console.error('Error al escribir en Firebase:', error);
       });
 
-      
+
   };
   const capitalizeFirstWord = (value) => {
     if (typeof value !== 'string' || value.length === 0) {
@@ -253,7 +252,7 @@ function AddFormTripData({onCloseForm}) {
           <br />
           {data.atracciones.map((attraction, index) => (
             <div key={index}>
-              <label htmlFor={`atraccion${index}`}>Punto nº {index + 1}: <span style={{color:'green'}}>{attraction.nombre}</span></label>
+              <label htmlFor={`atraccion${index}`}>Punto nº {index + 1}: <span style={{ color: 'green' }}>{attraction.nombre}</span></label>
               <input
                 type="text"
                 id={`atraccion${index}`}
