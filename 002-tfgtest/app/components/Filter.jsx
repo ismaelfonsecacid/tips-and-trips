@@ -8,7 +8,7 @@ export function FilterPage() {
 
 
     const [products] = useState(datos)
-    console.log(Array.isArray(products))
+
 
 
     const [filters, setFilters] = useState(

@@ -65,9 +65,8 @@
 }
 
 .precio p {
-  background-color: orange;
-
-  padding: 10px 15px;
+  border-bottom: 1px solid;
+  padding: 5px 15px;
   margin-bottom: 20px;
 
 }
@@ -86,7 +85,7 @@
 }
 
 @media (max-width: 300px) {
-  .img{
+  .img {
     width: 150px;
     height: 150px;
   }

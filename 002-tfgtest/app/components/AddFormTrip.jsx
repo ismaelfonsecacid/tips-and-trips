@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { app } from '../firebases/firebaseApp';
-import { getDatabase, ref, update, onValue} from 'firebase/database';
+import { getDatabase, ref, update, onValue } from 'firebase/database';
 
 import styles from './AddFormTrip.module.css';
 import AddFormTripData from './AddFormTripData';
@@ -25,6 +25,9 @@ export default function FirebaseComponent({ onSubmit }) {
     imgURL: '',
     resume: ''
   });
+
+
+  const [error, setError] = useState(false);
 
   const [count, setCount] = useState(0);
   const [showAddFormTripData, setShowAddFormTripData] = useState(false);
@@ -58,6 +61,15 @@ export default function FirebaseComponent({ onSubmit }) {
       ...prevData,
       [name]: value
     }));
+
+    const inputValue = e.target.value;
+    const pattern = /^[A-Za-z\s]+$/;
+
+    if (!pattern.test(inputValue) || inputValue.trim() === '') {
+      setError(true); // Activate the error state
+    } else {
+      setError(false); // Deactivate the error state Update the value in the state
+    }
   };
 
   const handleDefaultImageSelect = (imageName) => {
@@ -82,7 +94,6 @@ export default function FirebaseComponent({ onSubmit }) {
 
     const newData = {
       [newCount]: {
-        body: data.body,
         ciudad: data.ciudad,
         continente: data.continente,
         fecha: data.fecha,
@@ -122,36 +133,28 @@ export default function FirebaseComponent({ onSubmit }) {
     <div className={styles.container}>
       <form className={styles.form} onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="body" className={styles.label}>
-            Body:
-          </label>
-          <input
-            type="text"
-            id="body"
-            name="body"
-            value={data.body}
-            onChange={handleInputChange}
-            required
-            disabled={disabled}
-            className={styles.input}
-          />
-        </div>
-
-        <div>
           <label htmlFor="ciudad" className={styles.label}>
             Ciudad:
+            {error && data.ciudad.trim() === '' && (
+            <p className={styles.errorText}>El campo no puede estar vacío</p>
+          )}
+          {error && !data.ciudad.match(/^[A-Za-z]+$/) && (
+            <p className={styles.errorText}>Solo se permiten letras en el campo</p>
+          )}
+          {cityIdExists && <p className={styles.errorText}>El viaje a la ciudad ya existe o se acaba de agregar</p>}
           </label>
           <input
             type="text"
             id="ciudad"
             name="ciudad"
+            pattern="[A-Za-z\s]+"
             value={capitalizeFirstWord(data.ciudad)}
             onChange={handleInputChange}
             required
             disabled={disabled}
-            className={styles.input}
+            className={`${styles.input} ${error ? styles.errorInput : ''}`}
           />
-          {cityIdExists && <p className={styles.errorText}>El viaje a la ciudad ya existe o se acaba de agregar</p>}
+        
         </div>
 
         <div>
@@ -189,6 +192,7 @@ export default function FirebaseComponent({ onSubmit }) {
             required
             disabled={disabled}
             className={styles.input}
+            max={new Date().toISOString().split('T')[0]}
           />
         </div>
 
@@ -216,24 +220,33 @@ export default function FirebaseComponent({ onSubmit }) {
           <label htmlFor="resume" className={styles.label}>
             Resumen:
           </label>
-          <input
-            type="text"
-            id="resume"
-            name="resume"
-            value={data.resume}
-            onChange={handleInputChange}
-            required
-            disabled={disabled}
-            className={styles.input}
-          />
+          <div className={styles.inputContainer}>
+            <input
+              type="text"
+              id="resume"
+              name="resume"
+              value={capitalizeFirstWord(data.resume)}
+              onChange={handleInputChange}
+              required
+              disabled={disabled}
+              maxLength={60}
+              className={styles.input}
+            />
+            <span className={styles.characterCount}>{`${data.resume.length}/${60}`}</span>
+          </div>
         </div>
 
-        <button type="submit" className={styles.button} disabled={cityIdExists || disabled}>
+        <button
+          type="submit"
+          className={styles.button}
+          disabled={
+            cityIdExists || disabled
+          }
+        >
           Siguiente
         </button>
       </form>
       {showAddFormTripData && <AddFormTripData />}
     </div>
   );
-
 }

@@ -3,9 +3,10 @@ Task:
     ✅Realizar la página de trips/[nombre]
     ✅Realizar la página de tips
     ✅Realizar la página de contact
+    ✅Se ha añadido interacción con el usuario para que pueda agregar paginas web
 # Tips and Trips - Blog de Viajes
 
-Progress: [████████████████████████████████░] 92%
+Progress: [████████████████████████████████] 99%
 
 
 
