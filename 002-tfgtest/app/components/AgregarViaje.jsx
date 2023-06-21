@@ -34,6 +34,7 @@ export default function AgregarViaje() {
   const handleCloseForm = () => {
     setShowAddFormTripData(false);
     setShowMessage(true); // Mostrar el mensaje al cerrar el formulario
+    setShowCancelButton(false);
 
     setTimeout(() => {
       setShowMessage(false); // Ocultar el mensaje después de 5 segundos
@@ -71,7 +72,9 @@ export default function AgregarViaje() {
       {showAddFormTripData && (
         <AddFormTripData onCloseForm={handleCloseForm} />
       )}
-      {showMessage && <div><span style={{color:'green'}}>¡Muchas gracias por agregar un nuevo viaje! Puedes revisarlo al final del slider anterior</span></div>}
+
+      {showMessage &&
+        <div className={styles.result}><span>¡Muchas gracias por agregar un nuevo viaje! Puedes revisarlo al final del slider anterior</span></div>}
 
     </div>
   );
