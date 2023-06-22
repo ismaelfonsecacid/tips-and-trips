@@ -21,10 +21,6 @@ const links = [
     label: 'CONTACT',
     route: '/contact'
   },
-  {
-    label: 'PERFIL',
-    route: '/login'
-  },
 ];
 
 

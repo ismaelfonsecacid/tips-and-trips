@@ -63,7 +63,7 @@ export default function FirebaseComponent({ onSubmit }) {
     }));
 
     const inputValue = e.target.value;
-    const pattern = /^[A-Za-z\s]+$/;
+    const pattern = /^[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+$/;
 
     if (!pattern.test(inputValue) || inputValue.trim() === '') {
       setError(true); // Activate the error state
@@ -147,7 +147,7 @@ export default function FirebaseComponent({ onSubmit }) {
             type="text"
             id="ciudad"
             name="ciudad"
-            pattern="[A-Za-z\s]+"
+            pattern="^[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+$"
             value={capitalizeFirstWord(data.ciudad)}
             onChange={handleInputChange}
             required
