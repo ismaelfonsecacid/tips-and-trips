@@ -28,16 +28,16 @@ export default async function TripPage({ params }) {
           <div className={styles.slider_frame}>
             <ul>
               <li>
-                <Image src={item.img1} width={600} height={300} alt={`Imagen que contiene un lugar del continente${item.nombre}`} title={`Imagen de ${item.nombre}`} />
+                <Image src={item.img1} width={600} height={300} alt={`Imagen que contiene un lugar del continente ${item.nombre}`} title={`Imagen de ${item.nombre}`} />
               </li>
               <li>
-                <Image src={item.img2} width={600} height={300} alt={`Imagen que contiene un lugar del continente${item.nombre}`} title={`Imagen de ${item.nombre}`}  />
+                <Image src={item.img2} width={600} height={300} alt={`Imagen que contiene un lugar del continente ${item.nombre}`} title={`Imagen de ${item.nombre}`}  />
               </li>
               <li>
-                <Image src={item.img3} width={600} height={300} alt={`Imagen que contiene un lugar del continente${item.nombre}`}title={`Imagen de ${item.nombre}`}  />
+                <Image src={item.img3} width={600} height={300} alt={`Imagen que contiene un lugar del continente ${item.nombre}`}title={`Imagen de ${item.nombre}`}  />
               </li>
               <li>
-                <Image src={item.img4} width={600} height={300} alt={`Imagen que contiene un lugar del continente${item.nombre}`} title={`Imagen de ${item.nombre}`}  />
+                <Image src={item.img4} width={600} height={300} alt={`Imagen que contiene un lugar del continente ${item.nombre}`} title={`Imagen de ${item.nombre}`}  />
               </li>
             </ul>
           </div>
