@@ -4,7 +4,7 @@ import styles from './Page.module.css'
 import { fetchData } from "@/app/services/apiFetchData";
 
 export default async function TripPage({ params }) {
-  const URL = 'tripsContinentes';
+  const URL = 'Continente';
   const { nombre } = params
   const data = await fetchData(URL)
   const datosFiltrados = data.filter(item => item.id === nombre);
