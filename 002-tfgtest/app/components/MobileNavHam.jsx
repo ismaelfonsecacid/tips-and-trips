@@ -23,10 +23,10 @@ export default function MobileNavHam({ open, onClick }) {
                         </button>
                     </div>
                     <div className={styles.cLink}>
-                        <Link href="/" onClick={onClick} className={styles.link}>HOME</Link>
-                        <Link href="/tips" onClick={onClick} className={styles.link}>TIPS</Link>
-                        <Link href="/trips " onClick={onClick} className={styles.link}>TRIPS</Link>
-                        <Link href="/contact " onClick={onClick} className={styles.link}>CONTACT</Link>
+                        <Link href="/" as="/" onClick={onClick} className={styles.link}>HOME</Link>
+                        <Link href="/tips" as="/tips" onClick={onClick} className={styles.link}>TIPS</Link>
+                        <Link href="/trips" as="/trips" onClick={onClick} className={styles.link}>TRIPS</Link>
+                        <Link href="/contact" as="/contact" onClick={onClick} className={styles.link}>CONTACT</Link>
                     </div>
                 </div>
             </div>
