@@ -12,6 +12,24 @@ const defaultImages = [
   { url: '/images/rios.jpg', name: 'Río o playa' },
   { url: '/images/mercadillo.jpg', name: 'Mercadillo o Tienda' }
 ];
+const languages = [
+  "Español",
+  "Inglés",
+  "Francés",
+  "Alemán",
+  "Italiano",
+  "Portugués",
+  "Chino mandarín",
+  "Japonés",
+  "Coreano",
+  "Ruso",
+  "Árabe",
+  "Hindi",
+  "Bengalí",
+  "Urdu",
+  "Swahili",
+  "Gallego"
+];
 
 function AddFormTripData({ onCloseForm }) {
 
@@ -23,19 +41,19 @@ function AddFormTripData({ onCloseForm }) {
     })),
     detalles: '',
     id: "",
-    idioma: '',
+    idioma: [],
     moneda: '',
     nombre: '',
     pais: '',
     poblacion: '',
   });
 
+  const [selectedLanguages, setSelectedLanguages] = useState([]);
 
   const [count, setCount] = useState(0);
-  const [errors, setErrors] = useState({
-    imgURL: Array(4).fill(false),
-  });
+
   const [selectedImages, setSelectedImages] = useState(Array(4).fill(""));
+
 
   const handleDefaultImageSelect = (attractionIndex, imageName) => {
     const selectedImage = defaultImages.find((image) => image.name === imageName);
@@ -59,14 +77,6 @@ function AddFormTripData({ onCloseForm }) {
       return newSelectedImages;
     });
 
-    setErrors((prevErrors) => {
-      const newErrors = [...prevErrors.imgURL];
-      newErrors[attractionIndex] = false;
-      return {
-        ...prevErrors,
-        imgURL: newErrors,
-      };
-    });
   };
 
   const [lastID, setLastID] = useState('')
@@ -82,7 +92,6 @@ function AddFormTripData({ onCloseForm }) {
     });
 
     return () => {
-      // Limpia la suscripción cuando el componente se desmonta
       unsubscribe();
     };
   }, []);
@@ -98,12 +107,23 @@ function AddFormTripData({ onCloseForm }) {
   }, []);
 
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
+    const { name, value, type, checked } = e.target;
+    if (type === 'checkbox') {
+      if (checked) {
+        setSelectedLanguages((prevSelectedLanguages) => [...prevSelectedLanguages, value]);
+      } else {
+        setSelectedLanguages((prevSelectedLanguages) =>
+          prevSelectedLanguages.filter((language) => language !== value)
+        );
+      }
+    } else {
+      setData((prevData) => ({
+        ...prevData,
+        [name]: value,
+      }));
+    }
   };
+
 
   const handleAttractionInputChange = (index, field, value) => {
     setData((prevData) => {
@@ -121,17 +141,11 @@ function AddFormTripData({ onCloseForm }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    const hasEmptyImageURL = data.atracciones.some((attraction) => !attraction.imgURL);
-
-    if (hasEmptyImageURL) {
-      setErrors((prevErrors) => ({
-        ...prevErrors,
-        imgURL: data.atracciones.map((attraction) => !attraction.imgURL),
-      }));
+    if (selectedLanguages.length === 0) {
+      // Mostrar mensaje de error o realizar alguna acción
+      console.log('Selecciona al menos un idioma');
       return;
     }
-
     setCount((prevCount) => prevCount);
     const newCount = count + 1;
 
@@ -144,7 +158,7 @@ function AddFormTripData({ onCloseForm }) {
         })),
         detalles: capitalizeFirstWord(data.detalles),
         id: lastID,
-        idioma: capitalizeFirstWord(data.idioma),
+        idioma: selectedLanguages.join(', '),
         moneda: capitalizeFirstWord(data.moneda),
         nombre: capitalizeFirstWord(lastID),
         pais: capitalizeFirstWord(data.pais),
@@ -178,7 +192,7 @@ function AddFormTripData({ onCloseForm }) {
     return firstChar + restOfString;
   };
 
-  
+
   return (
     <div className={styles.container} id='addFormData'>
       <form onSubmit={handleSubmit}>
@@ -197,29 +211,59 @@ function AddFormTripData({ onCloseForm }) {
         </div>
         <br />
         <div>
-          <label htmlFor="idioma">Idioma</label>
-          <input
-            type="text"
-            id="idioma"
-            name="idioma"
-            value={capitalizeFirstWord(data.idioma)}
-            onChange={handleInputChange}
-            required
-            className={styles.input}
-          />
+          <label>Idiomas:</label>
+          <div className={styles.languageList}>
+            {languages.map((language) => (
+              <label key={language} className={styles.languageLabel}>
+                <input
+                  type="checkbox"
+                  name="idioma"
+                  value={language}
+                  checked={selectedLanguages.includes(language)}
+                  onChange={handleInputChange}
+                  className={styles.checkbox}
+                />
+                {language}
+              </label>
+            ))}
+          </div>
+          <div className={styles.infoIdioma}>
+            <strong>Idiomas seleccionados:</strong>
+            {selectedLanguages.map((language) => (
+              <span key={language}>{language}, </span>
+            ))}
+          </div>
         </div>
         <br />
         <div>
-          <label htmlFor="moneda">Moneda</label>
-          <input
-            type="text"
+          <label htmlFor="moneda">
+            Moneda:
+          </label>
+          <select
             id="moneda"
             name="moneda"
-            value={capitalizeFirstWord(data.moneda)}
+            value={data.moneda}
             onChange={handleInputChange}
             required
-            className={styles.input}
-          />
+            className={styles.select}
+          >
+            <option value="" disabled>Seleccionar moneda</option>
+            <option value="Dólar estadounidense (USD)">Dólar estadounidense (USD)</option>
+            <option value="Euro (EUR)">Euro (EUR)</option>
+            <option value="Libra esterlina (GBP)">Libra esterlina (GBP)</option>
+            <option value="Yen japonés (JPY)">Yen japonés (JPY)</option>
+            <option value="Dólar australiano (AUD)">Dólar australiano (AUD)</option>
+            <option value="Dólar canadiense (CAD)">Dólar canadiense (CAD)</option>
+            <option value="Franco suizo (CHF)">Franco suizo (CHF)</option>
+            <option value="Yuan chino (CNY)">Yuan chino (CNY)</option>
+            <option value="Rupia india (INR)">Rupia india (INR)</option>
+            <option value="Real brasileño (BRL)">Real brasileño (BRL)</option>
+            <option value="Peso mexicano (MXN)">Peso mexicano (MXN)</option>
+            <option value="Rand sudafricano (ZAR)">Rand sudafricano (ZAR)</option>
+            <option value="Rublo ruso (RUB)">Rublo ruso (RUB)</option>
+            <option value="Lira turca (TRY)">Lira turca (TRY)</option>
+
+          </select>
         </div>
         <br />
         <div>
@@ -236,7 +280,7 @@ function AddFormTripData({ onCloseForm }) {
         </div>
         <br />
         <div>
-          <label htmlFor="poblacion">Población</label>
+          <label htmlFor="poblacion">Número de habitantes</label>
           <input
             type="number"
             id="poblacion"
@@ -306,9 +350,6 @@ function AddFormTripData({ onCloseForm }) {
                 <img src={defaultImages.find((image) => image.name === selectedImages[index]).url} alt={`Imagen ${index}`} className={styles.imgBig} />
               )}
               <br />
-              {errors.imgURL[index] && (
-                <span className={styles.error}>Por favor, selecciona una imagen</span>
-              )}
               <br />
             </div>
           ))}

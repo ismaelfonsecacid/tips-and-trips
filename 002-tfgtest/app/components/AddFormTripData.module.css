@@ -6,6 +6,9 @@
     border-radius: 5px;
     box-sizing: border-box;
   }
+  .textarea{
+    height: 130px;
+  }
   
   .input,
   .textarea,
@@ -72,5 +75,31 @@
     .container {
       max-width: 300px;
     }
+  }
+  
+  .languageLabel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    justify-content: center;
+  }
+  
+  .checkbox {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+  }
+  .infoIdioma {
+    margin-top: 10px;
+  }
+  
+  .languageList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .checkbox input[type="checkbox"] {
+    width: 20px; /* Ajusta el ancho del checkbox */
+    height: 20px; /* Ajusta la altura del checkbox */
   }
   
