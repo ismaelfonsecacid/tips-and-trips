@@ -1,0 +1,160 @@
+.main {
+    padding: 0 10%;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.upper {
+    margin-top: 2%;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 2%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-bottom: 2%;
+}
+
+@media (max-width: 768px) {
+    .upper {
+        flex-direction: column-reverse;
+    }
+}
+
+.middle {
+    align-items: center;
+    margin-top: 2%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 20px;
+    margin-bottom: 2%;
+    background-color: #f8cb9d;
+}
+
+.bottom {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.bottombox {
+    padding: 20px;
+    background-color: #86bdb9;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+
+@media (max-width: 768px) {
+    .main{
+        font-size: 16px;
+    }
+   .bottom{
+    grid-template-columns: repeat(1, 1fr);
+   }
+}
+
+@keyframes autoslide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(0);
+    }
+
+    33.33% {
+        transform: translateX(calc(-100% - 10px));
+    }
+
+    58.33% {
+        transform: translateX(calc(-100% - 10px));
+    }
+
+    66.67% {
+        transform: translateX(calc(-200% - 20px));
+    }
+
+    91.67% {
+        transform: translateX(calc(-200% - 20px));
+    }
+
+    100% {
+        transform: translateX(calc(-300% - 30px));
+    }
+}
+
+.slider_frame {
+    width: 600px;
+    margin: 0 auto 0;
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .slider_frame {
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .slider_frame {
+        width: 90%;
+    }
+}
+
+.slider_frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider_frame li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider_frame img {
+    width: 100%;
+    height: 350px;
+}
+
+.museos {
+    list-style: none;
+}
+.pases {
+    list-style: none;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}

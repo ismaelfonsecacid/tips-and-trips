@@ -1,0 +1,46 @@
+
+.carrusel {
+   display: flex;
+   flex-wrap: nowrap;
+    overflow-x: scroll;
+
+}
+.carrusel::-webkit-scrollbar {
+  display: block;
+  background-color: gray;
+
+}
+
+.card {
+  flex: 1 0 auto;
+  width: 200px;
+  height: auto;
+  margin: 0 50px;
+  padding-bottom: 12px;
+}
+
+.card p {
+  color: black;
+  font-size: 17px;
+}
+.card:hover p{
+  background-color:  rgb(123, 178, 192);
+  border-radius: 20px;
+}
+
+.card img {
+  border-radius: 30px;
+}
+@media (max-width: 450px) {
+  .carrusel::-webkit-scrollbar {
+   display: none;
+  }
+  .card {
+    font-size: 16px;
+  }
+
+}
+
+
+
+

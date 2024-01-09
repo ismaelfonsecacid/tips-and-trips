@@ -1,0 +1,268 @@
+[
+  {
+    "id": 2,
+    "nombre": "Con Vuelo",
+    "lugar": "Nueva York",
+    "hotel": "T",
+    "precioViaje": 500,
+    "continente": "América",
+    "categoria": {
+      "tipo": "Hotel de 4⭐",
+      "precio": 350
+    },
+    "dias": "6",
+    "precioTransporte": 150,
+    "relleno": "En Nueva York hemos explorado la ciudad que nunca duerme. Hemos paseado por las bulliciosas calles de Times Square, recorrido Central Park en bicicleta, visitado los famosos museos como el MoMA y el MET, y disfrutado de increíbles vistas desde el Empire State Building. También hemos degustado una amplia variedad de sabores en los diversos restaurantes y food trucks de la ciudad, desde la auténtica pizza en Brooklyn hasta los deliciosos bagels de Manhattan.",
+    "imgH": "/images/hotel/nueva_york.jpg",
+    "nombreHotel": "Hotel Empire",
+    "tips": [
+      "Utiliza el transporte público y camina para moverte por la ciudad.",
+      "Mantén tus pertenencias seguras y sé cauteloso en áreas concurridas.",
+      "Verifica el clima y prepárate adecuadamente.",
+      "Reserva entradas con anticipación para evitar filas en atracciones populares.",
+      "Prueba la comida callejera y aprovecha los eventos culturales y festivales de la ciudad."
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Con tren",
+    "lugar": "París",
+    "hotel": "T",
+    "precioViaje": 250,
+    "continente": "Europa",
+    "categoria": {
+      "tipo": "Hotel de 2⭐",
+      "precio": 150
+    },
+    "dias": "3",
+    "precioTransporte": 100,
+    "relleno": "En París, la ciudad del amor y la moda, hemos disfrutado de un ambiente romántico y sofisticado. Hemos paseado por las orillas del río Sena, visitado la emblemática Torre Eiffel y explorado los encantadores barrios de Montmartre y Le Marais. Además, hemos admirado obras maestras en el Louvre, descubierto la belleza gótica de la Catedral de Notre Dame y degustado exquisitos croissants y macarons en las encantadoras cafeterías parisinas.",
+    "imgH": "/images/hotel/paris.jpg",
+    "nombreHotel": "B&B HOTEL Paris Romainville",
+    "tips": [
+      "Explora la ciudad a pie o en bicicleta para disfrutar de su encanto.",
+      "Visita los museos más populares temprano en la mañana o al final del día para evitar las multitudes.",
+      "Prueba la deliciosa cocina francesa, como el croissant y el queso francés.",
+      "Reserva con antelación las entradas para las atracciones más famosas.",
+      "Disfruta de un paseo romántico a lo largo del río Sena durante la noche."
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "Con Vuelo",
+    "lugar": "Tokio",
+    "hotel": "TS",
+    "precioViaje": 750,
+    "continente": "Asia",
+    "categoria": {
+      "tipo": "Hotel de 5⭐",
+      "precio": 500
+    },
+    "dias": "7",
+    "precioTransporte": 250,
+    "relleno": "En Tokio, la vibrante capital de Japón, hemos experimentado la fusión perfecta entre tradición y modernidad. Hemos explorado los antiguos templos y jardines, como el Templo Senso-ji y los Jardines del Palacio Imperial. También hemos recorrido los bulliciosos distritos de Shinjuku y Shibuya, famosos por sus luces de neón y cruces peatonales concurridas. Además, hemos disfrutado de la exquisita gastronomía japonesa, desde sushi fresco hasta ramen reconfortante.",
+    "imgH": "/images/hotel/tokio.jpg",
+    "nombreHotel": "Halekulani Okinawa",
+    "tips": [
+      "Explora los barrios tradicionales como Asakusa y Yanaka para experimentar la cultura japonesa auténtica.",
+      "Prueba los platos tradicionales japoneses, como el sushi y el ramen, en restaurantes locales.",
+      "Visita los jardines y templos para experimentar la tranquilidad y belleza de la cultura japonesa.",
+      "Utiliza el transporte público eficiente de Tokio para moverte por la ciudad.",
+      "Aprovecha los horarios de apertura extendidos de algunas atracciones para disfrutar de la ciudad de noche."
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "Con Vuelo",
+    "lugar": "Sídney",
+    "hotel": "F",
+    "precioViaje": 600,
+    "continente": "Oceanía",
+    "categoria": {
+      "tipo": "Hostal",
+      "precio": 400
+    },
+    "dias": "7",
+    "precioTransporte": 200,
+    "relleno": "En Sídney, la icónica ciudad australiana, hemos disfrutado de hermosas playas, como Bondi Beach y Manly Beach, donde hemos practicado surf y tomado el sol. También hemos explorado el impresionante puerto de Sídney, admirando la Ópera de Sídney y el Puente de la Bahía. Además, hemos visitado el Zoológico de Taronga para conocer la fauna autóctona de Australia, como los koalas y canguros. Por las noches, nos hemos sumergido en la animada vida nocturna de Sídney, disfrutando de bares y restaurantes con vistas panorámicas.",
+    "imgH": "/images/hotel/sidney.jpg",
+    "nombreHotel": "YHA Sydney Central",
+    "tips": [
+      "Explora las playas icónicas de Sídney y disfruta del surf y el sol.",
+      "Realiza un crucero por el puerto para disfrutar de vistas impresionantes de la ciudad.",
+      "Visita la Ópera de Sídney y camina por el Puente de la Bahía para obtener vistas panorámicas.",
+      "Descubre la vida silvestre australiana en el Zoológico de Taronga.",
+      "Disfruta de la animada vida nocturna de Sídney en los bares y restaurantes de moda."
+    ]
+  },
+  {
+    "id": 6,
+    "nombre": "Con Vuelo",
+    "lugar": "Mauricio",
+    "hotel": "TS",
+    "precioViaje": 1100,
+    "continente": "África",
+    "categoria": {
+      "tipo": "Hotel de 5⭐",
+      "precio": 800
+    },
+    "dias": "7",
+    "precioTransporte": 300,
+    "relleno": "En Mauricio, hemos disfrutado de hermosas playas de arena blanca y aguas cristalinas. Nos hemos relajado en los complejos turísticos de lujo, disfrutando de servicios exclusivos y tratamientos de spa. Además, hemos explorado la exuberante naturaleza de la isla, visitando cascadas y reservas naturales. También hemos probado la deliciosa cocina criolla, que combina influencias francesas, africanas e indias.",
+    "imgH": "/images/hotel/mauricio.jpg",
+    "nombreHotel": "LUX* Le Morne",
+    "tips": [
+      "Disfruta de las hermosas playas de arena blanca y las aguas cristalinas de Mauricio.",
+      "Relájate en los lujosos complejos turísticos y disfruta de los servicios de spa.",
+      "Explora la naturaleza exuberante de la isla, visita cascadas y reservas naturales.",
+      "Prueba la deliciosa cocina criolla, que combina influencias francesas, africanas e indias.",
+      "Participa en actividades acuáticas como el buceo y el snorkel para descubrir la vida marina de Mauricio."
+    ]
+  },
+  {
+    "id": 7,
+    "nombre": "Con Vuelo",
+    "lugar": "Santorini",
+    "hotel": "T",
+    "precioViaje": 750,
+    "continente": "Europa",
+    "categoria": {
+      "tipo": "Hotel de 5⭐",
+      "precio": 600
+    },
+    "dias": "5",
+    "precioTransporte": 150,
+    "relleno": "En Santorini, la joya del mar Egeo, hemos disfrutado de vistas panorámicas impresionantes de sus famosos acantilados y casas blancas. Nos hemos relajado en las playas de arena volcánica y hemos explorado los pintorescos pueblos de Oia y Fira. También hemos degustado los sabores únicos de la gastronomía local, como el delicioso gyros y los vinos producidos en la isla.",
+    "imgH": "/images/hotel/santorini.jpg",
+    "nombreHotel": "Mystique Santorini",
+    "tips": [
+      "Disfruta de las impresionantes vistas panorámicas de los acantilados y casas blancas de Santorini.",
+      "Relájate en las playas de arena volcánica y disfruta del sol y el mar.",
+      "Explora los pintorescos pueblos de Oia y Fira con sus calles empedradas y hermosas vistas.",
+      "Prueba la gastronomía local, como el delicioso gyros y los vinos producidos en la isla.",
+      "No te pierdas la famosa puesta de sol de Santorini, considerada una de las más hermosas del mundo."
+    ]
+  },
+  {
+    "id": 8,
+    "nombre": "Con Vuelo",
+    "lugar": "Bali",
+    "hotel": "TS",
+    "precioViaje": 1200,
+    "continente": "Asia",
+    "categoria": {
+      "tipo": "Hotel de 4⭐",
+      "precio": 300
+    },
+    "dias": "7",
+    "precioTransporte": 900,
+    "relleno": "En Bali, la isla de los dioses, hemos experimentado una combinación única de cultura, espiritualidad y hermosos paisajes. Hemos visitado templos sagrados, como el Templo de Uluwatu y el Templo de Besakih, y hemos participado en ceremonias tradicionales. También hemos disfrutado de las playas de arena dorada, practicando surf y buceo en los arrecifes de coral. Además, hemos explorado los campos de arroz en terrazas y nos hemos relajado en los resorts de lujo con vistas impresionantes.",
+    "imgH": "/images/hotel/bali.jpg",
+    "nombreHotel": "Padma Resort Legian",
+    "tips": [
+      "Explora los templos sagrados y participa en ceremonias tradicionales para experimentar la cultura balinesa.",
+      "Disfruta de las hermosas playas de arena dorada y practica surf y buceo en los arrecifes de coral.",
+      "Explora los campos de arroz en terrazas y disfruta de los paisajes naturales de Bali.",
+      "Relájate en los resorts de lujo con vistas impresionantes y disfruta de los servicios de spa.",
+      "Prueba la deliciosa comida balinesa, como el nasi goreng y el satay."
+    ]
+  },
+  {
+    "id": 9,
+    "nombre": "Con tren",
+    "lugar": "Roma",
+    "hotel": "TS",
+    "precioViaje": 300,
+    "continente": "Europa",
+    "categoria": {
+      "tipo": "Hotel de 3⭐",
+      "precio": 250
+    },
+    "dias": "4",
+    "precioTransporte": 50,
+    "relleno": "En Roma, la ciudad eterna, hemos explorado la rica historia y la arquitectura impresionante. Hemos visitado el Coliseo, el Foro Romano y el Vaticano, donde hemos admirado la Capilla Sixtina y la Basílica de San Pedro. También hemos disfrutado de la deliciosa gastronomía italiana, probando auténtica pasta, pizza y gelato. Además, nos hemos perdido por las encantadoras calles y plazas de Roma, descubriendo hermosas fuentes y esculturas.",
+    "imgH": "/images/hotel/roma.jpg",
+    "nombreHotel": "Colony Hotel",
+    "tips": [
+      "Explora la rica historia de Roma visitando el Coliseo, el Foro Romano y el Vaticano.",
+      "Admira las obras maestras en la Capilla Sixtina y la Basílica de San Pedro.",
+      "Prueba la auténtica comida italiana, como la pasta, la pizza y el gelato.",
+      "Pasea por las encantadoras calles y plazas de Roma, descubriendo fuentes y esculturas.",
+      "Disfruta de un paseo en bicicleta por el pintoresco parque de Villa Borghese."
+    ]
+  },
+  {
+    "id": 10,
+    "nombre": "Con tren",
+    "lugar": "Praga",
+    "hotel": "TS",
+    "precioViaje": 380,
+    "continente": "Europa",
+    "categoria": {
+      "tipo": "Hotel de 4⭐",
+      "precio": 350
+    },
+    "dias": "5",
+    "precioTransporte": 30,
+    "relleno": "En Praga, la ciudad de las cien torres, hemos disfrutado de su arquitectura gótica y su encanto histórico. Hemos visitado el Castillo de Praga y la Catedral de San Vito, y nos hemos perdido por las pintorescas calles de la Ciudad Vieja. También hemos cruzado el Puente de Carlos, admirando las estatuas y las vistas del río Moldava. Además, hemos degustado la cerveza checa en los acogedores pubs y probado platos tradicionales como el goulash y el trdelník.",
+    "imgH": "/images/hotel/praga.jpg",
+    "nombreHotel": "Grandium Prague",
+    "tips": [
+      "Explora el impresionante Castillo de Praga y admira la Catedral de San Vito.",
+      "Pasea por las pintorescas calles de la Ciudad Vieja y descubre su encanto histórico.",
+      "Cruza el Puente de Carlos y disfruta de las estatuas y las vistas del río Moldava.",
+      "Prueba la cerveza checa en los acogedores pubs y degusta platos tradicionales como el goulash y el trdelník.",
+      "Visita el Reloj Astronómico de Praga y disfruta del espectáculo de las figuras animadas cada hora."
+    ]
+  },
+  
+{
+  "id": 11,
+  "nombre": "Escapada rápida",
+  "lugar": "Barcelona",
+  "hotel": "F",
+  "precioViaje": 80,
+  "continente": "Europa",
+  "categoria": {
+  "tipo": "Hostal",
+  "precio": 50
+  },
+  "dias": "2",
+  "precioTransporte": 30,
+  "relleno": "En Barcelona, una ciudad vibrante y llena de vida, hemos aprovechado al máximo nuestra escapada de 2 días. Nos hemos maravillado con las obras maestras de la arquitectura modernista de Antoni Gaudí, como la Sagrada Familia y el Parque Güell.",
+  "imgH": "/images/hotel/barcelona.jpg",
+  "nombreHotel": "Hostal XYZ",
+  "tips": [
+  "Visita la Sagrada Familia, una obra maestra de la arquitectura de Gaudí.",
+  "Explora el Parque Güell y disfruta de las vistas panorámicas de la ciudad.",
+  "Pasea por Las Ramblas y sumérgete en la animada atmósfera de la ciudad.",
+  "Prueba la deliciosa gastronomía catalana, como la paella y las tapas.",
+  "Disfruta de la vida nocturna en los bares y discotecas de la ciudad."
+  ]
+  },
+  
+{
+  "id": 12,
+  "nombre": "Escapada rápida",
+  "lugar": "Madrid",
+  "hotel": "Hotel XYZ",
+  "precioViaje": 110,
+  "continente": "Europa",
+  "categoria": {
+  "tipo": "Hotel de 3⭐",
+  "precio": 60
+  },
+  "dias": "2",
+  "precioTransporte": 50,
+  "relleno": "En Madrid, la capital de España, hemos disfrutado de una escapada rápida llena de cultura y gastronomía. Hemos visitado el famoso Museo del Prado, donde hemos admirado obras maestras de artistas como Velázquez, Goya y El Greco. También hemos paseado por el animado Parque del Retiro y disfrutado de un relajante paseo en barco por el estanque. Además, hemos saboreado deliciosas tapas en los bares de la calle Cava Baja y nos hemos perdido por las estrechas calles del barrio de La Latina.",
+  "imgH": "/images/hotel/madrid.jpg",
+  "nombreHotel": "Hotel Madrid",
+  "tips": [
+  "Visita el Museo del Prado y maravíllate con su impresionante colección de arte.",
+  "Pasea por el Parque del Retiro y relájate en el hermoso estanque.",
+  "Disfruta de la gastronomía madrileña probando tapas en la calle Cava Baja.",
+  "Explora el barrio de La Latina y descubre sus encantadoras calles y plazas.",
+  "No te pierdas la animada vida nocturna de Madrid en los bares y discotecas del centro."
+  ]
+  }
+]

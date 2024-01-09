@@ -1,0 +1,459 @@
+[
+  {
+    "id": "nuevayork",
+    "nombre": "Nueva York",
+    "pais": "Estados Unidos",
+    "poblacion": "8.4 millones",
+    "idioma": "Inglés",
+    "moneda": "Dólar estadounidense",
+    "atracciones": [
+      {
+        "nombre": "Times Square",
+        "descripcion": "Famosa por sus pantallas luminosas y su animado ambiente, Times Square es el corazón de Nueva York. Es un lugar ideal para ir de compras, disfrutar de espectáculos teatrales y probar una amplia variedad de restaurantes.",
+        "img": "/images/lugares/times_square.jpg"
+      },
+      {
+        "nombre": "Estatua de la Libertad",
+        "descripcion": "Uno de los símbolos más reconocidos de Nueva York y de Estados Unidos en general. Se puede acceder a la isla donde se encuentra la estatua y disfrutar de vistas panorámicas de la ciudad.",
+        "img": "/images/lugares/estatua_libertad1.jpg"
+      },
+      {
+        "nombre": "Central Park",
+        "descripcion": "Este icónico parque urbano ofrece un oasis verde en medio de la ciudad. Es perfecto para pasear, hacer picnic, montar en bicicleta o disfrutar de actividades al aire libre. También alberga zoológicos, lagos y áreas de recreo.",
+        "img": "/images/lugares/central_park.jpg"
+      },
+      {
+        "nombre": "Empire State Building",
+        "descripcion": "Un rascacielos emblemático de Nueva York con vistas panorámicas desde su mirador en el piso 86. Es un lugar popular para disfrutar de impresionantes vistas de la ciudad y capturar fotos memorables.",
+        "img": "/images/lugares/empire_state.jpg"
+      }
+    ],
+    "comida_tipica": [
+      "Pizza",
+      "Hamburguesas",
+      "Hot dogs",
+      "Cheesecake",
+      "Bagels"
+    ],
+    "detalles": "Nueva York es una ciudad vibrante y llena de energía que ofrece una gran variedad de experiencias para todos los gustos. Times Square, con sus luces deslumbrantes y su ambiente animado, es el epicentro del entretenimiento y las compras. La Estatua de la Libertad es un símbolo de libertad y esperanza, mientras que Central Park brinda un refugio tranquilo en medio del bullicio urbano. El icónico Empire State Building ofrece vistas panorámicas impresionantes de la ciudad. Además, la ciudad es famosa por su deliciosa comida, desde las clásicas hamburguesas y pizzas hasta los auténticos bagels y cheesecakes."
+  },
+  {
+    "id": "paris",
+    "nombre": "París",
+    "pais": "Francia",
+    "poblacion": "2.2 millones",
+    "idioma": "Francés",
+    "moneda": "Euro",
+    "atracciones": [
+      {
+        "nombre": "Torre Eiffel",
+        "descripcion": "Uno de los monumentos más reconocidos del mundo, la Torre Eiffel ofrece vistas panorámicas impresionantes de París desde sus diferentes niveles. También cuenta con restaurantes y tiendas.",
+        "img": "/images/lugares/eiffel.jpg"
+      },
+      {
+        "nombre": "Museo del Louvre",
+        "descripcion": "Uno de los museos más grandes y visitados del mundo, el Louvre alberga obras maestras como la Mona Lisa y la Venus de Milo. Explorar sus galerías es sumergirse en la historia del arte.",
+        "img": "/images/lugares/louvre.jpg"
+      },
+      {
+        "nombre": "Catedral de Notre Dame",
+        "descripcion": "Un magnífico ejemplo de arquitectura gótica, la Catedral de Notre Dame es un lugar histórico y religioso. Sus impresionantes vitrales y su majestuosa estructura la convierten en una visita obligada.",
+        "img": "/images/lugares/notredame.jpg"
+      },
+      {
+        "nombre": "Arco de Triunfo",
+        "descripcion": "Situado en el extremo oeste de los Campos Elíseos, el Arco de Triunfo es un monumento emblemático de París. Ofrece vistas panorámicas de la ciudad y es un símbolo de la grandeza de Francia.",
+        "img": "/images/lugares/arcotriunfo.jpg"
+      }
+    ],
+    "comida_tipica": [
+      "Croissant",
+      "Baguette",
+      "Quesos franceses",
+      "Foie gras",
+      "Macarons"
+    ],
+    "detalles": "París, la ciudad del amor y la luz, cautiva a sus visitantes con su elegancia y su rico patrimonio cultural. La Torre Eiffel, uno de los monumentos más icónicos del mundo, ofrece vistas panorámicas impresionantes de la ciudad. El Museo del Louvre alberga una impresionante colección de arte, desde la Mona Lisa hasta la Venus de Milo. La majestuosa Catedral de Notre Dame y el imponente Arco de Triunfo son ejemplos de la grandiosidad arquitectónica de París. El bohemio barrio de Montmartre, con sus calles adoquinadas y la Basílica del Sagrado Corazón, es un lugar lleno de encanto. Además, París es famosa por su exquisita comida, desde los croissants y baguettes hasta los quesos franceses y los deliciosos macarons."
+  },
+  {
+    "id": "tokio",
+    "nombre": "Tokio",
+    "pais": "Japón",
+    "poblacion": "13.9 millones",
+    "idioma": "Japonés",
+    "moneda": "Yen",
+    "atracciones": [
+      {
+        "nombre": "Tokyo Disneyland",
+        "descripcion": "Este parque temático es una visita obligada para los amantes de Disney. Ofrece atracciones emocionantes, espectáculos en vivo y la oportunidad de conocer a tus personajes favoritos.",
+        "img": "/images/lugares/tokyodisneyland.jpg"
+      },
+      {
+        "nombre": "Templo Senso-ji",
+        "descripcion": "Uno de los templos más antiguos y venerados de Tokio, el Senso-ji es un lugar de peregrinación y una muestra impresionante de la arquitectura tradicional japonesa. También es famoso por su colorida calle comercial Nakamise.",
+        "img": "/images/lugares/sensoji_temple.jpg"
+      },
+      {
+        "nombre": "Barrio de Akihabara",
+        "descripcion": "Conocido como el paraíso de la electrónica, Akihabara es famoso por sus tiendas de tecnología, manga y anime. Es un lugar vibrante y lleno de energía que atrae a los amantes de la cultura pop japonesa.",
+        "img": "/images/lugares/akihabara.jpg"
+      },
+      {
+        "nombre": "Parque Ueno",
+        "descripcion": "Este amplio parque ofrece un escape tranquilo en medio del ajetreo de Tokio. Es ideal para relajarse, hacer un picnic, visitar museos y disfrutar de la belleza natural, especialmente durante la temporada de sakura (flores de cerezo).",
+        "img": "/images/lugares/ueno_park.jpg"
+      }
+    ],
+    "comida_tipica": [
+      "Sushi",
+      "Ramen",
+      "Tempura",
+      "Okonomiyaki",
+      "Matcha"
+    ],
+    "detalles": "Tokio, la bulliciosa capital de Japón, combina la tradición con la modernidad de una manera fascinante. Tokyo Disneyland es un paraíso para los amantes de Disney, con atracciones emocionantes y la oportunidad de conocer a los personajes favoritos. El Templo Senso-ji, uno de los templos más antiguos de Tokio, ofrece una experiencia espiritual y una muestra impresionante de la arquitectura tradicional japonesa. El animado barrio de Akihabara es conocido como el paraíso de la electrónica y atrae a los amantes del manga, el anime y los videojuegos. El Parque Ueno brinda un espacio tranquilo para relajarse y disfrutar de la belleza natural, especialmente durante la temporada de sakura. Además, Tokio es famoso por su deliciosa comida, desde el sushi fresco y el ramen reconfortante hasta el sabroso tempura y el okonomiyaki. No puedes dejar de probar el auténtico matcha japonés."
+  },
+  {
+    "id": "roma",
+    "nombre": "Roma",
+    "pais": "Italia",
+    "poblacion": "2.8 millones",
+    "idioma": "Italiano",
+    "moneda": "Euro",
+    "atracciones": [
+      {
+        "nombre": "Coliseo de Roma",
+        "descripcion": "El Coliseo es un antiguo anfiteatro romano y uno de los iconos más famosos de la ciudad. Es un testimonio impresionante de la arquitectura y la historia de la antigua Roma.",
+        "img": "/images/lugares/coliseo.jpg"
+      },
+      {
+        "nombre": "Basílica de San Pedro",
+        "descripcion": "La Basílica de San Pedro es una de las iglesias más grandes del mundo y el epicentro del catolicismo. Su interior alberga obras de arte renacentistas y su cúpula ofrece vistas panorámicas de la ciudad.",
+        "img": "/images/lugares/basilica_san_pedro.jpg"
+      },
+      {
+        "nombre": "Fontana di Trevi",
+        "descripcion": "La Fontana di Trevi es una hermosa fuente barroca que se ha convertido en un símbolo de buena suerte. Es tradición lanzar una moneda al agua para asegurar el regreso a Roma.",
+        "img": "/images/lugares/fontana_trevi.jpg"
+      },
+      {
+        "nombre": "Museos Vaticanos",
+        "descripcion": "Los Museos Vaticanos albergan una vasta colección de arte y antigüedades, incluyendo la Capilla Sixtina con sus famosos frescos de Miguel Ángel. Es un destino imperdible para los amantes del arte y la historia.",
+        "img": "/images/lugares/museos_vaticanos.jpg"
+      }
+    ],
+    "comida_tipica": [
+      "Pizza",
+      "Pasta",
+      "Gelato",
+      "Caffè",
+      "Supplì"
+    ],
+    "detalles": "Roma, la Ciudad Eterna, es un tesoro de historia y cultura. El Coliseo de Roma, uno de los anfiteatros más grandes jamás construidos, es una visita obligada para los amantes de la historia. La Basílica de San Pedro, situada en el Vaticano, es una obra maestra arquitectónica y religiosa. La Fontana di Trevi, con su encanto y tradición, atrae a visitantes de todo el mundo. Los Museos Vaticanos ofrecen una experiencia artística incomparable, con la Capilla Sixtina como punto culminante. Además, Roma es famosa por su deliciosa comida, desde las auténticas pizzas y pastas hasta los deliciosos gelatos y caffès. No te pierdas la oportunidad de probar los famosos supplì, un bocado romano tradicional."
+  },
+  {
+    "id": "sidney",
+    "nombre": "Sídney",
+    "pais": "Australia",
+    "poblacion": "5.4 millones",
+    "idioma": "Inglés",
+    "moneda": "Dólar australiano",
+    "atracciones": [
+      {
+        "nombre": "Ópera de Sídney",
+        "descripcion": "La Ópera de Sídney es uno de los edificios más famosos y reconocibles del mundo. Su arquitectura distintiva y su ubicación en el puerto hacen de ella una visita imprescindible.",
+        "img": "/images/lugares/opera_sydney.jpg"
+      },
+      {
+        "nombre": "Puente del Puerto de Sídney",
+        "descripcion": "El Puente del Puerto de Sídney, también conocido como el Puente del Puerto de la Bahía de Sídney, es un hito icónico. Ofrece la oportunidad de realizar escalada o simplemente disfrutar de las vistas panorámicas de la ciudad.",
+        "img": "/images/lugares/puente_sidney.jpg"
+      },
+      {
+        "nombre": "Playa de Bondi",
+        "descripcion": "La playa de Bondi es una de las playas más famosas de Australia. Con su arena dorada y sus aguas cristalinas, es un lugar perfecto para disfrutar del sol, surfear o simplemente relajarse.",
+        "img": "/images/lugares/playa_bondi.jpg"
+      },
+      {
+        "nombre": "Jardín Botánico Real",
+        "descripcion": "El Jardín Botánico Real es un oasis verde en el corazón de la ciudad. Con hermosos jardines, senderos pintorescos y una variedad de flora y fauna, es un lugar ideal para pasear y relajarse.",
+        "img": "/images/lugares/jardin_botanico_sidney.jpg"
+      }
+    ],
+    "comida_tipica": [
+      "Fish and chips",
+      "Pavlova",
+      "Meat pie",
+      "Barramundi",
+      "Tim Tam"
+    ],
+    "detalles": "Sídney, la ciudad más grande de Australia, ofrece una combinación perfecta de belleza natural y vida urbana vibrante. La icónica Ópera de Sídney, con su distintiva arquitectura, es un símbolo reconocido a nivel mundial. El Puente del Puerto de Sídney ofrece impresionantes vistas panorámicas y la oportunidad de realizar escalada. La playa de Bondi, con su arena dorada y sus aguas cristalinas, es el lugar perfecto para disfrutar del sol y el mar. El Jardín Botánico Real ofrece un oasis de tranquilidad en medio de la ciudad, con hermosos jardines y una gran variedad de flora y fauna. Además, Sídney es conocida por su deliciosa comida, desde el clásico fish and chips hasta el postre tradicional pavlova y los famosos Tim Tam. No te pierdas la oportunidad de probar el barramundi, un pescado localmente aclamado, y la clásica meat pie australiana."
+  },
+  {
+    "id": "estambul",
+    "nombre": "Estambul",
+    "pais": "Turquía",
+    "poblacion": "15 millones",
+    "idioma": "Turco",
+    "moneda": "Lira turca",
+    "atracciones": [
+      {
+        "nombre": "Santa Sofía",
+        "descripcion": "Santa Sofía es una antigua basílica que se convirtió en mezquita y luego en un museo. Es famosa por su impresionante arquitectura bizantina y su cúpula imponente.",
+        "img": "/images/lugares/santa_sofia.jpg"
+      },
+      {
+        "nombre": "Mezquita Azul",
+        "descripcion": "La Mezquita Azul, oficialmente conocida como la Mezquita del Sultán Ahmed, es una de las mezquitas más importantes de Estambul. Su nombre se debe a los azulejos de color azul que adornan su interior.",
+        "img": "/images/lugares/mezquita_azul.jpg"
+      },
+      {
+        "nombre": "Gran Bazar",
+        "descripcion": "El Gran Bazar es uno de los mercados cubiertos más grandes y antiguos del mundo. Ofrece una experiencia de compras única, con una amplia variedad de productos, desde joyas y alfombras hasta especias y artesanías.",
+        "img": "/images/lugares/gran_bazar.jpg"
+      },
+      {
+        "nombre": "Palacio de Topkapi",
+        "descripcion": "El Palacio de Topkapi fue la residencia principal de los sultanes otomanos durante casi 400 años. Hoy en día, es un museo que alberga una impresionante colección de arte, joyas y objetos históricos.",
+        "img": "/images/lugares/palacio_topkapi.jpg"
+      }
+    ],
+    "comida_tipica": [
+      "Kebab",
+      "Baklava",
+      "Manti",
+      "Lahmacun",
+      "Ayran"
+    ],
+    "detalles": "Estambul, una ciudad que se extiende por Europa y Asia, es famosa por su rica historia y su fusión de culturas. La majestuosa Santa Sofía, con su arquitectura bizantina y su cúpula imponente, es un tesoro histórico. La Mezquita Azul, con sus característicos azulejos azules, es una de las principales mezquitas de la ciudad. El Gran Bazar ofrece una experiencia de compras única, donde se puede encontrar desde joyas y alfombras hasta especias y artesanías. El Palacio de Topkapi, antigua residencia de los sultanes otomanos, alberga una impresionante colección de arte y objetos históricos."
+  },
+  {
+    "id": "londres",
+    "nombre": "Londres",
+    "pais": "Reino Unido",
+    "poblacion": "8.9 millones",
+    "idioma": "Inglés",
+    "moneda": "Libra esterlina",
+    "atracciones": [
+      {
+        "nombre": "Palacio de Buckingham",
+        "descripcion": "El Palacio de Buckingham es la residencia oficial de la monarquía británica en Londres. Es famoso por el cambio de guardia y su impresionante arquitectura.",
+        "img": "/images/lugares/palacio_buckingham.jpg"
+      },
+      {
+        "nombre": "Big Ben",
+        "descripcion": "La Torre de Londres es una fortaleza histórica ubicada en la orilla del río Támesis. Alberga las Joyas de la Corona y ha desempeñado varios roles a lo largo de la historia, desde palacio real hasta prisión.",
+        "img": "/images/lugares/torre_londres.jpg"
+      },
+      {
+        "nombre": "Abadía de Westminster",
+        "descripcion": "La Abadía de Westminster es una iglesia gótica famosa por ser el lugar de coronación de los monarcas británicos. También es el lugar de descanso final de muchas figuras históricas importantes.",
+        "img": "/images/lugares/abadia_westminster.jpg"
+      },
+      {
+        "nombre": "London Eye",
+        "descripcion": "El London Eye es una noria gigante que ofrece vistas panorámicas impresionantes de la ciudad. Es uno de los iconos modernos de Londres y una atracción turística popular.",
+        "img": "/images/lugares/london_eye.jpg"
+      }
+    ],
+    "comida_tipica": [
+      "Fish and chips",
+      "Pie and mash",
+      "English breakfast",
+      "Afternoon tea",
+      "Pudding de Yorkshire"
+    ],
+    "detalles": "Londres, la capital del Reino Unido, es una ciudad vibrante y llena de historia. El Palacio de Buckingham, residencia oficial de la monarquía británica, es famoso por el cambio de guardia y su arquitectura impresionante. La Torre de Londres, una antigua fortaleza, alberga las Joyas de la Corona y ofrece fascinantes recorridos históricos. La Abadía de Westminster, una iglesia gótica icónica, es el lugar de coronación de los monarcas británicos y alberga tumbas y monumentos históricos. El London Eye, una noria gigante, ofrece vistas panorámicas increíbles de la ciudad. Además, Londres es conocida por su comida tradicional, que incluye platos como el clásico fish and chips, el pie and mash, el desayuno inglés, el afternoon tea y el pudding de Yorkshire."
+  },
+  {
+    "id": "berlin",
+    "nombre": "Berlín",
+    "pais": "Alemania",
+    "poblacion": "3.7 millones",
+    "idioma": "Alemán",
+    "moneda": "Euro",
+    "atracciones": [
+      {
+        "nombre": "Puerta de Brandeburgo",
+        "descripcion": "La Puerta de Brandeburgo es uno de los símbolos más conocidos de Berlín. Fue construida en el siglo XVIII y ha sido testigo de importantes eventos históricos. Hoy en día, es un importante punto de referencia y un lugar popular para eventos y celebraciones.",
+        "img": "/images/lugares/puerta_brandeburgo.jpg"
+      },
+      {
+        "nombre": "Muro de Berlín",
+        "descripcion": "El Muro de Berlín fue un símbolo de la división de Alemania durante la Guerra Fría. Aunque gran parte del muro fue derribado, todavía quedan secciones conservadas, como el East Side Gallery, que muestra murales pintados por artistas de todo el mundo.",
+        "img": "/images/lugares/muro_berlin.jpg"
+      },
+      {
+        "nombre": "Museo de Pérgamo",
+        "descripcion": "El Museo de Pérgamo alberga una colección impresionante de artefactos antiguos, incluido el famoso Altar de Pérgamo. Es uno de los museos más visitados de Berlín y ofrece una mirada fascinante a la historia antigua.",
+        "img": "/images/lugares/museo_pergamo.jpg"
+      },
+      {
+        "nombre": "Isla de los Museos",
+        "descripcion": "La Isla de los Museos es un complejo de museos en el centro de Berlín. Incluye varios museos importantes, como el Museo de Pérgamo, el Museo Nuevo y el Museo Bode, que albergan una amplia gama de colecciones artísticas y arqueológicas.",
+        "img": "/images/lugares/isla_museos.jpg"
+      }
+    ],
+    "comida_tipica": [
+      "Currywurst",
+      "Bretzel",
+      "Eisbein",
+      "Königsberger Klopse",
+      "Berliner Pfannkuchen"
+    ],
+    "detalles": "Berlín, la capital de Alemania, es una ciudad llena de historia, cultura y vida vibrante. La Puerta de Brandeburgo, uno de los símbolos más reconocidos de Berlín, es un importante punto de referencia y lugar de celebraciones. El Muro de Berlín, que fue derribado en 1989, todavía tiene secciones conservadas, como el famoso East Side Gallery, que muestra murales pintados por artistas de todo el mundo. El Museo de Pérgamo alberga una impresionante colección de artefactos antiguos, incluido el Altar de Pérgamo. La Isla de los Museos, situada en el centro de la ciudad, alberga varios museos importantes que ofrecen una amplia gama de colecciones artísticas y arqueológicas. En cuanto a la comida, Berlín es conocida por su currywurst, los tradicionales bretzels, el eisbein, los Königsberger Klopse y los Berliner Pfannkuchen (rosquillas berlinas)."
+  },
+  {
+    "id": "rio",
+    "nombre": "Río de Janeiro",
+    "pais": "Brasil",
+    "poblacion": "6.7 millones",
+    "idioma": "Portugués",
+    "moneda": "Real brasileño",
+    "atracciones": [
+      {
+        "nombre": "Cristo Redentor",
+        "descripcion": "El Cristo Redentor es una de las Nuevas Maravillas del Mundo y uno de los íconos más reconocibles de Río de Janeiro. Esta estatua de Jesús con los brazos abiertos se encuentra en la cima del monte Corcovado y ofrece vistas panorámicas impresionantes de la ciudad.",
+        "img": "/images/lugares/cristo_redentor.jpg"
+      },
+      {
+        "nombre": "Copacabana",
+        "descripcion": "La playa de Copacabana es una de las playas más famosas del mundo. Con su extensa franja de arena dorada, aguas azules y una animada atmósfera, es un lugar perfecto para disfrutar del sol, nadar y participar en actividades deportivas.",
+        "img": "/images/lugares/copacabana.jpg"
+      },
+      {
+        "nombre": "Pan de Azúcar",
+        "descripcion": "El Pan de Azúcar es una formación rocosa que se eleva sobre la bahía de Guanabara. Es accesible mediante un teleférico y ofrece vistas panorámicas espectaculares de la ciudad, las playas y el océano.",
+        "img": "/images/lugares/pan_azucar.jpg"
+      },
+      {
+        "nombre": "Barrio de Santa Teresa",
+        "descripcion": "El barrio de Santa Teresa es conocido por su encanto bohemio y su arquitectura colonial. Sus calles empedradas, casas coloridas y ambiente artístico lo convierten en un lugar popular para explorar galerías de arte, tiendas boutique y restaurantes con estilo.",
+        "img": "/images/lugares/santa_teresa.jpg"
+      }
+    ],
+    "comida_tipica": [
+      "Feijoada",
+      "Açaí",
+      "Coxinha",
+      "Pão de queijo",
+      "Caipirinha"
+    ],
+    "detalles": "Río de Janeiro, ubicado en Brasil, es una ciudad llena de energía, playas espectaculares y una cultura vibrante. El Cristo Redentor, una estatua imponente en la cima del monte Corcovado, ofrece vistas panorámicas impresionantes de la ciudad. La playa de Copacabana, famosa en todo el mundo, es el lugar perfecto para disfrutar del sol, nadar y disfrutar de la animada atmósfera carioca. El Pan de Azúcar, una formación rocosa icónica, proporciona vistas panorámicas espectaculares de la ciudad y el océano. El barrio de Santa Teresa, con su encanto bohemio y arquitectura colonial, es un lugar popular para explorar galerías de arte y disfrutar de la escena gastronómica. En cuanto a la comida típica, no puedes dejar de probar la feijoada, el açaí, la coxinha, el pão de queijo y la refrescante caipirinha, una bebida tradicional brasileña."
+  },
+  {
+    "id": "santorini",
+    "nombre": "Santorini",
+    "pais": "Grecia",
+    "poblacion": "15,500",
+    "idioma": "Griego",
+    "moneda": "Euro",
+    "atracciones": [
+      {
+        "nombre": "Oia",
+        "descripcion": "Oia es un hermoso pueblo en lo alto de un acantilado en la isla de Santorini. Es conocido por sus icónicas casas blancas con cúpulas azules y sus impresionantes vistas al mar Egeo. Es el lugar perfecto para disfrutar de una puesta de sol espectacular.",
+        "img": "/images/lugares/oia.jpg"
+      },
+      {
+        "nombre": "Fira",
+        "descripcion": "Fira es la capital de Santorini y un centro animado lleno de tiendas, restaurantes y vida nocturna. Desde Fira, se pueden admirar las vistas panorámicas de los acantilados y el volcán de Santorini. También es un punto de partida popular para recorridos en barco alrededor de la isla.",
+        "img": "/images/lugares/fira.jpg"
+      },
+      {
+        "nombre": "Playa Roja",
+        "descripcion": "La Playa Roja es una de las playas más famosas de Santorini debido a su distintivo color rojo en el paisaje. Está rodeada de acantilados de lava y ofrece aguas cristalinas para nadar y tomar el sol.",
+        "img": "/images/lugares/playa_roja.jpg"
+      },
+      {
+        "nombre": "Akrotiri",
+        "descripcion": "Akrotiri es un sitio arqueológico que muestra las ruinas de una antigua ciudad minoica. Es conocido por sus edificios bien conservados, frescos y objetos antiguos, que brindan una visión fascinante de la vida en la antigua Santorini.",
+        "img": "/images/lugares/akrotiri.jpg"
+      }
+    ],
+    "comida_tipica": [
+      "Moussaka",
+      "Souvlaki",
+      "Tzatziki",
+      "Dolmades",
+      "Baklava"
+    ],
+    "detalles": "Santorini, una isla situada en Grecia, es famosa por su belleza escénica y su arquitectura distintiva. Oia, un encantador pueblo en lo alto de un acantilado, es conocido por sus casas blancas con cúpulas azules y sus vistas impresionantes del mar Egeo. Fira, la capital de Santorini, es un lugar animado con una gran cantidad de tiendas, restaurantes y vida nocturna, además de ofrecer vistas panorámicas de los acantilados y el volcán. La Playa Roja destaca por su arena de color rojo y aguas cristalinas, rodeada de acantilados de lava. Akrotiri es un sitio arqueológico que muestra las ruinas de una antigua ciudad minoica, ofreciendo una fascinante visión de la antigua Santorini. En cuanto a la comida típica, Santorini ofrece delicias como la moussaka, el souvlaki, el tzatziki, los dolmades y el baklava, un postre tradicional griego."
+  },
+  {
+    "id": "vancouver",
+    "nombre": "Vancouver",
+    "pais": "Canadá",
+    "poblacion": "631,486",
+    "idioma": "Inglés",
+    "moneda": "Dólar canadiense",
+    "atracciones": [
+      {
+        "nombre": "Parque Stanley",
+        "descripcion": "El Parque Stanley es un oasis urbano en el corazón de Vancouver. Con sus extensos senderos, hermosos jardines y playas pintorescas, es el lugar perfecto para disfrutar de actividades al aire libre, como caminatas, ciclismo y picnics.",
+        "img": "/images/lugares/parque_stanley.jpg"
+      },
+      {
+        "nombre": "Granville Island",
+        "descripcion": "Granville Island es un destino popular para los amantes de la comida y las artes. El mercado público de Granville Island ofrece una amplia variedad de productos frescos, deliciosos platos gourmet y productos artesanales. Además, hay galerías de arte, teatros y tiendas únicas para explorar.",
+        "img": "/images/lugares/granville_island.jpg"
+      },
+      {
+        "nombre": "Gastown",
+        "descripcion": "Gastown es el barrio más antiguo de Vancouver y se caracteriza por su encanto histórico. Con sus adoquines, farolas antiguas y edificios de estilo victoriano, es un lugar popular para pasear, disfrutar de restaurantes y descubrir tiendas boutique.",
+        "img": "/images/lugares/gastown.jpg"
+      },
+      {
+        "nombre": "Acuario de Vancouver",
+        "descripcion": "El Acuario de Vancouver es una atracción popular para toda la familia. Ofrece la oportunidad de explorar una amplia variedad de especies marinas, incluidas ballenas, delfines, pingüinos y más. También se enfoca en la conservación y la educación sobre la vida marina.",
+        "img": "/images/lugares/acuario_vancouver.jpg"
+      }
+    ],
+    "comida_tipica": [
+      "Salmón ahumado",
+      "Poutine",
+      "Jugo de arce",
+      "Nanaimo bar",
+      "Sushi"
+    ],
+    "detalles": "Vancouver, ubicada en Canadá, es una ciudad cosmopolita rodeada de impresionantes paisajes naturales. El Parque Stanley, un oasis urbano, ofrece una variedad de actividades al aire libre, desde caminatas hasta ciclismo, rodeado de hermosos jardines y playas pintorescas. Granville Island es un destino imperdible para los amantes de la comida y las artes, con su animado mercado público y una amplia oferta de productos frescos y artesanales. Gastown, el barrio más antiguo de la ciudad, ofrece un encanto histórico con sus calles empedradas y edificios victorianos, además de una gran selección de restaurantes y tiendas boutique. El Acuario de Vancouver es una atracción popular, donde se pueden explorar diversas especies marinas y aprender sobre la conservación. En cuanto a la comida típica, no te pierdas la oportunidad de probar el salmón ahumado, la poutine (patatas fritas con queso y salsa), el jugo de arce, el Nanaimo bar (un postre delicioso) y el sushi, que refleja la influencia multicultural de la ciudad."
+  },
+  {
+    "id": "mauricio",
+    "nombre": "Mauricio",
+    "pais": "Mauricio",
+    "poblacion": "1,265,577",
+    "idioma": "Inglés, francés y criollo mauriciano",
+    "moneda": "Rupia mauriciana",
+    "atracciones": [
+      {
+        "nombre": "Playa de Trou aux Biches",
+        "descripcion": "La playa de Trou aux Biches es conocida por sus aguas cristalinas y su arena blanca. Es un lugar perfecto para relajarse, nadar y practicar deportes acuáticos como el buceo y el snorkel. Además, ofrece impresionantes vistas al atardecer.",
+        "img": "/images/lugares/trou_aux_biches.jpg"
+      },
+      {
+        "nombre": "Parque Nacional Black River Gorges",
+        "descripcion": "El Parque Nacional Black River Gorges es un santuario natural que alberga una gran diversidad de flora y fauna. Es un destino ideal para hacer senderismo y explorar paisajes montañosos, cascadas y bosques exuberantes.",
+        "img": "/images/lugares/black_river_gorges.jpg"
+      },
+      {
+        "nombre": "Port Louis",
+        "descripcion": "Port Louis, la capital de Mauricio, es un lugar lleno de historia y cultura. Puedes visitar la Ciudadela, un fuerte histórico, y explorar el animado mercado central, donde encontrarás una variedad de productos locales. También puedes disfrutar de la arquitectura colonial francesa y visitar el famoso paseo marítimo de Caudan Waterfront.",
+        "img": "/images/lugares/port_louis.jpg"
+      },
+      {
+        "nombre": "Isla de los Ciervos",
+        "descripcion": "La Isla de los Ciervos, también conocida como Île aux Cerfs, es una isla paradisíaca en la costa este de Mauricio. Ofrece playas de arena blanca, aguas turquesas y una amplia gama de actividades acuáticas, como el esnórquel, el kayak y el parasailing.",
+        "img": "/images/lugares/ile_aux_cerfs.jpg"
+      }
+    ],
+    "comida_tipica": [
+      "Curry de mariscos",
+      "Dholl puri",
+      "Rougaille",
+      "Gateau Piment",
+      "Alouda"
+    ],
+    "detalles": "Mauricio, ubicado en el océano Índico, es un paraíso tropical conocido por sus hermosas playas, aguas cristalinas y rica cultura. La playa de Trou aux Biches es una de las más populares, con su arena blanca y aguas transparentes, ideal para relajarse y practicar deportes acuáticos. El Parque Nacional Black River Gorges ofrece una experiencia natural impresionante, con senderos para hacer senderismo, cascadas y bosques exuberantes. La capital, Port Louis, es un lugar lleno de historia y cultura, donde puedes explorar la Ciudadela, visitar el mercado central y disfrutar de la arquitectura colonial francesa. La Isla de los Ciervos, también conocida como Île aux Cerfs, es una isla paradisíaca con playas de ensueño y una amplia gama de actividades acuáticas. En cuanto a la comida típica, no te pierdas el curry de mariscos, el dholl puri (un panqueque relleno de lentejas), el rougaille (un guiso picante) y el gateau piment (una especie de buñuelo de chile). También puedes probar el alouda, una bebida refrescante a base de leche y sabores de rosa o almendra."
+  }
+  
+]

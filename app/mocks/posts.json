@@ -1,0 +1,111 @@
+[
+  {
+    "id": "nuevayork",
+    "ciudad": "Nueva York",
+    "continente": "america",
+    "fecha": "Nueva York / 2023-06-15",
+    "img": "/images/nyork.jpg",
+    "resume": "Descubre la Gran Manzana en todo su esplendor",
+    "body": "Nueva York, la ciudad que nunca duerme, te espera con sus rascacielos imponentes, sus icónicos puntos turísticos como Times Square y Central Park, y su vibrante vida cultural. Prepárate para vivir una experiencia única en esta metrópolis cosmopolita."
+  },
+  {
+    "id": "paris",
+    "ciudad": "París",
+    "continente": "europa",
+    "fecha": "Paris / 2023-07-20",
+    "img": "/images/paris.jpg",
+    "resume": "Sumérgete en la magia de la Ciudad de la Luz",
+    "body": "París, la romántica capital de Francia, te espera con sus elegantes bulevares, su impresionante arquitectura y su inigualable gastronomía. Desde la majestuosidad de la Torre Eiffel hasta la belleza del Museo del Louvre, descubrirás un destino que te transportará a otra época."
+  },
+  {
+    "id": "tokio",
+    "ciudad": "Tokio",
+    "continente": "asia",
+    "fecha": "Tokio / 2023-08-10",
+    "img": "/images/tokyo.jpg",
+    "resume": "Sumérgete en la fascinante cultura japonesa",
+    "body": "Tokio, la capital de Japón, te sorprenderá con su modernidad y tradición entrelazadas. Desde los rascacielos iluminados de Shibuya hasta los templos históricos de Asakusa, vivirás una experiencia única. No te pierdas la oportunidad de probar la deliciosa gastronomía local y explorar los barrios vibrantes de la ciudad."
+  },
+  {
+    "id": "roma",
+    "ciudad": "Roma",
+    "continente": "europa",
+    "fecha": "Roma / 2023-09-18",
+    "img": "/images/roma.jpg",
+    "resume": "Sumérgete en la antigua historia de la Ciudad Eterna",
+    "body": "Roma, la capital de Italia, te transportará a través de los siglos con sus monumentos y ruinas históricas. Desde el majestuoso Coliseo hasta la grandiosidad de la Ciudad del Vaticano, descubrirás una ciudad llena de encanto y belleza. No olvides probar la auténtica pizza y pasta italiana durante tu visita."
+  },
+  {
+    "id": "sidney",
+    "ciudad": "Sídney",
+    "continente": "oceania",
+    "fecha": "Sidney / 2023-10-12",
+    "img": "/images/sidney.jpg",
+    "resume": "Descubre la belleza costera de la ciudad australiana",
+    "body": "Sídney, una de las ciudades más icónicas de Australia, te maravillará con su impresionante puerto y su famosa Ópera. Desde las playas de Bondi y Manly hasta los jardines botánicos repletos de exuberante vegetación, disfrutarás de un estilo de vida relajado y vistas impresionantes."
+  },
+  {
+    "id": "estambul",
+    "ciudad": "Estambul",
+    "continente": "europa",
+    "fecha": "Estambul / 2023-11-05",
+    "img": "/images/estambul.jpg",
+    "resume": "Explora el cruce de culturas entre europa y Asia",
+    "body": "Estambul, la ciudad que conecta dos continentes, te cautivará con su rica historia y su arquitectura fascinante. Desde la majestuosidad de la Mezquita Azul hasta la impresionante basílica de Santa Sofía, descubrirás una ciudad llena de contrastes y maravillas por explorar."
+  },
+  {
+    "id": "londres",
+    "ciudad": "Londres",
+    "continente": "europa",
+    "fecha": "Londres / 2023-12-01",
+    "img": "/images/londres.jpg",
+    "resume": "Explora la capital del Reino Unido",
+    "body": "Londres, la bulliciosa capital del Reino Unido, te espera con su rica historia, sus emblemáticos monumentos como el Big Ben y el Palacio de Buckingham, y su vibrante escena artística y cultural. Disfruta de un paseo por el río Támesis, visita los famosos museos de la ciudad y saborea la comida tradicional en un pub británico."
+  },
+  {
+    "id": "berlin",
+    "ciudad": "Berlín",
+    "continente": "europa",
+    "fecha": "Berlín / 2024-01-15",
+    "img": "/images/berlin.jpg",
+    "resume": "Sumérgete en la historia y la modernidad de Berlín",
+    "body": "Berlín, la capital de Alemania, te sorprenderá con su fusión de historia y vanguardia. Desde el icónico Muro de Berlín hasta la imponente Puerta de Brandenburgo, descubrirás los vestigios del pasado y la energía de una ciudad en constante evolución. Explora los animados barrios, disfruta de la animada vida nocturna y no te pierdas los museos de clase mundial."
+  },
+  {
+    "id": "rio",
+    "ciudad": "Río de Janeiro",
+    "continente": "america",
+    "fecha": "Río de Janeiro / 2024-02-20",
+    "img": "/images/rio.jpg",
+    "resume": "Vive la pasión y la belleza de Río de Janeiro",
+    "body": "Río de Janeiro, la ciudad brasileña conocida por su carnaval y sus impresionantes playas como Copacabana e Ipanema, te cautivará con su energía y su escenario natural. Sube al Cristo Redentor, explora el Pan de Azúcar, disfruta de la samba y déjate sorprender por la belleza del paisaje urbano y natural de la ciudad."
+  },
+  {
+    "id": "santorini",
+    "ciudad": "Santorini",
+    "continente": "europa",
+    "fecha": "Santorini / 2024-03-10",
+    "img": "/images/santorini.jpg",
+    "resume": "Descubre la belleza de las islas griegas",
+    "body": "Santorini, una de las islas más impresionantes de Grecia, te maravillará con su arquitectura blanca y azul, sus espectaculares vistas al mar Egeo y sus románticos atardeceres. Explora las encantadoras calles de Oia, visita las playas de arena negra y disfruta de la deliciosa gastronomía mediterránea."
+  },
+  {
+    "id": "vancouver",
+    "ciudad": "Vancouver",
+    "continente": "america",
+    "fecha": "Vancouver / 2024-04-15",
+    "img": "/images/vancouver.jpg",
+    "resume": "Disfruta de la naturaleza y la diversidad de Vancouver",
+    "body": "Vancouver, en la costa oeste de Canadá, te brinda la combinación perfecta entre naturaleza y vida urbana. Admira las montañas cubiertas de nieve, explora los parques como Stanley Park, recorre el vibrante barrio de Gastown y prueba la variedad de restaurantes étnicos. No te pierdas la oportunidad de hacer senderismo, esquiar o pasear en bicicleta por la ciudad."
+  },
+  {
+    "id": "mauricio",
+    "ciudad": "Mauricio",
+    "continente": "África",
+    "fecha": "Mauricio / 2024-XX-XX",
+    "img": "/images/mauricio.jpg",
+    "resume": "Descubre la belleza tropical de Mauricio",
+    "body": "Mauricio, ubicado en el océano Índico, te cautivará con su impresionante belleza tropical. Disfruta de sus playas de arena blanca, aguas turquesas y exuberante vegetación. Explora la fascinante vida marina mientras practicas snorkel o buceo en sus arrecifes de coral. Admira las cascadas y senderos del Parque Nacional Black River Gorges y sumérgete en la rica cultura de Port Louis, la animada capital. No te pierdas la oportunidad de degustar la deliciosa comida local, como el curry de mariscos y el dholl puri. Mauricio te espera con un paraíso tropical que nunca olvidarás."
+  }
+  
+]
