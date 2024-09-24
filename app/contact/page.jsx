@@ -73,7 +73,7 @@ export default function EmailForm() {
         </p>
         <p>Nuestro equipo de expertos en viajes está disponible para brindarte la asistencia que necesitas.</p>
         <p>
-          Puedes contactarnos por correo electrónico a través del siguiente formulario o por teléfono al <a href="tel:+34689272482" className={styles.tlf}>689 27 24 82</a>.
+          Puedes contactarnos por correo electrónico a través del siguiente formulario o por teléfono al <a className={styles.tlf}>666 666 666</a>.
         </p>
         <br />
         <p>
